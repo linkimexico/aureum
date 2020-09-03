@@ -1,0 +1,3099 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-09-16 00:06+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: Config/bootstrap.php:269
+msgid "his"
+msgstr "il suo"
+
+#: Config/bootstrap.php:269
+msgid "her"
+msgstr "la sua"
+
+#: Controller/AlbumsController.php:152
+#: Controller/UsersController.php:1036
+msgid "Your changes have been saved"
+msgstr "Le modifiche sono state salvate"
+
+#: Controller/AlbumsController.php:168
+#: View/Albums/view.ctp:18
+#: View/Themed/Mobile/Albums/view.ctp:12
+msgid "Edit Album"
+msgstr "Modifica Album"
+
+#: Controller/AlbumsController.php:230
+msgid "Album has been deleted"
+msgstr "L'album è stato cancellato"
+
+#: Controller/AppController.php:61
+msgid "You are not allowed to view this site"
+msgstr "Non ti è permesso di vedere questo sito"
+
+#: Controller/AppController.php:113
+msgid "Please login to view the site"
+msgstr "Effettua il login per vedere il sito"
+
+#: Controller/AppController.php:223;492
+msgid "This account has been disabled"
+msgstr "L'account è stato disabilitato"
+
+#: Controller/AppController.php:313;330;337;344;358
+#: Controller/UsersController.php:745;802
+msgid "Access denied"
+msgstr "Accesso negato"
+
+#: Controller/AppController.php:322
+#: View/Elements/activities.ctp:223
+#: View/Themed/Layoto/Elements/activities.ctp:225
+msgid "Please login or register"
+msgstr "Effettua il login o registrati"
+
+#: Controller/AppController.php:351
+msgid "You have not confirmed your email address! Check your email (including junk folder) and click on the validation link to validate your email address"
+msgstr ""
+
+#: Controller/AppController.php:388
+msgid "Item does not exist"
+msgstr "L'oggetto non esiste più"
+
+#: Controller/AppController.php:455
+msgid "Only friends of the poster can view this item"
+msgstr "Solo gli amici dell'autore possono vedere questo elemento"
+
+#: Controller/AppController.php:462
+msgid "Only the poster can view this item"
+msgstr "Solo l'autore può vedere questo elemento"
+
+#: Controller/AppController.php:544
+msgid "Your Notifications Summary"
+msgstr "Sommario notifiche"
+
+#: Controller/BlogsController.php:22
+#: View/Blogs/index.ctp:31
+#: View/Search/index.ctp:7;41
+#: View/Themed/Bado/Layouts/default.ctp:47
+#: View/Themed/Cross/Layouts/default.ctp:50
+#: View/Themed/Layoto/Layouts/default.ctp:79
+#: View/Themed/Mobile/Users/view.ctp:194
+#: View/Themed/Vk/Elements/right_column.ctp:9
+#: View/Users/ajax_info.ctp:47
+#: View/Users/view.ctp:210
+msgid "Blogs"
+msgstr "Blog"
+
+#: Controller/BlogsController.php:90
+#: View/Blogs/create.ctp:70
+#: View/Blogs/view.ctp:19
+msgid "Edit Entry"
+msgstr "Modifica articolo"
+
+#: Controller/BlogsController.php:95
+#: View/Blogs/create.ctp:70
+#: View/Blogs/index.ctp:26
+#: View/Elements/ajax/home_blog.ctp:1
+#: View/Users/ajax_blogs.ctp:2
+msgid "Write New Entry"
+msgstr "Scrivi un nuovo articolo"
+
+#: Controller/BlogsController.php:228
+msgid "Entry has been deleted"
+msgstr "L'articolo è stato salvato"
+
+#: Controller/ConversationsController.php:109
+msgid "Recipient is required"
+msgstr ""
+
+#: Controller/ConversationsController.php:206
+msgid "Please select at least one person"
+msgstr "Seleziona almeno una persona"
+
+#: Controller/EventsController.php:32
+#: View/Events/index.ctp:23
+#: View/Themed/Bado/Layouts/default.ctp:62
+#: View/Themed/Cross/Layouts/default.ctp:65
+#: View/Themed/Layoto/Layouts/default.ctp:94
+#: View/Themed/Vk/Elements/right_column.ctp:24
+msgid "Events"
+msgstr "Eventi"
+
+#: Controller/EventsController.php:90
+#: View/Events/create.ctp:57
+#: View/Events/view.ctp:55
+msgid "Edit Event"
+msgstr "Modifica evento"
+
+#: Controller/EventsController.php:95
+#: View/Events/create.ctp:57
+msgid "Add New Event"
+msgstr "Aggiungi un evento"
+
+#: Controller/EventsController.php:376
+#: View/Elements/misc/notification_texts.ctp:58
+msgid "invited you to \"%s\""
+msgstr ""
+
+#: Controller/EventsController.php:390
+#: Controller/GroupsController.php:469
+msgid "Your invitations have been sent."
+msgstr "I tuoi inviti sono stati spediti"
+
+#: Controller/EventsController.php:390
+#: Controller/GroupsController.php:469
+msgid "Invite more friends"
+msgstr "Invita più amici"
+
+#: Controller/EventsController.php:426
+msgid "Event has been deleted"
+msgstr "L'evento è stato cancellato"
+
+#: Controller/FriendsController.php:21;75
+msgid "You cannot send friend request to yourself"
+msgstr "Non puoi inviare una richiesta di amicizia a te stesso"
+
+#: Controller/FriendsController.php:28;83
+msgid "You are already a friend of this user"
+msgstr "Sei già amico di questo utente"
+
+#: Controller/FriendsController.php:35
+msgid "You have already sent a friend request to this user"
+msgstr "Hai già inviato una richiesta di amicizia a questo utente"
+
+#: Controller/FriendsController.php:43
+msgid "Your request has been successfully sent"
+msgstr "La tua richiesta è stato inviata"
+
+#: Controller/FriendsController.php:58
+#: View/Elements/misc/notification_texts.ctp:62
+msgid "wants to be friends with you"
+msgstr "vuole diventare tuo amico"
+
+#: Controller/FriendsController.php:92
+msgid "You have already sent this user a friend request"
+msgstr ""
+
+#: Controller/FriendsController.php:100
+msgid "This user has already sent you a friend request"
+msgstr ""
+
+#: Controller/FriendsController.php:193
+msgid "You and %s are now friends"
+msgstr "Tu e %s siete ora amici"
+
+#: Controller/FriendsController.php:196
+#: Controller/GroupsController.php:549
+msgid "You have deleted the request. The sender will not be notified"
+msgstr ""
+
+#: Controller/FriendsController.php:232
+msgid "invited you to join %s"
+msgstr "invitato ad unirti a %s"
+
+#: Controller/GroupsController.php:32
+#: View/Groups/index.ctp:25
+#: View/Search/index.ctp:11;31
+#: View/Themed/Bado/Layouts/default.ctp:59
+#: View/Themed/Cross/Layouts/default.ctp:62
+#: View/Themed/Layoto/Layouts/default.ctp:91
+#: View/Themed/Mobile/Users/view.ctp:203
+#: View/Themed/Vk/Elements/right_column.ctp:21
+#: View/Users/view.ctp:219
+msgid "Groups"
+msgstr "Gruppi"
+
+#: Controller/GroupsController.php:103
+#: View/Groups/create.ctp:40
+#: View/Groups/view.ctp:183
+msgid "Edit Group"
+msgstr "Modifica Gruppo"
+
+#: Controller/GroupsController.php:108
+#: View/Groups/create.ctp:40
+msgid "Add New Group"
+msgstr "Crea un gruppo"
+
+#: Controller/GroupsController.php:306
+msgid "This is a private group. You must be invited by a group admin in order to join"
+msgstr ""
+
+#: Controller/GroupsController.php:316
+msgid "Your join request has been sent"
+msgstr ""
+
+#: Controller/GroupsController.php:455
+#: View/Elements/misc/notification_texts.ctp:74
+msgid "invited you to join \"%s\""
+msgstr ""
+
+#: Controller/GroupsController.php:543
+msgid "is now a member of this group"
+msgstr "è adesso membro del gruppo"
+
+#: Controller/GroupsController.php:582
+msgid "You have successfully left this group"
+msgstr "Hai lasciato il gruppo"
+
+#: Controller/GroupsController.php:599
+msgid "Group has been featured"
+msgstr "Il gruppo è in evidenza"
+
+#: Controller/GroupsController.php:614
+msgid "Group has been unfeatured"
+msgstr "Il gruppo non è più in evidenza"
+
+#: Controller/GroupsController.php:635
+msgid "Group has been deleted"
+msgstr "Il gruppo è stato cancellato"
+
+#: Controller/HomeController.php:54
+#: View/Elements/main_menu.ctp:3
+#: View/Themed/Bado/Elements/userbox.ctp:4
+#: View/Themed/Blue/Elements/main_menu.ctp:3
+#: View/Themed/Cross/Layouts/default.ctp:44
+#: View/Themed/Vk/Elements/userbox.ctp:6
+msgid "Home"
+msgstr "Home"
+
+#: Controller/HomeController.php:118
+msgid "Thanks you! Your message has been sent"
+msgstr "Grazie! il tuo messaggio è stato inviato"
+
+#: Controller/HomeController.php:121
+#: View/Home/contact.ctp:12
+msgid "Invalid email address"
+msgstr "Indirizzo mail non valido"
+
+#: Controller/PhotosController.php:31
+#: View/Elements/ajax/group_detail.ctp:42
+#: View/Elements/ajax/profile_detail.ctp:28
+#: View/Groups/view.ctp:141
+#: View/Photos/index.ctp:28
+#: View/Search/index.ctp:8;51
+#: View/Themed/Bado/Layouts/default.ctp:50
+#: View/Themed/Cross/Layouts/default.ctp:53
+#: View/Themed/Layoto/Layouts/default.ctp:82
+#: View/Themed/Mobile/Users/view.ctp:143
+#: View/Themed/Vk/Elements/right_column.ctp:12
+#: View/Users/view.ctp:159
+msgid "Photos"
+msgstr "Foto"
+
+#: Controller/PhotosController.php:118
+#: View/Elements/ajax/photo_detail.ctp:32
+#: View/Photos/lightbox_view.ctp:46
+msgid "Photos of %s"
+msgstr "Foto di %s"
+
+#: Controller/PhotosController.php:403
+msgid "Duplicated tag!"
+msgstr "Tag duplicato"
+
+#: Controller/ReportsController.php:39
+msgid "Duplicated report"
+msgstr "Segnalazione duplicata"
+
+#: Controller/ReportsController.php:50
+msgid "reported a %s"
+msgstr "segnalato a %s"
+
+#: Controller/ReportsController.php:55
+msgid "Thank you! Your report has been submitted"
+msgstr "Grazie! La tua segnalazione è stata inviata"
+
+#: Controller/SearchController.php:16
+msgid "Search term must have at least 4 characters"
+msgstr "Il termine di ricerca deve contenere almeno 4 caratteri"
+
+#: Controller/TopicsController.php:36
+#: View/Groups/view.ctp:147
+#: View/Search/index.ctp:10;71
+#: View/Themed/Bado/Layouts/default.ctp:56
+#: View/Themed/Cross/Layouts/default.ctp:59
+#: View/Themed/Layoto/Layouts/default.ctp:88
+#: View/Themed/Mobile/Users/view.ctp:151
+#: View/Themed/Vk/Elements/right_column.ctp:18
+#: View/Topics/index.ctp:32
+#: View/Users/ajax_info.ctp:51
+#: View/Users/view.ctp:167
+msgid "Topics"
+msgstr ""
+
+#: Controller/TopicsController.php:155
+#: View/Topics/ajax_view.ctp:35
+#: View/Topics/create.ctp:23
+#: View/Topics/view.ctp:61
+msgid "Edit Topic"
+msgstr "Modifica topic"
+
+#: Controller/TopicsController.php:167
+#: View/Elements/ajax/group_topic.ctp:2
+#: View/Elements/ajax/home_topic.ctp:1
+#: View/Topics/create.ctp:23
+#: View/Topics/index.ctp:27
+#: View/Users/ajax_topics.ctp:2
+msgid "Create New Topic"
+msgstr "Crea topic"
+
+#: Controller/TopicsController.php:361
+msgid "This is a private group topic and can only be viewed by the group's members"
+msgstr ""
+
+#: Controller/TopicsController.php:415
+msgid "Topic has been deleted"
+msgstr "Il topic è stato cancellato"
+
+#: Controller/TopicsController.php:439
+msgid "Topic has been pinned"
+msgstr "Il Topic è stato marcato"
+
+#: Controller/TopicsController.php:456
+msgid "Topic has been unpinned"
+msgstr "Il Topic non è più marcato"
+
+#: Controller/TopicsController.php:473
+msgid "Topic has been locked"
+msgstr "Il Topic è stato chiuso"
+
+#: Controller/TopicsController.php:490
+msgid "Topic has been unlocked"
+msgstr "Il topic è stato sbloccato"
+
+#: Controller/UploadController.php:110
+msgid "Profile Pictures"
+msgstr "Immagini Profilo"
+
+#: Controller/UploadController.php:232
+msgid "Cover Pictures"
+msgstr "Immagini Cover"
+
+#: Controller/UploadController.php:340
+msgid "Newsfeed Photos"
+msgstr "Foto Newsfeed"
+
+#: Controller/UsersController.php:53
+#: View/Search/index.ctp:6;21
+#: View/Themed/Bado/Layouts/default.ctp:44
+#: View/Themed/Cross/Layouts/default.ctp:47
+#: View/Themed/Layoto/Layouts/default.ctp:76
+#: View/Themed/Vk/Elements/right_column.ctp:6
+#: View/Users/index.ctp:82
+msgid "People"
+msgstr "Persone"
+
+#: Controller/UsersController.php:197
+msgid "Invalid email or password"
+msgstr ""
+
+#: Controller/UsersController.php:243;352
+msgid "The admin has disabled registration on this site"
+msgstr ""
+
+#: Controller/UsersController.php:261
+msgid "Registration"
+msgstr ""
+
+#: Controller/UsersController.php:277;359
+msgid "Invalid registration code"
+msgstr ""
+
+#: Controller/UsersController.php:320
+msgid "Invalid security question"
+msgstr ""
+
+#: Controller/UsersController.php:337
+msgid "Invalid security code"
+msgstr ""
+
+#: Controller/UsersController.php:389;1012
+msgid " is required"
+msgstr ""
+
+#: Controller/UsersController.php:420;1388
+#: View/Elements/left_column.ctp:15
+msgid "Welcome to"
+msgstr "Benvenuto su"
+
+#: Controller/UsersController.php:437
+msgid "An email has been sent to your email address<br />Please click the validation link to confirm your email"
+msgstr ""
+
+#: Controller/UsersController.php:442
+msgid "Something went wrong. Please contact the administrators"
+msgstr ""
+
+#: Controller/UsersController.php:488
+#: View/Elements/registration.ctp:69
+msgid "Registration Code"
+msgstr ""
+
+#: Controller/UsersController.php:495
+#: View/Users/fb_register.ctp:1
+msgid "Register with your Facebook account"
+msgstr ""
+
+#: Controller/UsersController.php:587
+msgid "The user's account you were trying to view has been disabled"
+msgstr ""
+
+#: Controller/UsersController.php:936
+#: View/Elements/ajax/profile_detail.ctp:2
+#: View/Users/ajax_info.ctp:2
+msgid "Edit Profile"
+msgstr "Modifica Profilo"
+
+#: Controller/UsersController.php:978;1182
+msgid "Username must not be a numeric value"
+msgstr ""
+
+#: Controller/UsersController.php:994;1198
+msgid "Username is restricted"
+msgstr ""
+
+#: Controller/UsersController.php:1063
+msgid "Incorrect current password"
+msgstr ""
+
+#: Controller/UsersController.php:1074;1355
+msgid "Your password has been changed"
+msgstr ""
+
+#: Controller/UsersController.php:1079
+#: View/Elements/profilenav.ctp:9
+#: View/Users/password.ctp:5;13
+msgid "Change Password"
+msgstr ""
+
+#: Controller/UsersController.php:1088
+msgid "Please enter an email address"
+msgstr ""
+
+#: Controller/UsersController.php:1102
+msgid "Password Change Request"
+msgstr ""
+
+#: Controller/UsersController.php:1108
+msgid "Email does not exist"
+msgstr ""
+
+#: Controller/UsersController.php:1141
+msgid "Your password has been reset"
+msgstr ""
+
+#: Controller/UsersController.php:1161
+msgid "Your account has been validated!"
+msgstr ""
+
+#: Controller/UsersController.php:1164
+msgid "Invalid code!"
+msgstr ""
+
+#: Controller/UsersController.php:1180
+msgid "Username must be between 5 and 50 characters long"
+msgstr ""
+
+#: Controller/UsersController.php:1184
+msgid "Username must only contain alphanumeric characters (no special chars)"
+msgstr ""
+
+#: Controller/UsersController.php:1209
+msgid "Username is already taken"
+msgstr ""
+
+#: Controller/UsersController.php:1213
+msgid "Username is available"
+msgstr ""
+
+#: Controller/UsersController.php:1231
+msgid "Root admin account cannot be deactivated"
+msgstr ""
+
+#: Controller/UsersController.php:1239
+msgid "Your account has been successfully deactivated"
+msgstr ""
+
+#: Controller/UsersController.php:1255
+msgid "requested to delete account"
+msgstr ""
+
+#: Controller/UsersController.php:1259
+msgid "Your account deletion request has been submitted"
+msgstr ""
+
+#: Controller/UsersController.php:1273
+msgid "This user has been successfully featured"
+msgstr ""
+
+#: Controller/UsersController.php:1289
+msgid "This user has been successfully unfeatured"
+msgstr ""
+
+#: Controller/UsersController.php:1355
+msgid "The admin has changed your password to"
+msgstr ""
+
+#: Controller/VideosController.php:30
+#: View/Groups/view.ctp:144
+#: View/Search/index.ctp:9;61
+#: View/Themed/Bado/Layouts/default.ctp:53
+#: View/Themed/Cross/Layouts/default.ctp:56
+#: View/Themed/Layoto/Layouts/default.ctp:85
+#: View/Themed/Mobile/Users/view.ctp:154;185
+#: View/Themed/Vk/Elements/right_column.ctp:15
+#: View/Users/ajax_info.ctp:59
+#: View/Users/view.ctp:170;201
+#: View/Videos/index.ctp:28
+msgid "Videos"
+msgstr "Video"
+
+#: Controller/VideosController.php:279
+msgid "Invalid URL. Please try again"
+msgstr ""
+
+#: Controller/VideosController.php:363
+msgid "This is a private group video and can only be viewed by the group's members"
+msgstr ""
+
+#: Controller/VideosController.php:406
+msgid "Video has been deleted"
+msgstr "Il Video è stato cancellato"
+
+#: View/Activities/ajax_comment.ctp:7
+#: View/Activities/ajax_share.ctp:19
+#: View/Comments/ajax_share.ctp:23
+msgid "Just now"
+msgstr "Adesso"
+
+#: View/Activities/ajax_share.ctp:20
+#: View/Elements/activities.ctp:122
+#: View/Themed/Layoto/Elements/activities.ctp:119
+msgid "via mobile"
+msgstr ""
+
+#: View/Activities/ajax_share.ctp:21;30
+#: View/Elements/activities.ctp:124;221
+#: View/Themed/Layoto/Elements/activities.ctp:121;222
+msgid "Comment"
+msgstr "Commenta"
+
+#: View/Activities/ajax_share.ctp:28
+#: View/Elements/activities.ctp:218
+#: View/Themed/Layoto/Elements/activities.ctp:219
+msgid "Write a comment..."
+msgstr "Scrivi un commento"
+
+#: View/Albums/ajax_create.ctp:9
+msgid "Album Title"
+msgstr "Titolo album"
+
+#: View/Albums/ajax_create.ctp:12
+#: View/Elements/ajax/group_detail.ctp:7
+#: View/Events/create.ctp:63
+#: View/Events/view.ctp:135
+#: View/Groups/create.ctp:46
+#: View/Topics/create.ctp:27
+#: View/Videos/ajax_fetch.ctp:18
+msgid "Category"
+msgstr "Categoria"
+
+#: View/Albums/ajax_create.ctp:15
+#: View/Elements/ajax/group_detail.ctp:31
+#: View/Groups/create.ctp:49
+#: View/Videos/ajax_fetch.ctp:21
+#: View/Videos/ajax_group_fetch.ctp:36
+msgid "Description"
+msgstr "Descrizione"
+
+#: View/Albums/ajax_create.ctp:18
+#: View/Albums/view.ctp:37
+#: View/Blogs/create.ctp:75
+#: View/Blogs/view.ctp:30
+#: View/Themed/Mobile/Albums/view.ctp:40
+#: View/Topics/create.ctp:29
+#: View/Topics/view.ctp:37
+#: View/Videos/ajax_fetch.ctp:24
+#: View/Videos/view.ctp:11
+msgid "Tags"
+msgstr "Tags"
+
+#: View/Albums/ajax_create.ctp:19
+#: View/Blogs/create.ctp:75
+#: View/Topics/create.ctp:29
+#: View/Videos/ajax_fetch.ctp:25
+msgid "Separated by commas"
+msgstr "Separati da virgola"
+
+#: View/Albums/ajax_create.ctp:21
+#: View/Blogs/create.ctp:76
+#: View/Videos/ajax_fetch.ctp:27
+msgid "Privacy"
+msgstr ""
+
+#: View/Albums/ajax_create.ctp:22
+#: View/Blogs/create.ctp:78
+#: View/Elements/ajax/home_activity.ctp:41;59
+#: View/Elements/ajax/profile_detail.ctp:55
+#: View/Elements/ajax/profile_edit.ctp:97
+#: View/Themed/Layoto/Elements/ajax/home_activity.ctp:22;39
+#: View/Users/index.ctp:45
+#: View/Videos/ajax_fetch.ctp:30
+msgid "Everyone"
+msgstr "Tutti"
+
+#: View/Albums/ajax_create.ctp:23
+#: View/Blogs/create.ctp:79
+#: View/Elements/ajax/home_activity.ctp:59
+#: View/Elements/ajax/profile_detail.ctp:55
+#: View/Elements/ajax/profile_edit.ctp:98
+#: View/Themed/Layoto/Elements/ajax/home_activity.ctp:39
+#: View/Videos/ajax_fetch.ctp:31
+msgid "Friends Only"
+msgstr "Solo Amici"
+
+#: View/Albums/ajax_create.ctp:24
+#: View/Blogs/create.ctp:80
+#: View/Elements/ajax/profile_edit.ctp:99
+#: View/Videos/ajax_fetch.ctp:32
+msgid "Me Only"
+msgstr "Solo Me"
+
+#: View/Albums/ajax_create.ctp:32
+msgid "Save Album"
+msgstr "Salva Album"
+
+#: View/Albums/edit.ctp:4
+msgid "View Album"
+msgstr "Vedi Album"
+
+#: View/Albums/edit.ctp:9
+msgid "No photos found"
+msgstr "Nessuna foto trovata"
+
+#: View/Albums/edit.ctp:16
+msgid "Caption"
+msgstr "Etichetta"
+
+#: View/Albums/edit.ctp:17
+msgid "Album cover"
+msgstr ""
+
+#: View/Albums/edit.ctp:18
+#: View/Blogs/create.ctp:102
+#: View/Events/create.ctp:111
+#: View/Friends/ajax_requests.ctp:19
+#: View/Groups/ajax_requests.ctp:17
+#: View/Groups/create.ctp:73
+#: View/Photos/lightbox_view.ctp:70
+#: View/Topics/ajax_group_create.ctp:51;73
+#: View/Topics/create.ctp:35;57
+#: View/Videos/ajax_group_fetch.ctp:43
+msgid "Delete"
+msgstr "Cancella"
+
+#: View/Albums/edit.ctp:27
+#: View/Elements/ajax/profile_edit.ctp:106
+msgid "Save Changes"
+msgstr "Salva Modifiche"
+
+#: View/Albums/edit.ctp:29
+msgid "Delete Album"
+msgstr "Cancella Album"
+
+#: View/Albums/edit.ctp:29
+msgid "Are you sure you want to delete this album?<br />All photos will also be deleted!"
+msgstr ""
+
+#: View/Albums/view.ctp:16
+#: View/Themed/Mobile/Users/view.ctp:262
+#: View/Topics/ajax_view.ctp:32
+msgid "Actions"
+msgstr "Azioni"
+
+#: View/Albums/view.ctp:19
+#: View/Themed/Mobile/Albums/view.ctp:10
+msgid "Edit Photos"
+msgstr "Modifica Foto"
+
+#: View/Albums/view.ctp:22
+#: View/Elements/ajax/group_photo.ctp:2
+#: View/Photos/upload.ctp:27
+#: View/Themed/Mobile/Albums/view.ctp:25
+msgid "Upload Photos"
+msgstr "Carica Foto"
+
+#: View/Albums/view.ctp:29
+#: View/Elements/ajax/photo_detail.ctp:113
+#: View/Themed/Mobile/Albums/view.ctp:32
+#: View/Topics/ajax_view.ctp:27
+#: View/Videos/ajax_view.ctp:22
+#: View/Videos/view.ctp:63
+msgid "Posted by %s"
+msgstr "Inviata da %s"
+
+#: View/Albums/view.ctp:29
+#: View/Themed/Mobile/Albums/view.ctp:32
+#: View/Videos/view.ctp:63
+msgid "in"
+msgstr "in"
+
+#: View/Albums/view.ctp:45
+#: View/Themed/Mobile/Albums/view.ctp:19
+msgid "Report Album"
+msgstr "Segnala Album"
+
+#: View/Albums/view.ctp:46
+#: View/Blogs/view.ctp:48
+#: View/Elements/ajax/photo_detail.ctp:121
+#: View/Events/view.ctp:115
+#: View/Groups/view.ctp:197
+#: View/Topics/view.ctp:64
+#: View/Videos/view.ctp:34
+msgid "Share This"
+msgstr "Condividi"
+
+#: View/Albums/view.ctp:50
+#: View/Blogs/view.ctp:61
+#: View/Elements/ajax/photo_detail.ctp:68
+#: View/Pages/view.ctp:6
+#: View/Themed/Mobile/Albums/view.ctp:46
+#: View/Videos/view.ctp:67
+msgid "Comments"
+msgstr "Commenti"
+
+#: View/Blogs/create.ctp:34
+#: View/Elements/misc/topic_create_script.ctp:26
+#: View/Photos/ajax_upload.ctp:14
+msgid "Select Files"
+msgstr "Seleziona Files"
+
+#: View/Blogs/create.ctp:73
+msgid "Title"
+msgstr "Titolo"
+
+#: View/Blogs/create.ctp:74
+msgid "Body"
+msgstr "Testo"
+
+#: View/Blogs/create.ctp:92
+#: View/Photos/ajax_upload.ctp:41
+#: View/Topics/ajax_group_create.ctp:62
+#: View/Topics/create.ctp:47
+msgid "Upload Queued Files"
+msgstr "Carica Coda dei Files"
+
+#: View/Blogs/create.ctp:94
+msgid "Toggle Images Uploader"
+msgstr "Visualizza Uploader Immagini"
+
+#: View/Blogs/create.ctp:97
+#: View/Events/create.ctp:106
+#: View/Groups/create.ctp:68
+#: View/Topics/ajax_group_create.ctp:67
+#: View/Topics/create.ctp:52
+#: View/Videos/ajax_group_fetch.ctp:40
+msgid "Save"
+msgstr "Salva"
+
+#: View/Blogs/create.ctp:99
+#: View/Elements/ajax/photo_detail.ctp:12
+#: View/Events/create.ctp:108
+#: View/Groups/create.ctp:70
+#: View/Photos/lightbox_view.ctp:28
+#: View/Topics/ajax_group_create.ctp:70;77
+#: View/Topics/create.ctp:54
+#: View/Videos/ajax_group_fetch.ctp:42;45
+msgid "Cancel"
+msgstr "Cancella"
+
+#: View/Blogs/create.ctp:102
+msgid "Are you sure you want to remove this entry?"
+msgstr ""
+
+#: View/Blogs/index.ctp:8
+#: View/Events/index.ctp:3
+#: View/Groups/index.ctp:3
+#: View/Photos/index.ctp:3
+#: View/Topics/index.ctp:3
+#: View/Users/index.ctp:43
+#: View/Videos/index.ctp:3
+msgid "Browse"
+msgstr "Naviga"
+
+#: View/Blogs/index.ctp:10
+msgid "All Entries"
+msgstr "Tutti gli articoli"
+
+#: View/Blogs/index.ctp:11
+msgid "My Entries"
+msgstr "I miei articoli"
+
+#: View/Blogs/index.ctp:12
+msgid "Friends' Entries"
+msgstr "Articoli degli amici"
+
+#: View/Blogs/index.ctp:15
+#: View/Groups/index.ctp:11
+#: View/Photos/index.ctp:11
+#: View/Topics/index.ctp:11
+#: View/Videos/index.ctp:11
+msgid "Enter keyword to search"
+msgstr "Inserisc una parola da cercare"
+
+#: View/Blogs/view.ctp:22
+#: View/Elements/hooks/friend_suggestions.ctp:13
+#: View/Elements/lists/users_list_bit.ctp:41
+#: View/Elements/misc/user_mini.ctp:11
+#: View/Themed/Bado/Home/index.ctp:87
+#: View/Themed/Cross/Elements/right_column.ctp:14
+#: View/Themed/Layoto/Elements/right_column.ctp:12
+#: View/Themed/Layoto/Home/index.ctp:100
+#: View/Themed/Mobile/Users/view.ctp:256
+#: View/Themed/Vk/Elements/right_column.ctp:39
+#: View/Users/view.ctp:272
+msgid "Send %s a friend request"
+msgstr ""
+
+#: View/Blogs/view.ctp:22
+#: View/Elements/misc/user_mini.ctp:11
+#: View/Themed/Mobile/Users/view.ctp:256
+#: View/Users/view.ctp:272
+msgid "Add as Friend"
+msgstr "Aggiungi come amico"
+
+#: View/Blogs/view.ctp:39
+msgid "Other Entries"
+msgstr "Altri articoli"
+
+#: View/Blogs/view.ctp:47
+msgid "Report Blog"
+msgstr "Segnala Articolo"
+
+#: View/Conversations/ajax_add.ctp:6
+#: View/Conversations/ajax_send.ctp:7
+#: View/Events/ajax_invite.ctp:6
+#: View/Groups/ajax_invite.ctp:6
+msgid "Enter a friend's name"
+msgstr ""
+
+#: View/Conversations/ajax_add.ctp:7
+#: View/Conversations/ajax_send.ctp:8
+#: View/Events/ajax_invite.ctp:7
+#: View/Groups/ajax_invite.ctp:7
+msgid "No results"
+msgstr "Nessun risultato"
+
+#: View/Conversations/ajax_add.ctp:45
+msgid "People you add will see all previous messages in this conversation"
+msgstr ""
+
+#: View/Conversations/ajax_add.ctp:46
+#: View/Conversations/view.ctp:22
+msgid "Add People"
+msgstr "Aggiungi persone"
+
+#: View/Conversations/ajax_browse.ctp:1
+#: View/Themed/Mobile/Users/view.ctp:244
+#: View/Users/view.ctp:260
+msgid "Send New Message"
+msgstr "Invia nuovo messaggio"
+
+#: View/Conversations/ajax_browse.ctp:2
+msgid "Conversations"
+msgstr "Conversazioni"
+
+#: View/Conversations/ajax_send.ctp:35
+msgid "Your message has been sent"
+msgstr ""
+
+#: View/Conversations/ajax_send.ctp:53;55
+#: View/Friends/ajax_invite.ctp:24
+msgid "Send to"
+msgstr "Invia a"
+
+#: View/Events/create.ctp:80
+msgid "To"
+msgstr "A"
+
+#: View/Conversations/ajax_send.ctp:57
+#: View/Home/contact.ctp:39
+msgid "Subject"
+msgstr "Soggetto"
+
+#: View/Conversations/ajax_send.ctp:58
+#: View/Friends/ajax_invite.ctp:25
+#: View/Home/contact.ctp:42
+msgid "Message"
+msgstr "Messaggio"
+
+#: View/Conversations/ajax_send.ctp:59
+#: View/Themed/Mobile/Users/view.ctp:244
+#: View/Users/view.ctp:260
+msgid "Send Message"
+msgstr "Invia Messaggio"
+
+#: View/Conversations/view.ctp:8
+#: View/Elements/lists/messages_list.ctp:12
+msgid "Participants"
+msgstr "Partecipanti"
+
+#: View/Conversations/view.ctp:22
+msgid "Add People To This Conversation"
+msgstr "Aggiungi persone a questa conversazione"
+
+#: View/Conversations/view.ctp:23
+msgid "Are you sure you want to leave this conversation"
+msgstr ""
+
+#: View/Conversations/view.ctp:23
+msgid "Leave Conversation"
+msgstr "Lascia la conversazione"
+
+#: View/Conversations/view.ctp:28
+msgid "Back to Messages"
+msgstr "Torna ai Messaggi"
+
+#: View/Conversations/view.ctp:39
+#: View/Events/view.ctp:140
+#: View/Home/index.ctp:50
+#: View/Themed/Bado/Home/index.ctp:57
+#: View/Themed/Layoto/Home/index.ctp:51
+msgid "Messages"
+msgstr "Messaggi"
+
+#: View/Elements/activities.ctp:9;26;43
+#: View/Elements/comments.ctp:16
+#: View/Elements/misc/photo_view_script.ctp:214;218
+#: View/Groups/view.ctp:10;33
+#: View/Themed/Mobile/Users/view.ctp:97
+#: View/Themes/admin_editor.ctp:80
+#: View/Topics/ajax_group_create.ctp:7
+#: View/Users/view.ctp:79
+#: View/Videos/ajax_group_fetch.ctp:5
+msgid "OK"
+msgstr ""
+
+#: View/Elements/activities.ctp:17;34;51
+#: View/Elements/comments.ctp:25
+#: View/Elements/ajax/home_user.ctp:17
+#: View/Elements/misc/photo_view_script.ctp:221
+#: View/Groups/view.ctp:19;39
+#: View/Themed/Layoto/Elements/activities.ctp:14;26;38
+#: View/Themed/Mobile/Users/view.ctp:103
+#: View/Themes/admin_editor.ctp:90
+#: View/Topics/ajax_group_create.ctp:16
+#: View/Users/view.ctp:85
+#: View/Videos/ajax_group_fetch.ctp:13
+msgid "Please Confirm"
+msgstr ""
+
+#: View/Elements/activities.ctp:18
+#: View/Themed/Layoto/Elements/activities.ctp:8
+msgid "Are you sure you want to remove this activity?"
+msgstr ""
+
+#: View/Elements/activities.ctp:35;52
+#: View/Elements/comments.ctp:26
+#: View/Themed/Layoto/Elements/activities.ctp:20;32
+msgid "Are you sure you want to remove this comment?"
+msgstr ""
+
+#: View/Elements/activities.ctp:99;161;197
+#: View/Videos/view.ctp:60
+msgid "Show More"
+msgstr "Di più"
+
+#: View/Elements/activities.ctp:99;161;197
+#: View/Videos/view.ctp:60
+msgid "Show Less"
+msgstr "Di meno"
+
+#: View/Elements/activities.ctp:127;131;165;201
+#: View/Elements/comments.ctp:61
+#: View/Elements/likes.ctp:5
+#: View/Elements/ajax/photo_detail.ctp:83
+#: View/Photos/lightbox_view.ctp:110
+#: View/Themed/Layoto/Elements/activities.ctp:124;128;162;198
+msgid "People Who Like This"
+msgstr "Persone a cui piace"
+
+#: View/Elements/activities.ctp:147
+#: View/Themed/Layoto/Elements/activities.ctp:144
+msgid "View all comments"
+msgstr "Guarda tutti i commenti"
+
+#: View/Elements/activities.ctp:180
+#: View/Themed/Layoto/Elements/activities.ctp:177
+msgid "View all %s comments"
+msgstr "Guarda tutti %s i commenti"
+
+#: View/Elements/activities.ctp:238
+#: View/Elements/comments.ctp:34
+#: View/Elements/ajax/user_overlay.ctp:9
+#: View/Elements/lists/albums_list.ctp:21
+#: View/Elements/lists/blogs_list.ctp:43
+#: View/Elements/lists/events_list.ctp:24
+#: View/Elements/lists/groups_list.ctp:43
+#: View/Elements/lists/messages_list.ctp:45
+#: View/Elements/lists/photos_list.ctp:27
+#: View/Elements/lists/topics_list.ctp:40
+#: View/Elements/lists/users_list.ctp:28
+#: View/Elements/lists/videos_list.ctp:22
+msgid "Load More"
+msgstr "Di più"
+
+#: View/Elements/comment_form.ctp:13
+msgid "Write a comment"
+msgstr "Scrivi un commento"
+
+#: View/Elements/comment_form.ctp:16
+msgid "Post"
+msgstr "Invia"
+
+#: View/Elements/comment_form.ctp:18
+msgid "Login or register to post your comment"
+msgstr "Effettua il login o registrati per inviare un commento"
+
+#: View/Elements/footer.ctp:4
+msgid "Powered by"
+msgstr ""
+
+#: View/Elements/left_column.ctp:17
+msgid "Join Now!"
+msgstr "Entra Adesso"
+
+#: View/Elements/left_column.ctp:22
+msgid "Be part of the community and join us today!"
+msgstr "Diventa parte della nostra comunità!"
+
+#: View/Elements/likes.ctp:5
+msgid "Like This"
+msgstr "Mi Piace"
+
+#: View/Elements/profilenav.ctp:3
+msgid "User Menu"
+msgstr "Menu utente"
+
+#: View/Elements/profilenav.ctp:6
+#: View/Elements/userbox.ctp:11
+#: View/Themed/Bado/Elements/userbox.ctp:12
+#: View/Themed/Cross/Elements/userbox.ctp:25
+#: View/Themed/Layoto/Elements/userbox.ctp:25
+#: View/Themed/Mobile/Elements/userbox.ctp:15
+#: View/Themed/Vk/Elements/userbox.ctp:14
+#: View/Users/profile.ctp:7
+msgid "Profile Information"
+msgstr "Informazioni Profilo"
+
+#: View/Elements/registration.ctp:29
+#: View/Elements/ajax/profile_edit.ctp:21
+#: View/Themed/Bado/Elements/registration.ctp:20
+#: View/Users/index.ctp:7
+msgid "% selected"
+msgstr "% selezionati"
+
+#: View/Elements/registration.ctp:66
+#: View/Groups/view.ctp:204
+msgid "Join"
+msgstr "Unisciti"
+
+#: View/Elements/registration.ctp:69
+msgid "A registration code is required in order to register on this site"
+msgstr ""
+
+#: View/Elements/registration.ctp:72
+#: View/Elements/ajax/profile_edit.ctp:46
+#: View/Themed/Bado/Elements/registration.ctp:92
+msgid "Full Name"
+msgstr "Nome Completo"
+
+#: View/Elements/registration.ctp:73
+#: View/Elements/ajax/profile_edit.ctp:57
+#: View/Home/contact.ctp:36
+#: View/Themed/Bado/Elements/registration.ctp:93
+msgid "Email Address"
+msgstr "Indirizzo Mail"
+
+#: View/Elements/registration.ctp:74
+#: View/Elements/userbox.ctp:39
+#: View/Home/admin_login.ctp:7
+#: View/Themed/Bado/Elements/registration.ctp:94
+#: View/Themed/Bado/Elements/userbox.ctp:39
+#: View/Themed/Cross/Elements/userbox.ctp:52
+#: View/Themed/Layoto/Elements/userbox.ctp:52
+#: View/Themed/Mobile/Elements/userbox.ctp:29
+#: View/Themed/Vk/Elements/right_column.ctp:73
+msgid "Password"
+msgstr ""
+
+#: View/Elements/registration.ctp:75
+#: View/Themed/Bado/Elements/registration.ctp:95
+#: View/Users/admin_password.ctp:13
+#: View/Users/password.ctp:11
+#: View/Users/resetpass.ctp:7
+msgid "Verify Password"
+msgstr ""
+
+#: View/Elements/registration.ctp:81
+msgid "To avoid spam, please answer the following question"
+msgstr ""
+
+#: View/Elements/registration.ctp:88
+#: View/Themed/Bado/Elements/registration.ctp:101
+msgid "Please enter the two words in the box"
+msgstr ""
+
+#: View/Elements/registration.ctp:97
+#: View/Themed/Bado/Elements/registration.ctp:102
+msgid "Sign Up"
+msgstr ""
+
+#: View/Elements/registration.ctp:102
+msgid "Continue"
+msgstr ""
+
+#: View/Elements/right_column.ctp:11
+#: View/Themed/Bado/Elements/right_column.ctp:9
+#: View/Themed/Cross/Elements/right_column.ctp:45
+#: View/Themed/Layoto/Elements/right_column.ctp:43
+#: View/Themed/Layoto/Home/index.ctp:149
+#: View/Themed/Vk/Elements/right_column.ctp:99
+msgid "Mobile Site"
+msgstr ""
+
+#: View/Elements/right_column.ctp:15
+#: View/Themed/Bado/Elements/right_column.ctp:15
+#: View/Themed/Cross/Elements/right_column.ctp:51
+#: View/Themed/Layoto/Elements/right_column.ctp:49
+#: View/Themed/Layoto/Home/index.ctp:155
+#: View/Themed/Mobile/Elements/right_column.ctp:13
+#: View/Themed/Vk/Elements/right_column.ctp:105
+msgid "Language"
+msgstr ""
+
+#: View/Elements/right_column.ctp:19
+#: View/Themed/Bado/Elements/right_column.ctp:19
+#: View/Themed/Cross/Elements/right_column.ctp:55
+#: View/Themed/Layoto/Elements/right_column.ctp:53
+#: View/Themed/Layoto/Home/index.ctp:159
+#: View/Themed/Vk/Elements/right_column.ctp:109
+msgid "Theme"
+msgstr ""
+
+#: View/Elements/userbox.ctp:2
+#: View/Themed/Bado/Elements/userbox.ctp:56
+#: View/Themed/Layoto/Layouts/default.ctp:72
+#: View/Themed/Mobile/Elements/userbox.ctp:3
+#: View/Themed/Vk/Elements/userbox.ctp:3
+#: View/Users/index.ctp:53;72
+msgid "Search"
+msgstr "Cerca"
+
+#: View/Elements/userbox.ctp:9
+#: View/Themed/Mobile/Elements/userbox.ctp:13
+msgid "Admin Panel"
+msgstr "Pannello Admin"
+
+#: View/Elements/userbox.ctp:13
+#: View/Themed/Bado/Elements/userbox.ctp:14
+#: View/Themed/Cross/Elements/userbox.ctp:27
+#: View/Themed/Layoto/Elements/userbox.ctp:27
+#: View/Themed/Mobile/Elements/userbox.ctp:17
+#: View/Themed/Vk/Elements/userbox.ctp:16
+msgid "New Messages (%s)"
+msgstr "Nuovi Messaggi (%s)"
+
+#: View/Elements/userbox.ctp:16
+#: View/Themed/Bado/Elements/userbox.ctp:17
+#: View/Themed/Cross/Elements/userbox.ctp:30
+#: View/Themed/Layoto/Elements/userbox.ctp:30
+#: View/Themed/Mobile/Elements/userbox.ctp:20
+#: View/Themed/Vk/Elements/userbox.ctp:19
+msgid "Friend Requests (%s)"
+msgstr "Richieste di Amicizia (%s)"
+
+#: View/Elements/userbox.ctp:18
+#: View/Elements/ajax/home_user.ctp:32
+#: View/Events/view.ctp:48
+#: View/Groups/view.ctp:178
+#: View/Home/index.ctp:52
+#: View/Themed/Bado/Elements/userbox.ctp:19
+#: View/Themed/Bado/Home/index.ctp:59
+#: View/Themed/Cross/Elements/userbox.ctp:32
+#: View/Themed/Layoto/Elements/userbox.ctp:32
+#: View/Themed/Layoto/Home/index.ctp:53
+#: View/Themed/Vk/Elements/userbox.ctp:21
+msgid "Invite Friends"
+msgstr "Invita Amici"
+
+#: View/Elements/userbox.ctp:19
+#: View/Themed/Bado/Elements/userbox.ctp:20
+#: View/Themed/Cross/Elements/userbox.ctp:33
+#: View/Themed/Layoto/Elements/userbox.ctp:33
+#: View/Themed/Mobile/Elements/userbox.ctp:22
+#: View/Themed/Vk/Elements/userbox.ctp:22
+msgid "Log Out"
+msgstr "Esci"
+
+#: View/Elements/userbox.ctp:30;40
+#: View/Themed/Bado/Elements/userbox.ctp:40
+#: View/Themed/Cross/Elements/userbox.ctp:45;54
+#: View/Themed/Layoto/Elements/userbox.ctp:45;54
+#: View/Themed/Mobile/Elements/userbox.ctp:25;32
+#: View/Themed/Vk/Elements/right_column.ctp:77
+msgid "Login"
+msgstr "Login"
+
+#: View/Elements/userbox.ctp:38
+#: View/Home/admin_login.ctp:6
+#: View/Themed/Bado/Elements/userbox.ctp:38
+#: View/Themed/Cross/Elements/userbox.ctp:51
+#: View/Themed/Layoto/Elements/userbox.ctp:51
+#: View/Themed/Mobile/Elements/userbox.ctp:28
+#: View/Themed/Vk/Elements/right_column.ctp:69
+#: View/Users/index.ctp:58
+msgid "Email"
+msgstr "Email"
+
+#: View/Elements/userbox.ctp:42
+msgid "Remember me"
+msgstr ""
+
+#: View/Elements/userbox.ctp:44
+#: View/Themed/Bado/Elements/userbox.ctp:44
+#: View/Themed/Cross/Elements/userbox.ctp:61
+#: View/Themed/Layoto/Elements/userbox.ctp:61
+#: View/Themed/Mobile/Elements/userbox.ctp:33
+#: View/Themed/Vk/Elements/right_column.ctp:86
+msgid "Forgot password?"
+msgstr ""
+
+#: View/Elements/userbox.ctp:27
+#: View/Themed/Bado/Elements/userbox.ctp:28;34
+#: View/Themed/Cross/Elements/userbox.ctp:6;11
+#: View/Themed/Layoto/Elements/userbox.ctp:6;11
+#: View/Themed/Mobile/Layouts/default.ctp:47
+#: View/Themed/Vk/Elements/userbox.ctp:30;36
+msgid "%s New Notification"
+msgid_plural "%s New Notifications"
+msgstr[0] "%s Nuova Notifica"
+msgstr[1] "%s Nuove Notifiche"
+
+#: View/Elements/ajax/group_detail.ctp:2
+msgid "Join Requests"
+msgstr ""
+
+#: View/Elements/ajax/group_detail.ctp:2
+#: View/Emails/html/friend_request.ctp:22
+#: View/Emails/html/general.ctp:3
+#: View/Emails/html/invite.ctp:22
+#: View/Emails/html/notification.ctp:8
+#: View/Photos/upload.ctp:29
+msgid "Click here"
+msgstr "Clicca qui"
+
+#: View/Elements/ajax/group_detail.ctp:2
+msgid "to respond"
+msgstr ""
+
+#: View/Elements/ajax/group_detail.ctp:5
+#: View/Events/create.ctp:87
+#: View/Events/view.ctp:123
+msgid "Information"
+msgstr "Informazioni"
+
+#: View/Elements/ajax/group_detail.ctp:8
+msgid "Type"
+msgstr "Tipo"
+
+#: View/Elements/ajax/group_detail.ctp:13
+msgid "Public (anyone can view and join)"
+msgstr "Pubblico (tutti possono vedere e unirsi)"
+
+#: View/Elements/ajax/group_detail.ctp:17
+msgid "Private (only group members can view details)"
+msgstr "Privato (solo i membri del gruppo possono vedere i dettagli)"
+
+#: View/Elements/ajax/group_detail.ctp:21
+msgid "Restricted (anyone can join upon approval)"
+msgstr "Ristretto (Tutti possono unirsi dopo l'approvazione)"
+
+#: View/Elements/ajax/group_detail.ctp:52
+#: View/Elements/ajax/profile_detail.ctp:38
+msgid "Recent Activities"
+msgstr "Attività Recenti"
+
+#: View/Elements/ajax/group_detail.ctp:64
+#: View/Elements/ajax/profile_detail.ctp:50
+#: View/Events/view.ctp:151
+msgid "Write something..."
+msgstr "Scrivi qualcosa"
+
+#: View/Elements/ajax/group_detail.ctp:68
+#: View/Elements/ajax/home_activity.ctp:60
+#: View/Elements/ajax/profile_detail.ctp:56
+#: View/Events/view.ctp:155
+#: View/Themed/Layoto/Elements/ajax/home_activity.ctp:40
+msgid "Share"
+msgstr "Condividi"
+
+#: View/Elements/ajax/group_detail.ctp:2
+msgid "join request"
+msgid_plural "join requests"
+msgstr[0] ""
+msgstr[1] ""
+
+#: View/Elements/ajax/group_video.ctp:2
+#: View/Elements/ajax/home_video.ctp:1
+#: View/Users/ajax_videos.ctp:2
+#: View/Videos/index.ctp:25
+msgid "Share New Video"
+msgstr "Condividi un nuovo video"
+
+#: View/Elements/ajax/home_activity.ctp:19
+#: View/Events/view.ctp:13
+#: View/Groups/view.ctp:112
+#: View/Themed/Mobile/Users/view.ctp:72
+#: View/Users/view.ctp:100
+msgid "Upload a Photo"
+msgstr "Carica una Foto"
+
+#: View/Elements/ajax/home_activity.ctp:42
+#: View/Themed/Layoto/Elements/ajax/home_activity.ctp:23
+msgid "Friends & Me"
+msgstr "Amici e Me"
+
+#: View/Elements/ajax/home_activity.ctp:46
+#: View/Home/index.ctp:48
+#: View/Themed/Bado/Home/index.ctp:55
+#: View/Themed/Layoto/Elements/ajax/home_activity.ctp:27
+#: View/Themed/Layoto/Home/index.ctp:49
+msgid "What's New"
+msgstr "Cosa c'é di Nuovo"
+
+#: View/Elements/ajax/home_activity.ctp:54
+#: View/Themed/Layoto/Elements/ajax/home_activity.ctp:35
+msgid "Share what's new"
+msgstr "Condividi qualcosa di nuovo"
+
+#: View/Elements/ajax/home_album.ctp:1
+#: View/Photos/index.ctp:25
+#: View/Photos/upload.ctp:26;29
+#: View/Users/ajax_photos.ctp:14
+msgid "Create New Album"
+msgstr "Crea un nuovo Album"
+
+#: View/Elements/ajax/home_album.ctp:2
+#: View/Home/index.ctp:57
+#: View/Photos/index.ctp:6
+#: View/Themed/Bado/Home/index.ctp:68
+#: View/Themed/Layoto/Home/index.ctp:62
+msgid "My Photos"
+msgstr "Mie Foto"
+
+#: View/Elements/ajax/home_blog.ctp:2
+#: View/Home/index.ctp:56
+#: View/Themed/Bado/Home/index.ctp:67
+#: View/Themed/Layoto/Home/index.ctp:61
+msgid "My Blog"
+msgstr "Miei Articoli"
+
+#: View/Elements/ajax/home_event.ctp:1
+#: View/Events/index.ctp:20
+msgid "Create New Event"
+msgstr "Crea un nuovo Evento"
+
+#: View/Elements/ajax/home_event.ctp:2
+#: View/Home/index.ctp:54
+#: View/Themed/Bado/Home/index.ctp:62
+#: View/Themed/Layoto/Home/index.ctp:56
+msgid "Upcoming Events"
+msgstr "Prossimi Eventi"
+
+#: View/Elements/ajax/home_group.ctp:1
+#: View/Groups/index.ctp:22
+msgid "Create New Group"
+msgstr "Crea un nuovo Gruppo"
+
+#: View/Elements/ajax/home_group.ctp:2
+#: View/Groups/index.ctp:6
+#: View/Home/index.ctp:55
+#: View/Themed/Bado/Home/index.ctp:66
+#: View/Themed/Layoto/Home/index.ctp:60
+msgid "My Groups"
+msgstr "Miei Gruppi"
+
+#: View/Elements/ajax/home_topic.ctp:2
+#: View/Home/index.ctp:59
+#: View/Themed/Bado/Home/index.ctp:70
+#: View/Themed/Layoto/Home/index.ctp:64
+#: View/Topics/index.ctp:6
+msgid "My Topics"
+msgstr "Miei Topics"
+
+#: View/Elements/ajax/home_user.ctp:18
+#: View/Themed/Mobile/Users/view.ctp:104
+#: View/Users/view.ctp:86
+msgid "Are you sure you want to remove this friend?"
+msgstr ""
+
+#: View/Elements/ajax/home_user.ctp:33
+#: View/Home/index.ctp:51
+#: View/Themed/Bado/Home/index.ctp:58
+#: View/Themed/Layoto/Home/index.ctp:52
+#: View/Themed/Mobile/Users/view.ctp:139;163
+#: View/Users/view.ctp:155;179
+msgid "Friends"
+msgstr "Amici"
+
+#: View/Elements/ajax/home_video.ctp:2
+#: View/Home/index.ctp:58
+#: View/Themed/Bado/Home/index.ctp:69
+#: View/Themed/Layoto/Home/index.ctp:63
+#: View/Videos/index.ctp:6
+msgid "My Videos"
+msgstr "Miei Video"
+
+#: View/Elements/ajax/photo_detail.ctp:7
+#: View/Photos/lightbox_view.ctp:24
+msgid "Enter person's name"
+msgstr ""
+
+#: View/Elements/ajax/photo_detail.ctp:9
+#: View/Photos/lightbox_view.ctp:26
+msgid "Or select a friend"
+msgstr ""
+
+#: View/Elements/ajax/photo_detail.ctp:11
+#: View/Photos/lightbox_view.ctp:28
+#: View/Users/recover.ctp:12
+#: View/Users/resetpass.ctp:8
+msgid "Submit"
+msgstr "Invia"
+
+#: View/Elements/ajax/photo_detail.ctp:38
+#: View/Elements/misc/photo_view_script.ctp:204
+#: View/Photos/lightbox_view.ctp:52
+msgid "Tag Photo"
+msgstr "Tagga nella Foto"
+
+#: View/Elements/ajax/photo_detail.ctp:41
+#: View/Photos/lightbox_view.ctp:55
+msgid "Download Hi-res"
+msgstr ""
+
+#: View/Elements/ajax/photo_detail.ctp:77
+#: View/Photos/lightbox_view.ctp:118
+msgid "This a group photo. Only group members can leave comment"
+msgstr ""
+
+#: View/Elements/ajax/photo_detail.ctp:90
+#: View/Photos/lightbox_view.ctp:82
+msgid "In this photo"
+msgstr "In questa foto"
+
+#: View/Elements/ajax/photo_detail.ctp:118
+msgid "Delete Photo"
+msgstr "Cancella foto"
+
+#: View/Elements/ajax/photo_detail.ctp:120
+#: View/Photos/lightbox_view.ctp:68
+#: View/Reports/ajax_create.ctp:35
+msgid "Report"
+msgstr "Segnala"
+
+#: View/Elements/ajax/photo_detail.ctp:120
+msgid "Report Photo"
+msgstr "Segnala Foto"
+
+#: View/Elements/ajax/photo_detail.ctp:83
+#: View/Photos/lightbox_view.ctp:110
+msgid "%s person likes this"
+msgid_plural "%s people like this"
+msgstr[0] "A %s persona piace questo"
+msgstr[1] "A %s persone piace questo"
+
+#: View/Elements/ajax/profile_detail.ctp:7
+#: View/Elements/ajax/profile_edit.ctp:61
+#: View/Users/ajax_info.ctp:11
+#: View/Users/ajax_signup_step1.ctp:13
+#: View/Users/index.ctp:59
+msgid "Gender"
+msgstr "Sesso"
+
+#: View/Elements/ajax/profile_detail.ctp:7
+#: View/Elements/ajax/profile_edit.ctp:61
+#: View/Users/ajax_signup_step1.ctp:13
+#: View/Users/index.ctp:60
+msgid "Male"
+msgstr "Maschio"
+
+#: View/Elements/ajax/profile_detail.ctp:7
+#: View/Elements/ajax/profile_edit.ctp:61
+#: View/Users/ajax_signup_step1.ctp:13
+#: View/Users/index.ctp:60
+msgid "Female"
+msgstr "Femmina"
+
+#: View/Elements/ajax/profile_detail.ctp:10
+msgid "Born on"
+msgstr "Nato il"
+
+#: View/Elements/ajax/profile_detail.ctp:50
+msgid "What's on your mind?"
+msgstr "Che cosa hai in mente?"
+
+#: View/Elements/ajax/profile_edit.ctp:44
+msgid "Required Information"
+msgstr "Informazioni richieste"
+
+#: View/Elements/ajax/profile_edit.ctp:59
+#: View/Users/ajax_info.ctp:13
+#: View/Users/ajax_signup_step1.ctp:2
+msgid "Birthday"
+msgstr "Compleanno"
+
+#: View/Elements/ajax/profile_edit.ctp:59
+#: View/Users/ajax_signup_step1.ctp:2
+msgid "Only month and date will be shown on your profile"
+msgstr ""
+
+#: View/Elements/ajax/profile_edit.ctp:63
+#: View/Users/ajax_signup_step1.ctp:5
+msgid "Timezone"
+msgstr ""
+
+#: View/Elements/ajax/profile_edit.ctp:73
+msgid "Optional Information"
+msgstr ""
+
+#: View/Elements/ajax/profile_edit.ctp:76
+msgid "Username"
+msgstr ""
+
+#: View/Elements/ajax/profile_edit.ctp:78
+msgid "Check Availability"
+msgstr ""
+
+#: View/Elements/ajax/profile_edit.ctp:82
+#: View/Users/ajax_info.ctp:18
+msgid "About"
+msgstr ""
+
+#: View/Elements/ajax/profile_edit.ctp:86
+msgid "Additional Information"
+msgstr ""
+
+#: View/Elements/ajax/profile_edit.ctp:94
+msgid "User Settings"
+msgstr ""
+
+#: View/Elements/ajax/profile_edit.ctp:96
+msgid "Profile Privacy"
+msgstr "Privacy Profilo"
+
+#: View/Elements/ajax/profile_edit.ctp:102
+msgid "Receive Site Emails (including daily notification summary email)"
+msgstr ""
+
+#: View/Elements/ajax/profile_edit.ctp:103
+msgid "Do not show my online status"
+msgstr ""
+
+#: View/Elements/blocks/blogs_block.ctp:16
+#: View/Elements/blocks/events_block.ctp:16
+#: View/Elements/blocks/groups_block.ctp:16
+#: View/Elements/blocks/photos_block.ctp:15
+#: View/Elements/blocks/tags_block.ctp:13
+#: View/Elements/blocks/tags_item_block.ctp:10
+#: View/Elements/blocks/topics_block.ctp:16
+#: View/Elements/blocks/videos_block.ctp:16
+#: View/Search/index.ctp:82
+#: View/Tags/view.ctp:51
+#: View/Users/ajax_info.ctp:77
+msgid "Nothing found"
+msgstr "Non ho trovato niente"
+
+#: View/Elements/blocks/blogs_block.ctp:8
+msgid "%s comment"
+msgid_plural "%s comments"
+msgstr[0] "%s commento"
+msgstr[1] "%s commenti"
+
+#: View/Elements/blocks/blogs_block.ctp:9
+#: View/Elements/blocks/topics_block.ctp:9
+#: View/Elements/blocks/videos_block.ctp:9
+#: View/Tags/view.ctp:44
+#: View/Users/ajax_info.ctp:68
+msgid "%s like"
+msgid_plural "%s likes"
+msgstr[0] "%s mi piace"
+msgstr[1] "%s mi piace"
+
+#: View/Elements/blocks/events_block.ctp:9
+#: View/Elements/lists/events_list.ctp:10
+msgid "%s attending"
+msgstr "%s partecipanti"
+
+#: View/Elements/blocks/groups_block.ctp:9
+#: View/Elements/hooks/online_users.ctp:9
+#: View/Elements/lists/groups_list.ctp:27
+msgid "%s member"
+msgid_plural "%s members"
+msgstr[0] "%s membro"
+msgstr[1] "%s membri"
+
+#: View/Elements/blocks/photos_block.ctp:8
+#: View/Elements/lists/albums_list.ctp:9
+#: View/Elements/lists/users_list_bit.ctp:20
+#: View/Elements/misc/user_mini.ctp:8
+#: View/Emails/html/friend_request.ctp:11
+#: View/Emails/html/invite.ctp:11
+#: View/Themed/Bado/Home/index.ctp:145
+msgid "%s photo"
+msgid_plural "%s photos"
+msgstr[0] "%s foto"
+msgstr[1] "%s foto"
+
+#: View/Elements/blocks/tags_block.ctp:2
+msgid "Popular Tags"
+msgstr ""
+
+#: View/Elements/blocks/topics_block.ctp:8
+msgid "%s reply"
+msgid_plural "%s replies"
+msgstr[0] "%s risposta"
+msgstr[1] "%s risposte"
+
+#: View/Elements/hooks/featured_groups.ctp:3
+msgid "Featured Groups"
+msgstr "Gruppi in Evidenza"
+
+#: View/Elements/hooks/featured_members.ctp:3
+#: View/Themed/Bado/Home/index.ctp:136
+#: View/Themed/Layoto/Home/index.ctp:113
+msgid "Featured Members"
+msgstr "Membri in Evidenza"
+
+#: View/Elements/hooks/friend_suggestions.ctp:5;18
+#: View/Themed/Bado/Home/index.ctp:80;92
+#: View/Themed/Cross/Elements/right_column.ctp:7;19
+#: View/Themed/Layoto/Elements/right_column.ctp:5;17
+#: View/Themed/Layoto/Home/index.ctp:93;105
+#: View/Themed/Vk/Elements/right_column.ctp:32;44
+msgid "People You May Know"
+msgstr "Persone Che Puoi Conoscere"
+
+#: View/Elements/hooks/friend_suggestions.ctp:13
+#: View/Elements/lists/users_list_bit.ctp:41
+#: View/Friends/ajax_suggestions.ctp:16
+#: View/Themed/Bado/Home/index.ctp:87
+#: View/Themed/Cross/Elements/right_column.ctp:14
+#: View/Themed/Layoto/Elements/right_column.ctp:12
+#: View/Themed/Layoto/Home/index.ctp:100
+#: View/Themed/Vk/Elements/right_column.ctp:39
+msgid "Add as friend"
+msgstr "Aggiungi come Amico"
+
+#: View/Elements/hooks/friend_suggestions.ctp:18
+#: View/Themed/Bado/Home/index.ctp:92
+#: View/Themed/Cross/Elements/right_column.ctp:19
+#: View/Themed/Layoto/Elements/right_column.ctp:17
+#: View/Themed/Layoto/Home/index.ctp:105
+#: View/Themed/Vk/Elements/right_column.ctp:44
+#: View/Users/ajax_photos.ctp:17
+msgid "View all"
+msgstr "Guarda tutti"
+
+#: View/Elements/hooks/friend_suggestions.ctp:12
+#: View/Friends/ajax_suggestions.ctp:15
+#: View/Themed/Bado/Home/index.ctp:86
+#: View/Themed/Cross/Elements/right_column.ctp:13
+#: View/Themed/Layoto/Elements/right_column.ctp:11
+#: View/Themed/Layoto/Home/index.ctp:99
+#: View/Themed/Vk/Elements/right_column.ctp:38
+msgid "%s mutual friend"
+msgid_plural "%s mutual friends"
+msgstr[0] "%s amico in comune"
+msgstr[1] "%s amici in comune"
+
+#: View/Elements/hooks/online_users.ctp:5
+#: View/Themed/Bado/Home/index.ctp:119
+#: View/Themed/Cross/Elements/right_column.ctp:29
+#: View/Themed/Layoto/Elements/right_column.ctp:27
+#: View/Themed/Layoto/Home/index.ctp:122
+#: View/Themed/Vk/Elements/right_column.ctp:54
+msgid "Who's Online"
+msgstr "Chi è Online"
+
+#: View/Elements/hooks/online_users.ctp:9
+msgid "There are currently %s and %s online"
+msgstr "Ci sono attualmente %s e %s online"
+
+#: View/Elements/hooks/online_users.ctp:9
+msgid "%s guest"
+msgid_plural "%s guests"
+msgstr[0] "%s visitatore"
+msgstr[1] "%s visitatori"
+
+#: View/Elements/hooks/popular_albums.ctp:2
+msgid "Popular Albums"
+msgstr "Album Popolari"
+
+#: View/Elements/hooks/popular_blogs.ctp:2
+msgid "Popular Entries"
+msgstr "Articoli Popolari"
+
+#: View/Elements/hooks/popular_events.ctp:2
+msgid "Popular Events"
+msgstr "Eventi Popolari"
+
+#: View/Elements/hooks/popular_groups.ctp:2
+msgid "Popular Groups"
+msgstr "Gruppi Popolari"
+
+#: View/Elements/hooks/popular_topics.ctp:2
+msgid "Popular Topics"
+msgstr "Topics Popolari"
+
+#: View/Elements/hooks/popular_videos.ctp:2
+msgid "Popular Videos"
+msgstr "Video Popolari"
+
+#: View/Elements/hooks/recently_joined.ctp:3
+#: View/Themed/Layoto/Home/index.ctp:134
+msgid "Recently Joined"
+msgstr "Ultimi iscritti"
+
+#: View/Elements/hooks/today_birthdays.ctp:3
+#: View/Themed/Bado/Home/index.ctp:100
+#: View/Themed/Layoto/Home/index.ctp:72
+msgid "Today Birthdays"
+msgstr "Compleanni di Oggi"
+
+#: View/Elements/lists/albums_list.ctp:16
+#: View/Elements/lists/blogs_list.ctp:38
+#: View/Elements/lists/events_list.ctp:16
+#: View/Elements/lists/groups_list.ctp:35
+#: View/Elements/lists/messages_list.ctp:40
+#: View/Elements/lists/photos_list.ctp:36
+#: View/Elements/lists/topics_list.ctp:35
+#: View/Elements/lists/users_list_bit.ctp:51
+#: View/Elements/lists/videos_list.ctp:17
+msgid "No more results found"
+msgstr "Nessun risultato"
+
+#: View/Elements/lists/blogs_list.ctp:27
+#: View/Tags/view.ctp:43
+msgid "Posted by"
+msgstr "Inviato da"
+
+#: View/Elements/lists/blogs_list.ctp:28
+msgid "Read more"
+msgstr "Leggi di più"
+
+#: View/Elements/lists/groups_list.ctp:15
+#: View/Events/create.ctp:93
+#: View/Groups/create.ctp:54
+msgid "Public"
+msgstr "Pubblico"
+
+#: View/Elements/lists/groups_list.ctp:19
+#: View/Groups/create.ctp:56
+msgid "Restricted"
+msgstr "Ristretto"
+
+#: View/Elements/lists/groups_list.ctp:23
+#: View/Events/create.ctp:94
+#: View/Groups/create.ctp:55
+msgid "Private"
+msgstr "Privato"
+
+#: View/Elements/lists/messages_list.ctp:24
+msgid " and %s others"
+msgstr " e %s altri"
+
+#: View/Elements/lists/messages_list.ctp:11
+msgid "message"
+msgid_plural "messages"
+msgstr[0] "messaggio"
+msgstr[1] "messaggi"
+
+#: View/Elements/lists/topics_list.ctp:13
+msgid "Pinned"
+msgstr ""
+
+#: View/Elements/lists/topics_list.ctp:16
+msgid "Attached files"
+msgstr "File allegati"
+
+#: View/Elements/lists/topics_list.ctp:19
+msgid "Locked"
+msgstr "Chiuso"
+
+#: View/Elements/lists/topics_list.ctp:24
+msgid "Last posted by %s"
+msgstr "Ultimo post da %s"
+
+#: View/Elements/lists/users_list_bit.ctp:25
+msgid "Remove Member"
+msgstr "Rimuovi Membro"
+
+#: View/Elements/lists/users_list_bit.ctp:31
+msgid "Make Admin"
+msgstr "Crea Amministratore"
+
+#: View/Elements/lists/users_list_bit.ctp:37
+msgid "Remove Admin"
+msgstr "Rimuovi Amministratore"
+
+#: View/Elements/lists/users_list_bit.ctp:19
+#: View/Elements/misc/user_mini.ctp:7
+#: View/Emails/html/friend_request.ctp:11
+#: View/Emails/html/invite.ctp:11
+#: View/Themed/Bado/Home/index.ctp:144
+msgid "%s friend"
+msgid_plural "%s friends"
+msgstr[0] "%s amico"
+msgstr[1] "%s amici"
+
+#: View/Elements/misc/notification_texts.ctp:8
+msgid "wrote on your profile"
+msgstr "scrivi sul tuo profilo"
+
+#: View/Elements/misc/notification_texts.ctp:13
+msgid "commented on %s status"
+msgstr "ha commentato %s stato"
+
+#: View/Elements/misc/notification_texts.ctp:17
+msgid "commented on your status"
+msgstr "ha commentato il tuo stato"
+
+#: View/Elements/misc/notification_texts.ctp:21
+msgid "replied to \"%s\""
+msgstr "ha risposto a \"%s\""
+
+#: View/Elements/misc/notification_texts.ctp:26
+#: View/Elements/misc/activity_texts/comment_add.ctp:15
+msgid "commented on %s photo"
+msgstr "ha commentato %s foto"
+
+#: View/Elements/misc/notification_texts.ctp:30
+msgid "commented on your photo"
+msgstr "ha commentato la tua foto"
+
+#: View/Elements/misc/notification_texts.ctp:34
+msgid "commented on \"%s\""
+msgstr "ha commentato \"%s\""
+
+#: View/Elements/misc/notification_texts.ctp:38
+msgid "likes your photo"
+msgstr "piace la tua foto"
+
+#: View/Elements/misc/notification_texts.ctp:42
+msgid "likes \"%s\""
+msgstr "piace \"%s\""
+
+#: View/Elements/misc/notification_texts.ctp:46
+msgid "likes your status"
+msgstr "piace il tuo stato"
+
+#: View/Elements/misc/notification_texts.ctp:50
+msgid "sent you a message"
+msgstr "ti ha inviato un messaggio"
+
+#: View/Elements/misc/notification_texts.ctp:54
+msgid "added you to a conversation"
+msgstr "ti ha aggiunto alla conversazione"
+
+#: View/Elements/misc/notification_texts.ctp:66
+msgid "accepted your friend request"
+msgstr "ha accettato la tua richiesta di amicizia"
+
+#: View/Elements/misc/notification_texts.ctp:70
+msgid "requested to join \"%s\""
+msgstr "chiede di unirti a \"%s\""
+
+#: View/Elements/misc/notification_texts.ctp:78
+msgid "tagged you in a photo"
+msgstr "ti ha taggato in una foto"
+
+#: View/Elements/misc/offline.ctp:6;26
+msgid "Offline Mode"
+msgstr "Modalità Offline"
+
+#: View/Elements/misc/photo_friends_list.ctp:5
+#: View/Photos/view.ctp:18
+msgid "Me"
+msgstr "Me"
+
+#: View/Elements/misc/photo_view_script.ctp:146
+msgid "Done Tagging"
+msgstr "Finito di Taggare"
+
+#: View/Elements/misc/photo_view_script.ctp:218
+msgid "Done!"
+msgstr "Fatto!"
+
+#: View/Elements/misc/photo_view_script.ctp:218
+msgid "Photo has been marked for deletion"
+msgstr "La foto è stata selezionata per l'eliminazione"
+
+#: View/Elements/misc/photo_view_script.ctp:222
+msgid "Are you sure you want to delete this photo?"
+msgstr "Sei sicuro di voler cancellare questa foto?"
+
+#: View/Elements/misc/activity_contents/event_create.ctp:7
+#: View/Events/create.ctp:66
+#: View/Events/view.ctp:130
+msgid "Location"
+msgstr "Posizione"
+
+#: View/Elements/misc/activity_texts/blog_create.ctp:2
+msgid "created a new blog entry"
+msgstr "ha creato un nuovo articolo"
+
+#: View/Elements/misc/activity_texts/comment_add.ctp:7
+msgid "commented on %s blog"
+msgstr "commentato %s blog"
+
+#: View/Elements/misc/activity_texts/comment_add.ctp:11
+msgid "commented on %s album"
+msgstr "commentato %s album"
+
+#: View/Elements/misc/activity_texts/comment_add.ctp:19
+msgid "commented on %s topic"
+msgstr "commentato %s topic"
+
+#: View/Elements/misc/activity_texts/comment_add.ctp:23
+msgid "commented on %s video"
+msgstr "ha commentato %s video"
+
+#: View/Elements/misc/activity_texts/event_attend.ctp:3
+msgid "is attending"
+msgstr "è atteso"
+
+#: View/Elements/misc/activity_texts/event_attend.ctp:8
+#: View/Elements/misc/activity_texts/friend_add.ctp:8
+#: View/Elements/misc/activity_texts/group_join.ctp:8
+msgid "and"
+msgstr "e"
+
+#: View/Elements/misc/activity_texts/event_create.ctp:2
+msgid "created a new event"
+msgstr "ha creato un nuovo evento"
+
+#: View/Elements/misc/activity_texts/friend_add.ctp:3
+msgid "is now friends with"
+msgstr "è ora amico con"
+
+#: View/Elements/misc/activity_texts/general.ctp:5
+msgid "joined %s"
+msgstr "si è unito %s"
+
+#: View/Elements/misc/activity_texts/general.ctp:9
+msgid "changed %s profile picture"
+msgstr "ha cambiato %s la sua foto del profilo"
+
+#: View/Elements/misc/activity_texts/general.ctp:13
+msgid "is attending %s"
+msgstr "pertecipa %s"
+
+#: View/Elements/misc/activity_texts/general.ctp:17
+msgid "joined group %s"
+msgstr "si è unito al gruppo %s"
+
+#: View/Elements/misc/activity_texts/general.ctp:31
+msgid "was tagged in a photo"
+msgstr "è stato taggato in una foto"
+
+#: View/Elements/misc/activity_texts/general.ctp:35
+msgid "and %s are now friends"
+msgstr "e %s sono ora amici"
+
+#: View/Elements/misc/activity_texts/general.ctp:24
+msgid "added %s new photo to album"
+msgid_plural "added %s new photos to album"
+msgstr[0] "ha aggiunto %s nuova foto all'album"
+msgstr[1] "ha aggiunto %s nuove foto all'album"
+
+#: View/Elements/misc/activity_texts/general.ctp:26
+msgid "added %s new photo"
+msgid_plural "added %s new photos"
+msgstr[0] "ha aggiunto %s nuova foto"
+msgstr[1] "ha aggiunto %s nuove foto"
+
+#: View/Elements/misc/activity_texts/group_create.ctp:2
+msgid "created a new group"
+msgstr "ha creato un nuovo gruppo"
+
+#: View/Elements/misc/activity_texts/group_join.ctp:3
+msgid "joined group"
+msgstr "si è unito al gruppo"
+
+#: View/Elements/misc/activity_texts/like_add.ctp:7
+msgid "likes %s blog"
+msgstr "piace %s blog"
+
+#: View/Elements/misc/activity_texts/like_add.ctp:11
+msgid "likes %s album"
+msgstr "piace %s album"
+
+#: View/Elements/misc/activity_texts/like_add.ctp:15
+msgid "likes %s photo"
+msgstr "piace %s foto"
+
+#: View/Elements/misc/activity_texts/like_add.ctp:19
+msgid "likes %s topic"
+msgstr "piace %s topic"
+
+#: View/Elements/misc/activity_texts/like_add.ctp:23
+msgid "likes %s video"
+msgstr "piace %s video"
+
+#: View/Elements/misc/activity_texts/topic_create.ctp:5
+msgid "created a new topic"
+msgstr "ha creato un nuovo topic"
+
+#: View/Elements/misc/activity_texts/video_add.ctp:5
+msgid "shared a new video"
+msgstr "ha condiviso in nuovo video"
+
+#: View/Emails/html/friend_request.ctp:3
+msgid "%s sent you a friend request"
+msgstr "%s ti ha inviato una richiesta di amicizia"
+
+#: View/Emails/html/friend_request.ctp:22
+msgid "to respond to this request"
+msgstr "per rispondere a questa richiesta"
+
+#: View/Emails/html/general.ctp:3
+msgid "to view it"
+msgstr "per vederlo"
+
+#: View/Emails/html/invite.ctp:3
+msgid "%s invited you to join %s"
+msgstr "%s ti ha invitato ad unirti a %s"
+
+#: View/Emails/html/invite.ctp:22
+msgid "to visit"
+msgstr "per visitare"
+
+#: View/Emails/html/notification.ctp:8
+msgid "to view all your notifications"
+msgstr "per vedere tutte le tue notifiche"
+
+#: View/Emails/html/password_request.ctp:1
+msgid "A request to reset password was submitted. If it's not you, please ignore this email<br />To reset your password, please click"
+msgstr ""
+
+#: View/Emails/html/password_request.ctp:2
+#: View/Emails/html/welcome_user.ctp:9
+msgid "here"
+msgstr "qui"
+
+#: View/Emails/html/welcome_user.ctp:1
+msgid "Hello %s, welcome to %s!"
+msgstr "Ciao %s, benvenuto su %s!"
+
+#: View/Emails/html/welcome_user.ctp:3
+msgid "Your account has been created."
+msgstr "Il tuo account è stato creato"
+
+#: View/Emails/html/welcome_user.ctp:6
+msgid "Please click the link below to validate your email"
+msgstr ""
+
+#: View/Emails/html/welcome_user.ctp:9
+msgid "You can login"
+msgstr ""
+
+#: View/Events/ajax_invite.ctp:39
+#: View/Groups/ajax_invite.ctp:39
+msgid "Not on your friends list? Enter their emails below (separated by commas)<br />Limit 10 email addresses per request"
+msgstr "Non sono sulla tua lista di amici? Inserisci i loro indirizzi email (separati da virgola)<br />Massimo 10 per richiesta"
+
+#: View/Events/ajax_invite.ctp:42
+#: View/Groups/ajax_invite.ctp:42
+msgid "Send Invitations"
+msgstr "Invia Inviti"
+
+#: View/Events/create.ctp:17
+#: View/Groups/create.ctp:17
+msgid "Upload a Picture"
+msgstr "Carica un\\'immagine"
+
+#: View/Events/create.ctp:34
+msgid "To date must be greater than From date"
+msgstr "La data di fine deve essere maggiore della data di inizio"
+
+#: View/Events/create.ctp:60
+msgid "Event Title"
+msgstr "Titolo Evento"
+
+#: View/Events/create.ctp:68
+msgid "e.g. Aluminum Hall, Carleton University"
+msgstr "es. Casa di Paolo, Roma"
+
+#: View/Events/create.ctp:70
+#: View/Events/view.ctp:132
+msgid "Address"
+msgstr "Indirizzo"
+
+#: View/Events/create.ctp:72
+msgid "Enter the full address (including city, state, country) of the location.<br />This will render a Google map on your event page (optional)"
+msgstr "Inserisci l'indirizzo completo (includi città,regione,stato) della località<br />Questo creerà la mappa con Google Map sulla tua pagina evento (opzionale)"
+
+#: View/Events/create.ctp:74
+msgid "From"
+msgstr "Inizio"
+
+#: View/Events/create.ctp:91
+msgid "Event Type"
+msgstr "Tipo Evento"
+
+#: View/Events/create.ctp:99
+msgid "Public: anyone can view and RSVP<br />Private: only invited guests can view and RSVP"
+msgstr "Pubblico: tutti possono vedere l'evento e confemare la partecipazione<br />Privato: solo i membri invitati possono vedere l'evento e confemare la partecipazione"
+
+#: View/Events/create.ctp:101
+#: View/Groups/create.ctp:63
+msgid "Photo"
+msgstr "Foto"
+
+#: View/Events/create.ctp:111
+msgid "Are you sure you want to remove this event?"
+msgstr "Sei sicuro di voler eliminare questo evento?"
+
+#: View/Events/index.ctp:5
+msgid "All Events"
+msgstr "Tutti gli Eventi"
+
+#: View/Events/index.ctp:6
+msgid "My Upcoming Events"
+msgstr "I Miei Prossimi Eventi"
+
+#: View/Events/index.ctp:7
+msgid "Friends Attending"
+msgstr "Amici che Partecipano"
+
+#: View/Events/index.ctp:8
+msgid "Past Events"
+msgstr "Eventi Passati"
+
+#: View/Events/view.ctp:48
+msgid "Invite Friends to Attend"
+msgstr "Invita Amici a Partecipare"
+
+#: View/Events/view.ctp:64
+msgid "Are you attending?"
+msgstr "Parteciperai?"
+
+#: View/Events/view.ctp:66
+msgid "Yes"
+msgstr "Sì"
+
+#: View/Events/view.ctp:67
+msgid "No"
+msgstr "No"
+
+#: View/Events/view.ctp:68
+msgid "Maybe"
+msgstr "Forse"
+
+#: View/Events/view.ctp:70
+msgid "Confirm RSVP"
+msgstr "Conferma RSVP"
+
+#: View/Events/view.ctp:76
+msgid "%s Attending"
+msgstr "%s Partecipano"
+
+#: View/Events/view.ctp:87
+msgid "%s Maybe Attending"
+msgstr "%s Forse Partecipano"
+
+#: View/Events/view.ctp:96
+msgid "%s Awaiting Response"
+msgstr "%s in Attesa di Risposta"
+
+#: View/Events/view.ctp:105
+msgid "%s Not Attending"
+msgstr "%s Non Partecipano"
+
+#: View/Events/view.ctp:114
+msgid "Report Event"
+msgstr "Segnala Evento"
+
+#: View/Events/view.ctp:125
+msgid "Time"
+msgstr "Ora"
+
+#: View/Events/view.ctp:132
+msgid "View Map"
+msgstr "Guarda la Mappa"
+
+#: View/Events/view.ctp:137
+msgid "Created by"
+msgstr "Creato da"
+
+#: View/Events/view.ctp:138
+#: View/Themed/Mobile/Users/view.ctp:136
+#: View/Users/view.ctp:152
+msgid "Info"
+msgstr "Info"
+
+#: View/Events/view.ctp:168
+msgid "No messages found"
+msgstr "Nessun messaggio trovato"
+
+#: View/Friends/ajax_add.ctp:8
+#: View/Themed/Mobile/Users/view.ctp:252
+#: View/Users/view.ctp:268
+msgid "Request Sent"
+msgstr "Richiesta inviata"
+
+#: View/Friends/ajax_add.ctp:15
+msgid "You can send <b>%s</b> an optional message below"
+msgstr "Puoi inviare a <b>%s</b> il messaggio opzionale"
+
+#: View/Friends/ajax_add.ctp:25
+msgid "Send Request"
+msgstr "Invia Richiesta"
+
+#: View/Friends/ajax_invite.ctp:9
+msgid "Your invitation has been sent"
+msgstr "Il tuo invito è stato inviato"
+
+#: View/Friends/ajax_invite.ctp:20
+msgid "Invite Your Friends"
+msgstr "Invita i tuoi Amici"
+
+#: View/Friends/ajax_invite.ctp:21
+msgid "Enter your friends' emails below (separated by commas). Limit 10 email addresses per request"
+msgstr "Inserisci le email dei tuoi amici qui sotto(separate da virgola). Al massimo 10 indirizzi per richiesta"
+
+#: View/Friends/ajax_invite.ctp:27
+msgid "Send Invitation"
+msgstr "Invia Inviti"
+
+#: View/Friends/ajax_requests.ctp:10
+#: View/Home/index.ctp:53
+#: View/Themed/Bado/Home/index.ctp:60
+#: View/Themed/Layoto/Home/index.ctp:54
+msgid "Friend Requests"
+msgstr "Richieste di Amicizia"
+
+#: View/Friends/ajax_requests.ctp:12
+msgid "You have no friend requests"
+msgstr "Non hai richieste di amicizia"
+
+#: View/Friends/ajax_requests.ctp:18
+#: View/Groups/ajax_requests.ctp:16
+msgid "Accept"
+msgstr "Accetta"
+
+#: View/Groups/ajax_requests.ctp:10
+msgid "No join requests"
+msgstr "Nessuna richiesta di partecipazione"
+
+#: View/Groups/create.ctp:43
+msgid "Group Name"
+msgstr "Nome Gruppo"
+
+#: View/Groups/create.ctp:52
+msgid "Group Type"
+msgstr "Tipo Gruppo"
+
+#: View/Groups/create.ctp:61
+msgid "Public: anyone can view and join<br />Private: only members can view group's details<br />Restricted: anyone can view but join request has to be accepted by group admins"
+msgstr "Pubblico: chiunque può unirsi<br />Privato: solo i membri possono vedere i dettagli del gruppo<br />Ristretto: tutti possono vedere i dettagli ma le richieste di entrare nel gruppo devono essere accettate da un amministratore"
+
+#: View/Groups/create.ctp:73
+msgid "Are you sure you want to remove this group?<br />All group contents will also be deleted!"
+msgstr "Sei sicuro di voler cancellare questo gruppo?<br />Tutti i contenuti saranno eliminati!"
+
+#: View/Groups/index.ctp:5
+msgid "All Groups"
+msgstr "Tutti i Gruppi"
+
+#: View/Groups/index.ctp:7
+msgid "Friends' Groups"
+msgstr "Gruppi degli Amici"
+
+#: View/Groups/view.ctp:20
+msgid "Are you sure you want to remove this member?"
+msgstr "Sei sicuro di voler rimuovere questo membro?"
+
+#: View/Groups/view.ctp:28
+msgid "Are you sure you want to make this member a group admin?"
+msgstr "Sei sicuro di voler promuovere questo utente come amministratore di gruppo?"
+
+#: View/Groups/view.ctp:30
+msgid "Are you sure you want to demote this group admin?"
+msgstr "Sei sicuro di voler rimuove questo amministratore?"
+
+#: View/Groups/view.ctp:135
+msgid "Details"
+msgstr "Dettagli"
+
+#: View/Groups/view.ctp:138;165
+msgid "Members"
+msgstr "Membri"
+
+#: View/Groups/view.ctp:155
+msgid "Admins"
+msgstr "Amministratori"
+
+#: View/Groups/view.ctp:178
+msgid "Invite Friends to Join"
+msgstr "Invita Amici a Unirsi"
+
+#: View/Groups/view.ctp:187
+msgid "Are you sure you want to leave this group?"
+msgstr "Sei sicuro di voler lasciare questo gruppo?"
+
+#: View/Groups/view.ctp:187
+msgid "Leave Group"
+msgstr "Lascia il Gruppo"
+
+#: View/Groups/view.ctp:189
+msgid "Report Group"
+msgstr "Segnala il Gruppo"
+
+#: View/Groups/view.ctp:192
+msgid "Feature Group"
+msgstr "Metti il Gruppo in evidenza"
+
+#: View/Groups/view.ctp:194
+msgid "Unfeature Group"
+msgstr "Metti il Gruppo non in evidenza"
+
+#: View/Groups/view.ctp:210
+#: View/Home/index.ctp:84
+#: View/Themed/Bado/Home/index.ctp:169
+#: View/Themed/Layoto/Home/index.ctp:177
+#: View/Users/index.ctp:86
+msgid "Loading..."
+msgstr "Caricamento..."
+
+#: View/Home/admin_index.ctp:36
+#: View/Notifications/ajax_show.ctp:56
+#: View/Themed/Mobile/Home/admin_index.ctp:72
+msgid "No new notifications"
+msgstr "Nessuna nuova notifica"
+
+#: View/Home/contact.ctp:6
+msgid "All fields are required"
+msgstr "Tutti i campi sono richiesti"
+
+#: View/Home/contact.ctp:30
+msgid "Contact Us"
+msgstr "Contattaci"
+
+#: View/Home/contact.ctp:33
+msgid "Your Name"
+msgstr "Il tuo Nome"
+
+#: View/Home/index.ctp:49
+#: View/Notifications/ajax_show.ctp:51
+#: View/Themed/Bado/Home/index.ctp:56
+#: View/Themed/Layoto/Home/index.ctp:50
+msgid "Notifications"
+msgstr "Notifiche"
+
+#: View/Layouts/Emails/html/default.ctp:15
+msgid "This is an automated generated email. Please do not respond to it."
+msgstr "Questo è un messaggio generato automaticamente. Per favore non rispondere a questa mail."
+
+#: View/Layouts/Emails/html/default.ctp:16
+msgid "If you don't want to receive these emails in the future, please visit"
+msgstr "If non vuoi ricevere queste email in futuro, visita"
+
+#: View/Layouts/Emails/html/default.ctp:16
+msgid "and change your email setting."
+msgstr "e cambia le impostazioni email"
+
+#: View/Notifications/ajax_show.ctp:49
+msgid "Clear All Notifications"
+msgstr "Cancella tutte le Notifiche"
+
+#: View/Pages/admin_index.ctp:24
+msgid "Create New Page"
+msgstr "Crea Nuova Pagina"
+
+#: View/Pages/error.ctp:2
+msgid "An error has occurred"
+msgstr ""
+
+#: View/Pages/no-permission.ctp:2
+msgid "You do not have permission to view this page"
+msgstr "Non hai il permesso di vedere questa pagina"
+
+#: View/Photos/ajax_upload.ctp:44
+msgid "Save Photos"
+msgstr "Salva le Foto"
+
+#: View/Photos/index.ctp:5
+msgid "All Photos"
+msgstr "Tutte le Foto"
+
+#: View/Photos/index.ctp:7
+msgid "Friends' Photos"
+msgstr "Foto degli Amici"
+
+#: View/Photos/upload.ctp:29
+msgid "to create your first album"
+msgstr "per creare il tuo primo album"
+
+#: View/Reports/ajax_create.ctp:31
+msgid "Reason"
+msgstr "Ragione"
+
+#: View/Search/index.ctp:3
+msgid "Search Filters"
+msgstr "Filtri"
+
+#: View/Search/index.ctp:5
+msgid "All Results"
+msgstr "Tutti i Risultati"
+
+#: View/Search/index.ctp:17
+msgid "Search Results"
+msgstr "Risultati di Ricerca"
+
+#: View/Search/index.ctp:26;36;46;56;66;76
+#: View/Themed/Layoto/Elements/activities.ctp:237
+msgid "View More Results"
+msgstr "Guarda Più Risultati"
+
+#: View/Tags/view.ctp:8
+msgid "Latest"
+msgstr "Ultimi"
+
+#: View/Tags/view.ctp:9
+msgid "Popular"
+msgstr "Popolare"
+
+#: View/Tags/view.ctp:13
+msgid "Tag"
+msgstr "Tag"
+
+#: View/Themed/Bado/Elements/registration.ctp:66
+msgid "First time on"
+msgstr "Prima volta su"
+
+#: View/Themed/Bado/Elements/right_column.ctp:15
+#: View/Themed/Cross/Elements/right_column.ctp:51
+#: View/Themed/Layoto/Elements/right_column.ctp:49
+#: View/Themed/Layoto/Home/index.ctp:155
+#: View/Themed/Vk/Elements/right_column.ctp:105
+msgid "Change"
+msgstr "Cambia"
+
+#: View/Themed/Bado/Elements/userbox.ctp:6
+#: View/Themed/Cross/Elements/userbox.ctp:23
+#: View/Themed/Layoto/Elements/userbox.ctp:23
+#: View/Themed/Vk/Elements/userbox.ctp:8
+msgid "Admin"
+msgstr "Amministratore"
+
+#: View/Themed/Bado/Elements/userbox.ctp:8
+#: View/Themed/Mobile/Users/view.ctp:133
+#: View/Themed/Vk/Elements/userbox.ctp:10
+#: View/Users/view.ctp:149
+msgid "Profile"
+msgstr "Profilo"
+
+#: View/Themed/Bado/Elements/userbox.ctp:42
+#: View/Themed/Cross/Elements/userbox.ctp:59
+#: View/Themed/Layoto/Elements/userbox.ctp:59
+#: View/Themed/Mobile/Elements/userbox.ctp:31
+#: View/Themed/Vk/Elements/right_column.ctp:80
+msgid "Keep me logged in"
+msgstr ""
+
+#: View/Themed/Bado/Elements/userbox.ctp:44
+#: View/Themed/Cross/Elements/userbox.ctp:42
+#: View/Themed/Layoto/Elements/userbox.ctp:42
+#: View/Themed/Mobile/Elements/userbox.ctp:33
+#: View/Themed/Vk/Elements/right_column.ctp:84
+msgid "Register"
+msgstr "Registrati"
+
+#: View/Themed/Bado/Home/index.ctp:53
+msgid "Hi"
+msgstr "Ciao"
+
+#: View/Themed/Bado/Home/index.ctp:72
+#: View/Themed/Layoto/Home/index.ctp:66
+msgid "More"
+msgstr "Di Più"
+
+#: View/Themed/Bado/Home/index.ctp:122
+#: View/Themed/Cross/Elements/right_column.ctp:32
+#: View/Themed/Layoto/Elements/right_column.ctp:30
+#: View/Themed/Layoto/Home/index.ctp:125
+#: View/Themed/Vk/Elements/right_column.ctp:57
+msgid "There are currently %s members and %s guests online"
+msgstr "Ci sono attualmente %s membri e %s visitatori online"
+
+#: View/Themed/Bado/Layouts/default.ctp:13
+#: View/Themed/Blue/Layouts/default.ctp:13
+#: View/Themed/Cross/Layouts/default.ctp:13
+#: View/Themed/Dark/Layouts/default.ctp:13
+#: View/Themed/Layoto/Layouts/default.ctp:13
+#: View/Themed/Light/Layouts/default.ctp:13
+#: View/Themed/Mobile/Layouts/default.ctp:13
+#: View/Themed/Test/Layouts/default.ctp:13
+#: View/Themed/Vk/Layouts/default.ctp:13
+msgid "[OFFLINE]"
+msgstr ""
+
+#: View/Themed/Cross/Layouts/default.ctp:72
+msgid "Enter your keyword here"
+msgstr "Inserisci qui le parole chiave"
+
+#: View/Themed/Mobile/Elements/right_column.ctp:4
+msgid "Menu"
+msgstr ""
+
+#: View/Themed/Mobile/Elements/right_column.ctp:10
+msgid "View Full Site"
+msgstr ""
+
+#: View/Themed/Mobile/Elements/userbox.ctp:5
+msgid "Welcome"
+msgstr "Benvenuto"
+
+#: View/Themed/Mobile/Users/view.ctp:19
+#: View/Users/index.ctp:63
+#: View/Users/view.ctp:19
+msgid "Profile Picture"
+msgstr "Immagine Profilo"
+
+#: View/Themed/Mobile/Users/view.ctp:27
+#: View/Users/view.ctp:27
+msgid "Save Thumbnail"
+msgstr "Salva Miniatura"
+
+#: View/Themed/Mobile/Users/view.ctp:45
+#: View/Users/view.ctp:45
+msgid "Cover Picture"
+msgstr "Immagine Cover"
+
+#: View/Themed/Mobile/Users/view.ctp:53
+#: View/Users/view.ctp:53
+msgid "Save Cover Picture"
+msgstr "Salva Cover"
+
+#: View/Themed/Mobile/Users/view.ctp:147
+#: View/Users/view.ctp:163
+msgid "Blog"
+msgstr "Blog"
+
+#: View/Themed/Mobile/Users/view.ctp:172
+#: View/Users/view.ctp:188
+msgid "Mutual Friends"
+msgstr "Amici in Comune"
+
+#: View/Themed/Mobile/Users/view.ctp:225
+#: View/Users/view.ctp:241
+msgid "Feature User"
+msgstr "Metti in evidenza l'Utente"
+
+#: View/Themed/Mobile/Users/view.ctp:228
+#: View/Users/view.ctp:244
+msgid "Unfeature User"
+msgstr "Metti non in evidenza l'Utente"
+
+#: View/Themed/Mobile/Users/view.ctp:231
+#: View/Users/view.ctp:247
+msgid "Edit User"
+msgstr "Modifica Utente"
+
+#: View/Themed/Mobile/Users/view.ctp:233
+#: View/Users/view.ctp:249
+msgid "Report User"
+msgstr "Segnala Utente"
+
+#: View/Themed/Mobile/Users/view.ctp:242
+#: View/Users/view.ctp:258
+msgid "Online"
+msgstr ""
+
+#: View/Themed/Mobile/Users/view.ctp:242
+#: View/Users/view.ctp:258
+msgid "Offline"
+msgstr ""
+
+#: View/Themed/Mobile/Users/view.ctp:246
+#: View/Users/view.ctp:262
+msgid "Unfriend"
+msgstr "Togli Amicizia"
+
+#: View/Themed/Mobile/Users/view.ctp:264
+msgid "Edit Avatar Picture"
+msgstr "Modifica Avatar"
+
+#: View/Themed/Mobile/Users/view.ctp:265
+#: View/Users/view.ctp:140
+msgid "Edit Cover Picture"
+msgstr "Modifica Cover"
+
+#: View/Themed/Mobile/Users/view.ctp:284
+#: View/Users/view.ctp:290
+msgid "%s only shares some information with everyone"
+msgstr "%s condivide solo qualche informazione con tutti"
+
+#: View/Topics/ajax_group_create.ctp:17
+#: View/Topics/create.ctp:57
+msgid "Are you sure you want to remove this topic?"
+msgstr "Sei sicuro di voler cancellare questo topic?"
+
+#: View/Topics/ajax_group_create.ctp:42
+#: View/Topics/create.ctp:26
+msgid "Topic Title"
+msgstr "Titolo Topic"
+
+#: View/Topics/ajax_group_create.ctp:44
+#: View/Topics/create.ctp:28
+msgid "Topic"
+msgstr "Topic"
+
+#: View/Topics/ajax_group_create.ctp:47
+#: View/Topics/create.ctp:31
+#: View/Topics/view.ctp:23
+msgid "Attachments"
+msgstr "Allegati"
+
+#: View/Topics/ajax_group_create.ctp:64
+#: View/Topics/create.ctp:49
+msgid "Toggle Attachments Uploader"
+msgstr "Mostra/Nascondi Upload Allegati"
+
+#: View/Topics/ajax_view.ctp:7
+#: View/Topics/view.ctp:73
+msgid "Attached Images"
+msgstr "Immagini Allegate"
+
+#: View/Topics/ajax_view.ctp:18
+msgid "Attached Files"
+msgstr "File Allegati"
+
+#: View/Topics/ajax_view.ctp:39
+#: View/Topics/view.ctp:49
+msgid "Pin Topic"
+msgstr ""
+
+#: View/Topics/ajax_view.ctp:41
+#: View/Topics/view.ctp:51
+msgid "Unpin Topic"
+msgstr ""
+
+#: View/Topics/ajax_view.ctp:45
+#: View/Topics/view.ctp:55
+msgid "Lock Topic"
+msgstr "Blocca Topic"
+
+#: View/Topics/ajax_view.ctp:47
+#: View/Topics/view.ctp:57
+msgid "Unlock Topic"
+msgstr "Sblocca Topic"
+
+#: View/Topics/ajax_view.ctp:56
+msgid "Replies (%s)"
+msgstr "Risposte (%s)"
+
+#: View/Topics/ajax_view.ctp:64
+#: View/Topics/view.ctp:91
+msgid "This topic has been locked"
+msgstr "Questo Topic è stato chiuso"
+
+#: View/Topics/ajax_view.ctp:68
+msgid "This a group topic. Only group members can leave comment"
+msgstr "Questo è un topic di gruppo. Solo i membri possono lasciare commenti"
+
+#: View/Topics/ajax_view.ctp:21
+#: View/Topics/view.ctp:27
+msgid "%s download"
+msgid_plural "%s downloads"
+msgstr[0] ""
+msgstr[1] ""
+
+#: View/Topics/index.ctp:5
+msgid "All Categories"
+msgstr "Tutte le Categorie"
+
+#: View/Topics/index.ctp:7
+msgid "Friends' Topics"
+msgstr "Topic degli Amici"
+
+#: View/Topics/view.ctp:15
+msgid "Topic Creator"
+msgstr "Creatore"
+
+#: View/Topics/view.ctp:63
+msgid "Report Topic"
+msgstr "Segnala il Topic"
+
+#: View/Topics/view.ctp:81
+msgid "Posted in"
+msgstr "Postato in"
+
+#: View/Topics/view.ctp:84
+msgid "Replies"
+msgstr "Risposte"
+
+#: View/Users/admin_password.ctp:12
+#: View/Users/password.ctp:10
+#: View/Users/resetpass.ctp:6
+msgid "New Password"
+msgstr "Nuova Password"
+
+#: View/Users/ajax_avatar.ctp:17
+#: View/Users/ajax_cover.ctp:18
+msgid "Upload New Picture"
+msgstr "Carica una nuova Immagine"
+
+#: View/Users/ajax_info.ctp:6
+msgid "Basic Information"
+msgstr "Informazioni Principali"
+
+#: View/Users/ajax_info.ctp:9
+msgid "Profile URL"
+msgstr "URL Profilo"
+
+#: View/Users/ajax_info.ctp:15
+msgid "Registered Date"
+msgstr "Data di Registrazione"
+
+#: View/Users/ajax_info.ctp:16
+msgid "Last Online"
+msgstr "Ultimo Accesso"
+
+#: View/Users/ajax_info.ctp:36
+msgid "Recent Likes"
+msgstr "Mi Piace Recenti"
+
+#: View/Users/ajax_info.ctp:55
+msgid "Albums"
+msgstr "Albums"
+
+#: View/Users/ajax_info.ctp:68
+msgid "by %s"
+msgstr "da %s"
+
+#: View/Users/ajax_photos.ctp:18
+msgid "Photo Albums"
+msgstr "Foto Album"
+
+#: View/Users/ajax_photos.ctp:23
+msgid "Tagged Photos"
+msgstr "Foto dove sei Taggato"
+
+#: View/Users/index.ctp:46
+msgid "My Friends"
+msgstr "Miei Amici"
+
+#: View/Users/index.ctp:57
+msgid "Name"
+msgstr "Nome"
+
+#: View/Users/index.ctp:64
+msgid "Online Users"
+msgstr "Utenti Online"
+
+#: View/Users/password.ctp:6
+msgid "To change your password, please enter your current password to for verification"
+msgstr ""
+
+#: View/Users/password.ctp:9
+msgid "Current Attuale"
+msgstr "Password "
+
+#: View/Users/profile.ctp:5
+msgid "View Profile"
+msgstr "Guarda Profilo"
+
+#: View/Users/profile.ctp:13
+msgid "Are you sure you want to deactivate your account? Your profile will not be accessible to anyone and you will not be able to login again!"
+msgstr "Sei sicuro di voler disattivare il tuo Account? IL tuo profilo non sarà più accessibile da nessuno e tu non potrai più effettuare il login!"
+
+#: View/Users/profile.ctp:13
+msgid "Deactivate my account"
+msgstr "Disattiva il mio Account"
+
+#: View/Users/profile.ctp:14
+msgid "Are you sure you want to permanently delete your account? All your contents (including groups, topics, events...) will also be permanently deleted!"
+msgstr "Sei sicuro di voler cancellare in maniera definiva il tuo account? Tutti i tuoi contenuti (inclusi gruppi, video, eventi...) saranno cancellati!"
+
+#: View/Users/profile.ctp:14
+msgid "Request to permanently delete my account"
+msgstr "Richiedi di cancellare permanentemente il mio Account"
+
+#: View/Users/recover.ctp:2
+msgid "Forgot Password"
+msgstr "Password Dimenticata"
+
+#: View/Users/recover.ctp:6
+msgid "An email has been sent to the email address that you entered<br />Please follow the instructions to reset your password<br />Check your spam folder if you don't see it"
+msgstr ""
+
+#: View/Users/recover.ctp:9
+msgid "Please enter your email to reset your password"
+msgstr ""
+
+#: View/Users/resetpass.ctp:2
+msgid "Reset Password"
+msgstr "Reset Password"
+
+#: View/Users/view.ctp:128
+msgid "Edit Profile Picture"
+msgstr "Modifica Foto Profilo"
+
+#: View/Videos/ajax_create.ctp:18
+msgid "Copy and paste the video url in the text field below"
+msgstr "Copia e incolla l'URL del video nel campo di testo"
+
+#: View/Videos/ajax_create.ctp:27
+msgid "Source"
+msgstr "Sorgente"
+
+#: View/Videos/ajax_create.ctp:34
+msgid "URL"
+msgstr "URL"
+
+#: View/Videos/ajax_create.ctp:36
+msgid "Fetch Video"
+msgstr "Prendi il Video"
+
+#: View/Videos/ajax_fetch.ctp:15
+#: View/Videos/ajax_group_fetch.ctp:33
+msgid "Video Title"
+msgstr "Titolo del Video"
+
+#: View/Videos/ajax_fetch.ctp:41
+msgid "Save Video"
+msgstr "Salva Video"
+
+#: View/Videos/ajax_fetch.ctp:43
+#: View/Videos/ajax_group_fetch.ctp:14
+msgid "Are you sure you want to remove this video?"
+msgstr "Sei sicuro di voler cancellare questo video?"
+
+#: View/Videos/ajax_fetch.ctp:43
+msgid "Delete Video"
+msgstr "Cancella Video"
+
+#: View/Videos/ajax_group_fetch.ctp:20
+msgid "Video Details"
+msgstr "Dettagli Video"
+
+#: View/Videos/ajax_view.ctp:26
+msgid "Edit"
+msgstr "Modifica"
+
+#: View/Videos/ajax_view.ctp:30
+msgid "Comments (%s)"
+msgstr "Commenti (%s)"
+
+#: View/Videos/ajax_view.ctp:39
+msgid "This a group video. Only group members can leave comment"
+msgstr "Questo è un Video di un gruppo. Solo i membri possono lasciare un commento"
+
+#: View/Videos/index.ctp:5
+msgid "All Videos"
+msgstr "Tutti i Video"
+
+#: View/Videos/index.ctp:7
+msgid "Friends' Videos"
+msgstr "Video degli Amici"
+
+#: View/Videos/view.ctp:19
+msgid "Similar Videos"
+msgstr "Video Simili"
+
+#: View/Videos/view.ctp:31
+msgid "Edit Video Details"
+msgstr "Modifica i Dettagli del Video"
+
+#: View/Videos/view.ctp:31
+msgid "Edit Video"
+msgstr "Modifica Video"
+
+#: View/Videos/view.ctp:33
+msgid "Report Video"
+msgstr "Segnala Video"
+
+#: Model/Album.php:validation for field title
+#: Model/Blog.php:validation for field title
+#: Model/Event.php:validation for field title
+#: Model/Topic.php:validation for field title
+#: Model/Video.php:validation for field title
+msgid "Title is required"
+msgstr "Il Titolo è obbligatorio"
+
+#: Model/Album.php:validation for field category_id
+#: Model/Event.php:validation for field category_id
+#: Model/Group.php:validation for field category_id
+#: Model/Topic.php:validation for field category_id
+#: Model/Video.php:validation for field category_id
+msgid "Category is required"
+msgstr "La Categoria è obbligatoria"
+
+#: Model/Blog.php:validation for field body
+#: Model/Topic.php:validation for field body
+msgid "Body is required"
+msgstr "Il Testo è obbligatorio"
+
+#: Model/Category.php:validation for field name;validation for field type
+#: Model/Hook.php:validation for field name;validation for field key
+#: Model/Language.php:validation for field name
+#: Model/Page.php:validation for field title;validation for field alias;validation for field content
+#: Model/Plugin.php:validation for field name;validation for field key
+#: Model/ProfileField.php:validation for field name;validation for field type
+#: Model/Role.php:validation for field name
+#: Model/SpamChallenge.php:validation for field question;validation for field answers
+#: Model/Theme.php:validation for field name
+msgid "is required"
+msgstr ""
+
+#: Model/Conversation.php:validation for field subject
+msgid "Subject is required"
+msgstr "Il Soggetto è obbligatorio"
+
+#: Model/Conversation.php:validation for field message
+msgid "Message is required"
+msgstr "Il Testo del Messaggio è obbligatorio"
+
+#: Model/Event.php:validation for field location
+msgid "Location is required"
+msgstr "La località è obbligatoria"
+
+#: Model/Event.php:validation for field from
+msgid "From is not a valid date format (yyyy-mm-dd)"
+msgstr "Devi inserire un formato valido per la data di inizio (yyyy-mm-dd)"
+
+#: Model/Event.php:validation for field to
+msgid "To is not a valid date format (yyyy-mm-dd)"
+msgstr "Devi inserire un formato valido per la data di fine (yyyy-mm-dd)"
+
+#: Model/Event.php:validation for field description
+#: Model/Group.php:validation for field description
+msgid "Description is required"
+msgstr "La Descrizione è obbligatoria"
+
+#: Model/Group.php:validation for field name
+#: Model/User.php:validation for field name
+msgid "Name is required"
+msgstr "Il Nome è obbligatoria"
+
+#: Model/Language.php:validation for field key
+#: Model/Theme.php:validation for field key
+msgid "must only contain letters and numbers"
+msgstr "deve contenere solo lettere e numeri"
+
+#: Model/Language.php:validation for field key
+#: Model/Theme.php:validation for field key
+msgid "already exists"
+msgstr "è già esistente"
+
+#: Model/MailQueue.php:validation for field email
+msgid "email"
+msgstr ""
+
+#: Model/Report.php:validation for field reason
+msgid "Reason is required"
+msgstr "La Ragione è obbligatoria"
+
+#: Model/User.php:validation for field email
+msgid "Email must be a valid email"
+msgstr "L'indirizzo Email deve essere valido"
+
+#: Model/User.php:validation for field email
+msgid "Email already exists"
+msgstr "Email già esistente"
+
+#: Model/User.php:validation for field email
+msgid "Email is required"
+msgstr "L'Email è obbligatoria"
+
+#: Model/User.php:validation for field password
+msgid "Password must have at least 6 characters"
+msgstr ""
+
+#: Model/User.php:validation for field password2
+msgid "Passwords do not match"
+msgstr ""
+
+#: Model/User.php:validation for field birthday
+msgid "Birthday is required"
+msgstr ""
+
+#: Model/User.php:validation for field gender
+msgid "Gender is required"
+msgstr ""
+
+#: Model/User.php:validation for field username
+msgid "Username must only contain letters and numbers"
+msgstr ""
+
+#: Model/User.php:validation for field username
+msgid "Username must be between 5 and 50 characters long."
+msgstr ""
+
+#: Model/User.php:validation for field username
+msgid "Username already exists"
+msgstr ""
+
+#: Model/Video.php:validation for field source
+msgid "Source is required"
+msgstr ""
+
+#: View/Layouts/error.ctp:19
+msgid "CakePHP: the rapid development php framework"
+msgstr ""
+
+#: webroot/test.php:75
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+
+#: View/Elements/lists/albums_list.ctp
+#: View/Elements/lists/video_list.ctp
+msgid "Likes"
+msgstr "Mi Piace"
+
+#: View/Elements/lists/albums_list.ctp
+#: View/Elements/lists/video_list.ctp
+msgid "Dislikes"
+msgstr "Non mi Piace"
+
+#: View/Elements/lists/users_list_bit.ctp:46
+msgid "Friend"
+msgstr "Amico"
+
+#: View/Elements/lists/users_list_bit.ctp:50
+msgid "Me"
+msgstr "Io"
+
+#: Utility/CakeTime.php
+msgid "at"
+msgstr "alle"
+
+#: View/Albums/edit.ctp:38
+msgid "Move to"
+msgstr "Muovi in"
+
+#: View/Albums/edit.ctp:38
+msgid "With selected..."
+msgstr "Con i selezionati..."
+

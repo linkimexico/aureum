@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info>
+	<name>Photos</name>
+	<key>photo</key>
+	<version>2.0</version>
+	<description>Photos Plugin</description>
+	<author>Jsn Project</author>
+	<website>http://www.easy-profile.com</website>
+	<menu>Jsn Project</menu>
+	<icon_class>icon-picture</icon_class>
+</info>

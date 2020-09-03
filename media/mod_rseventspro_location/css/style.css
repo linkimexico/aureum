@@ -1,0 +1,38 @@
+.rsepro_location_list {
+	width: 100%;
+}
+
+.rsepro_location_list .rsepro_location_map {
+	text-align: center !important;
+	margin-bottom: 10px;
+}
+
+.rsepro_location_list .rsepro_location_map a, 
+.rsepro_location_list .rsepro_location_map a:hover, 
+.rsepro_location_list .rsepro_location_map a:focus,
+.rsepro_location_list .rsepro_location_map a:active {
+	text-decoration: none;
+	background: none !important;
+}
+
+.rsepro_location_list a,
+.rsepro_location_list a:hover,
+.rsepro_location_list a:active,
+.rsepro_location_list a:focus {
+	text-decoration: none;
+}
+
+
+.rsepro_location_list .rsepro_location_map img {
+	border: 1px solid #c8c8c8;
+    border-radius: 5px;
+}
+
+.rsepro_location_list .rsepro_location_address span {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.rsepro_location_list #rsepro_location_name {
+	font-weight: bold;
+}

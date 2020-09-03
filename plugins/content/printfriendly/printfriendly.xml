@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+    <name>Print, PDF, Email by PrintFriendly</name>
+    <creationDate>2017-04-07</creationDate>
+    <author>PrintFriendly</author>
+    <authorEmail>support@printfriendly.com</authorEmail>
+    <authorUrl>printfriendly.com</authorUrl>
+    <copyright>Copyright (C) 2005 - 2017 PrintFriendly. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>1.3.3</version>
+    <description>Print, PDF, Email by PrintFriendly
+
+      &lt;div class="notice notice-warning is-dismissible"&gt;
+        &lt;br /&gt;&lt;h2&gt;Does your website use these technologies?&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;- Password protected websites (paywall or intranet)&lt;/li&gt;
+            &lt;li&gt;- JavaScript to display content (Angular/React applications)&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;If yes, you need to &lt;a href="https://www.printfriendly.com/button/pro"&gt;purchase a PrintFriendly Pro subscription&lt;/a&gt; for the plugin to work properly on your website (&lt;a href="http://blog.printfriendly.com/2017/11/printfriendly-pdf-plugin-is-changing.html"&gt;learn why&lt;/a&gt;).&lt;/p&gt;
+        &lt;p&gt;If you are an existing Pro customer, no further action is required&lt;/p&gt;
+      &lt;/div&gt;
+
+    </description>
+    <files>
+        <filename plugin="printfriendly">printfriendly.php</filename>
+    </files>
+    <updateservers>
+        <server type="extension" name="PrintFriendly Extension's Updates">https://cdn.printfriendly.com/joomla/updates.xml</server>
+    </updateservers>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="button-style" type="radio" default="0" label="Pick Your Button Style" description="">
+                    <option value="12">
+                        &lt;img style="border:none;-webkit-box-shadow:none; box-shadow:none;" src="https://cdn.printfriendly.com/buttons/printfriendly-button.png" alt="Print Friendly"&gt;
+                    </option>
+                    <option value="14">
+                        &lt;img style="border:none;-webkit-box-shadow:none; box-shadow:none;" src="https://cdn.printfriendly.com/buttons/printfriendly-button-md.png" alt="Print Friendly"&gt;
+                    </option>
+                    <option value="2">
+                        &lt;img style="border:none;-webkit-box-shadow:none; box-shadow:none;" src="https://cdn.printfriendly.com/buttons/printfriendly-button-lg.png" alt="Print Friendly"&gt;
+                    </option>
+                    <option value="3">
+                        &lt;img style="border:none;-webkit-box-shadow:none; box-shadow:none;" src="https://cdn.printfriendly.com/buttons/print-button.png" alt="Print Friendly"&gt;
+                    </option>
+                    <option value="5">
+                        &lt;img style="border:none;-webkit-box-shadow:none; box-shadow:none;" src="https://cdn.printfriendly.com/buttons/print-button-gray.png" alt="Print Friendly"&gt;
+                    </option>
+                    <option value="1">
+                        &lt;img style="border:none;-webkit-box-shadow:none; box-shadow:none;" src="https://cdn.printfriendly.com/buttons/printfriendly-pdf-button.png" alt="Print Friendly"&gt;
+                    </option>
+                    <option value="10">
+                        &lt;img style="border:none;-webkit-box-shadow:none; box-shadow:none;" src="https://cdn.printfriendly.com/buttons/printfriendly-pdf-button-nobg.png" alt="Print Friendly"&gt;
+                    </option>
+                    <option value="13">
+                        &lt;img style="border:none;-webkit-box-shadow:none; box-shadow:none;" src="https://cdn.printfriendly.com/buttons/printfriendly-button-nobg.png" alt="Print Friendly"&gt;
+                    </option>
+                    <option value="11">
+                        &lt;img style="border:none;-webkit-box-shadow:none; box-shadow:none;" src="https://cdn.printfriendly.com/buttons/printfriendly-pdf-button-nobg-md.png" alt="Print Friendly"&gt;
+                    </option>
+                    <option value="7">
+                        &lt;img style="border:none;-webkit-box-shadow:none; box-shadow:none;" src="https://cdn.printfriendly.com/buttons/printfriendly-pdf-email-button.png" alt="Print Friendly"&gt;
+                    </option>
+                    <option value="8">
+                        &lt;img style="border:none;-webkit-box-shadow:none; box-shadow:none;" src="https://cdn.printfriendly.com/buttons/printfriendly-pdf-email-button-md.png" alt="Print Friendly"&gt;
+                    </option>
+                    <option value="9">
+                        &lt;img style="border:none;-webkit-box-shadow:none; box-shadow:none;" src="https://cdn.printfriendly.com/buttons/printfriendly-pdf-email-button-notext.png" alt="Print Friendly"&gt;
+                    </option>
+                    <option value="6">
+                        Custom
+                    </option>
+                </field>
+                <field name="button-custom-image" type="text" showon="button-style:6" label="Button Image URL" />
+                <field name="button-place" type="checkboxes" label="Display button on" checked="0,1,2" description="">
+                    <option value="0">
+                        Before Article
+                    </option>
+                    <option value="1">
+                        After Article
+                    </option>
+                    <option value="2">
+                        Use [printfriendly] shortcode inside your page/article
+                    </option>
+                </field>
+                <field name="button-position" type="radio" default="0" label="Button position" description="">
+                    <option value="0">
+                        Left
+                    </option>
+                    <option value="1">
+                        Right
+                    </option>
+                </field>
+                <field name="custom-css-url" type="text" label="Custom CSS URL" description="" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,196 @@
+
+/* all ul's. for submenu's there is an override below */
+ul.adminmenum_menu{	
+	margin: 0;
+	padding: 0;	
+	list-style-type: none;	
+}
+
+/* level 2 ul. override below */
+ul.adminmenum_menu ul{
+	margin: 0;	
+	padding: 0;
+	list-style-type: none;
+	z-index: 110;
+}
+
+/* all li's. for submenu's there is an override below */
+ul.adminmenum_menu li{
+	float: left;
+	margin: 0;
+	padding: 0;
+	border-right: 1px solid #333333;
+	border-left: 1px solid #333333;	
+	background-repeat: no-repeat;
+	background-position: 0.35em 50%;
+	background-color: #4D4D4D;	
+	position: relative;
+	list-style: none;		
+}
+
+/* white arrows on level 1 dropdown parents */
+ul.adminmenum_menu li.parent a span.arrow_down{
+	padding-right: 15px;
+	background-image: url("../images/arrow_down.png");
+	background-position: right 50%;
+	background-repeat: no-repeat;
+}
+
+/* all a's. for submenu's there is an override below */
+ul.adminmenum_menu li a{				
+	display: block;			
+	text-decoration: none;
+	padding: 0.35em 1em 0.35em 2em;
+	font-size: 1em;
+	white-space: nowrap;	
+	line-height: 1.6em;
+	vertical-align: middle;
+	font-weight: bold;	
+	background-repeat: no-repeat;
+	background-position: 0.35em 50%;
+}
+
+/* ul's submenu and deeper */
+ul.adminmenum_menu li ul{
+	position: absolute;
+	left: 0;
+	top: 2.1em;
+	font-weight: normal;	
+	background: #4D4D4D url('../images/bg_menu.gif') repeat-y left;
+	width: 15em;	
+}
+	
+/* all level 2 li's and deeper */	
+ul.adminmenum_menu li li{
+	float: none;
+	border: 0;				
+	width: 15em;						
+}
+	
+/* all level 2 a's and deeper */		
+ul.adminmenum_menu li li a{				
+	display: block;					
+	text-decoration: none;											
+	padding: 0.35em 1em 0.35em 2.3em;		
+	white-space: normal;	
+	font-weight: normal;
+	background-position: 0.5em 0.5em;
+}
+				
+/* offset level 3 and deeper */
+ul.adminmenum_menu li li ul{
+	left: 15em;
+	top: -1px;
+}
+	
+/* arrow for parents for submenu and deeper */			
+ul.adminmenum_menu ul li.parent{	
+	background-image: url("../images/arrow_white.png");
+	background-position: 14em 0.8em;	
+}
+
+/* all a's */
+ul.adminmenum_menu li a,
+ul.adminmenum_menu li:hover a{
+	display: block;
+	color: #fff;
+}	
+
+/* background color li's on hover */
+ul.adminmenum_menu li:hover{
+	background-color: #666;
+}
+
+
+/* hide submenus */
+ul.adminmenum_menu li ul,
+ul.adminmenum_menu li:hover li ul,
+ul.adminmenum_menu li li:hover li ul,
+ul.adminmenum_menu li li li:hover li ul,
+ul.adminmenum_menu li li li li:hover li ul,
+ul.adminmenum_menu li li li li li:hover li ul,
+ul.adminmenum_menu li li li li li li:hover li ul,
+ul.adminmenum_menu li li li li li li li:hover li ul{
+	display: none;
+}
+
+/* show submenus */
+ul.adminmenum_menu li:hover ul,
+ul.adminmenum_menu li li:hover ul,
+ul.adminmenum_menu li li li:hover ul,
+ul.adminmenum_menu li li li li:hover ul,
+ul.adminmenum_menu li li li li li:hover ul,
+ul.adminmenum_menu li li li li li li:hover ul,
+ul.adminmenum_menu li li li li li li li:hover ul,
+ul.adminmenum_menu li li li li li li li li:hover ul{
+	display: block;
+}
+
+/* line separator before or after menu. optional see module configuration */
+.amm_line_separator{
+	height: 1px;
+	background: #333333;
+}
+
+/* a's when menu is disabled on edit-pages */
+ul.amm_menu_disabled li.amm_li_disabled a,
+ul.amm_menu_disabled li.amm_li_disabled a:hover{
+	cursor: default;	
+	background-color: none;
+	color: #DBDBDB;
+}
+
+/* li's hover when menu is disabled on edit-pages */
+ul.adminmenum_menu li.amm_li_disabled:hover{
+	background-color: #4D4D4D;
+}
+
+/* text separator horizontal */
+ul.adminmenum_menu li.adminmenum_text_separator_level_1 span{
+	display: block;			
+	text-decoration: none;
+	padding: 0.35em 1em;
+	font-size: 1em;
+	white-space: nowrap;	
+	line-height: 1.6em;
+	vertical-align: middle;
+	font-weight: bold;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	background-repeat: no-repeat;
+	background-position: 0.35em 50%;	
+}
+
+/* text separator vertical */
+ul.adminmenum_menu li.adminmenum_text_separator span{
+	background-color: #4D4D4D;	
+	display: block;					
+	text-decoration: none;											
+	padding: 0.35em 1em 0.35em 0.5em;		
+	white-space: normal;
+	border: 1px solid transparent;
+	font-weight: normal;	
+}
+
+/* separators no background color on hover */
+ul.adminmenum_menu li.adminmenum_text_separator_level_1:hover, ul.adminmenum_menu li.adminmenum_text_separator:hover,
+ul.adminmenum_menu li.adminmenum_line_separator_level_1:hover, ul.adminmenum_menu li.adminmenum_line_separator:hover{
+	background-color: #4D4D4D;
+}
+
+/* line separator horizontal */
+ul.adminmenum_menu li.adminmenum_line_separator_level_1 span{
+	display: block;
+	padding: 0.35em 0;
+	font-size: 1em;
+	white-space: nowrap;	
+	line-height: 1.6em;	
+}
+
+/* line separator vertical */
+ul.adminmenum_menu li.adminmenum_line_separator{	
+	background-color: #4D4D4D;
+	background-position: 0 50%;
+	background-image: url("../images/line_missioncontrol.png");
+	background-repeat: repeat-x;
+}

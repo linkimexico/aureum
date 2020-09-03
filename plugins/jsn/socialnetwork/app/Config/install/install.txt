@@ -1,0 +1,679 @@
+CREATE TABLE IF NOT EXISTS `{PREFIX}activities` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `type` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `target_id` int(10) unsigned NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `action` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `text` text COLLATE utf8_unicode_ci NOT NULL,
+  `content` text COLLATE utf8_unicode_ci NOT NULL,
+  `items` text COLLATE utf8_unicode_ci NOT NULL,
+  `item_type` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `item_id` int(10) unsigned NOT NULL,
+  `created` datetime NOT NULL,
+  `activity_comment_count` smallint(5) unsigned NOT NULL,
+  `query` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `privacy` tinyint(2) unsigned NOT NULL DEFAULT '1',
+  `modified` datetime NOT NULL,
+  `params` text COLLATE utf8_unicode_ci NOT NULL,
+  `like_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `dislike_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `guest_home` (`type`,`privacy`,`modified`),
+  KEY `profile` (`target_id`,`type`,`action`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}activity_comments` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `activity_id` int(10) unsigned NOT NULL,
+  `comment` text COLLATE utf8_unicode_ci NOT NULL,
+  `like_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `dislike_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `created` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `wall_id` (`activity_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci PACK_KEYS=0;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}admin_notifications` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `created` datetime NOT NULL,
+  `text` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `message` text COLLATE utf8_unicode_ci NOT NULL,
+  `url` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `read` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}albums` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `category_id` smallint(5) unsigned NOT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` text COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  `photo_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `cover` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `modified` datetime NOT NULL,
+  `like_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `dislike_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `privacy` tinyint(2) unsigned NOT NULL DEFAULT '1',
+  `type` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `category_id` (`category_id`),
+  KEY `privacy` (`privacy`,`id`),
+  FULLTEXT KEY `title` (`title`,`description`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}attachments` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `plugin_id` int(10) unsigned NOT NULL,
+  `target_id` int(10) unsigned NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `filename` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+  `original_filename` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+  `extension` varchar(8) COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  `downloads` smallint(5) unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `plugin_id` (`plugin_id`,`target_id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}blogs` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `body` text COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  `like_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `privacy` tinyint(2) unsigned NOT NULL DEFAULT '1',
+  `comment_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `dislike_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `privacy` (`privacy`,`id`),
+  FULLTEXT KEY `title` (`title`,`body`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}cake_sessions` (
+  `id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `data` text COLLATE utf8_unicode_ci NOT NULL,
+  `expires` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `expires` (`expires`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}comments` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `target_id` int(10) unsigned NOT NULL,
+  `message` text COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  `type` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `like_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `dislike_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `type` (`type`,`target_id`,`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}conversations` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `subject` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `message` text COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  `message_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `lastposter_id` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `lastposter_id` (`lastposter_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}conversation_users` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `conversation_id` int(10) unsigned NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `unread` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  `modified` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `conversation_id` (`conversation_id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}events` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `category_id` smallint(5) unsigned NOT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` text COLLATE utf8_unicode_ci NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `location` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `from` date NOT NULL,
+  `from_time` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `to` date NOT NULL,
+  `to_time` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  `type` tinyint(2) unsigned NOT NULL DEFAULT '1',
+  `photo` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `event_rsvp_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `address` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `category_id` (`category_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}event_rsvps` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `event_id` int(10) unsigned NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `rsvp` tinyint(2) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `rsvp_list` (`event_id`,`rsvp`,`id`),
+  KEY `event_id` (`event_id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}friends` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `friend_id` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `friend_id` (`friend_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}friend_requests` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `sender_id` int(10) unsigned NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `message` text COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `sender_id` (`sender_id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}groups` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `category_id` smallint(5) unsigned NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `description` text COLLATE utf8_unicode_ci NOT NULL,
+  `type` tinyint(2) unsigned NOT NULL,
+  `photo` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `group_user_count` smallint(5) unsigned NOT NULL DEFAULT '1',
+  `created` datetime NOT NULL,
+  `photo_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `topic_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `video_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `event_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `featured` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `category_id` (`category_id`),
+  KEY `type` (`type`),
+  FULLTEXT KEY `name` (`name`,`description`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}group_users` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `group_id` int(10) unsigned NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `status` tinyint(2) unsigned NOT NULL,
+  `created` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `group_id` (`group_id`),
+  KEY `user_id` (`user_id`),
+  KEY `status` (`status`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}likes` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `target_id` int(10) unsigned NOT NULL,
+  `type` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `thumb_up` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `type` (`type`,`target_id`,`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}notifications` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `sender_id` int(10) unsigned NOT NULL,
+  `created` datetime NOT NULL,
+  `text` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `action` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  `url` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `read` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `params` TEXT COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `sender_id` (`sender_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}pages` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+  `alias` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+  `content` text COLLATE utf8_unicode_ci NOT NULL,
+  `permission` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+  `params` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  `menu` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `icon_class` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `weight` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `alias` (`alias`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}password_requests` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `code` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `code` (`code`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}photos` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `target_id` int(10) unsigned NOT NULL,
+  `type` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `caption` text COLLATE utf8_unicode_ci NOT NULL,
+  `path` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `thumb` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `original` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  `like_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `dislike_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `target_id` (`target_id`,`type`,`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}photo_tags` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `photo_id` int(10) unsigned NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `tagger_id` int(10) unsigned NOT NULL,
+  `value` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `style` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `photo_id` (`photo_id`),
+  KEY `tagger_id` (`tagger_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}profile_fields` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` text COLLATE utf8_unicode_ci NOT NULL,
+  `type` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `values` text COLLATE utf8_unicode_ci NOT NULL,
+  `required` tinyint(1) unsigned NOT NULL,
+  `registration` tinyint(1) unsigned NOT NULL,
+  `searchable` tinyint(1) unsigned NOT NULL,
+  `active` tinyint(1) unsigned NOT NULL,
+  `weight` smallint(5) unsigned NOT NULL,
+  `profile` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}profile_field_values` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `profile_field_id` int(10) unsigned NOT NULL,
+  `value` text COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `profile_field_id` (`profile_field_id`),
+  FULLTEXT KEY `value` (`value`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}reports` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `type` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `target_id` int(10) unsigned NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `reason` text COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}spam_challenges` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `question` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+  `answers` text COLLATE utf8_unicode_ci NOT NULL,
+  `active` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}tags` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `target_id` int(10) unsigned NOT NULL,
+  `type` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `tag` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `type` (`type`),
+  KEY `tag` (`tag`),
+  KEY `target_id` (`target_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}topics` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `category_id` smallint(5) unsigned NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `body` text COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  `last_post` datetime NOT NULL,
+  `comment_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `lastposter_id` int(10) unsigned NOT NULL,
+  `like_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `group_id` int(10) unsigned NOT NULL,
+  `pinned` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `attachment` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `dislike_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `locked` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `topic_category_id` (`category_id`),
+  KEY `lastposter_id` (`lastposter_id`),
+  FULLTEXT KEY `title` (`title`,`body`),
+  KEY `group_id` (`group_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}users` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `role_id` tinyint(3) unsigned NOT NULL DEFAULT '2',
+  `avatar` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `photo` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `created` datetime NOT NULL,
+  `last_login` datetime NOT NULL,
+  `photo_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `friend_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `notification_count` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `friend_request_count` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `blog_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `topic_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `conversation_user_count` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `video_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `gender` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `birthday` date NOT NULL,
+  `active` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  `confirmed` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  `code` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `notification_email` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  `timezone` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `ip_address` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `privacy` tinyint(2) unsigned NOT NULL DEFAULT '1',
+  `username` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+  `about` text COLLATE utf8_unicode_ci NOT NULL,
+  `featured` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `lang` varchar(4) COLLATE utf8_unicode_ci NOT NULL,
+  `hide_online` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `cover` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`),
+  KEY `gender` (`gender`),
+  KEY `active` (`active`,`id`),
+  KEY `username` (`username`),
+  FULLTEXT KEY `name` (`name`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}videos` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) unsigned NOT NULL,
+  `category_id` smallint(5) unsigned NOT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` text COLLATE utf8_unicode_ci NOT NULL,
+  `thumb` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `source` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `source_id` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `like_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `dislike_count` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `created` datetime NOT NULL,
+  `privacy` tinyint(2) unsigned NOT NULL DEFAULT '1',
+  `group_id` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `category_id` (`category_id`),
+  KEY `privacy` (`privacy`,`id`),
+  FULLTEXT KEY `title` (`title`,`description`),
+  KEY `group_id` (`group_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}acos` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `group` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `key` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `description` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `group` (`group`,`key`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT IGNORE `{PREFIX}acos` (`group`, `key`, `description`) VALUES
+('user', 'username', 'Select username'),
+('blog', 'view', 'View blog entry'),
+('blog', 'create', 'Create/Edit blog entry'),
+('album', 'create', 'Create/Edit photo album'),
+('album', 'view', 'View photo album'),
+('event', 'create', 'Create/Edit event'),
+('event', 'view', 'View event'),
+('group', 'create', 'Create/Edit group'),
+('group', 'view', 'View group'),
+('photo', 'upload', 'Upload photos'),
+('photo', 'view', 'View photo'),
+('topic', 'create', 'Create/Edit topic'),
+('topic', 'view', 'View topic'),
+('video', 'share', 'Share video'),
+('video', 'view', 'View video'),
+('attachment', 'upload', 'Upload attachment'),
+('attachment', 'download', 'Download attachment');
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}categories` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `type` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `parent_id` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `item_count` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `active` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  `weight` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `header` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `create_permission` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `parent_id` (`parent_id`),
+  KEY `type` (`type`,`active`,`weight`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci PACK_KEYS=0;
+
+INSERT IGNORE `{PREFIX}categories` (`id`, `type`, `name`, `description`, `item_count`, `active`, `weight`) VALUES
+(1, 'album', 'Member Albums', '', 0, 1, 0),
+(2, 'group', 'Default Category', '', 0, 1, 0),
+(3, 'topic', 'Default Category', '', 0, 1, 0),
+(4, 'video', 'Default Category', '', 0, 1, 0),
+(5, 'event', 'Default Category', '', 0, 1, 0);
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}hooks` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+  `key` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `controller` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `action` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `position` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `weight` smallint(6) NOT NULL DEFAULT '0',
+  `enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `version` varchar(16) COLLATE utf8_unicode_ci NOT NULL,
+  `settings` text COLLATE utf8_unicode_ci NOT NULL,
+  `permission` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `key` (`key`),
+  KEY `controller` (`controller`),
+  KEY `action` (`action`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT IGNORE `{PREFIX}hooks` (`name`, `key`, `controller`, `action`, `position`, `weight`, `enabled`, `version`, `settings`, `permission`) VALUES
+('Featured Members', 'featured_members', 'home', 'index', 'home_sidebar', 6, 1, '2.0', '', ''),
+('Popular Blogs', 'popular_blogs', 'blogs', 'index', 'blogs_sidebar', 2, 1, '2.0', '', ''),
+('Popular Albums', 'popular_albums', 'photos', 'index', 'photos_sidebar', 3, 1, '2.0', '', ''),
+('Today Birthdays', 'today_birthdays', 'home', 'index', 'home_sidebar', 4, 1, '2.0', '', ''),
+('Online Users', 'online_users', '', '', 'global_sidebar', 5, 1, '2.0', '', ''),
+('Recently Joined', 'recently_joined', 'home', 'index', 'home_sidebar', 7, 1, '2.0', '', ''),
+('Popular Events', 'popular_events', 'events', 'index', 'events_sidebar', 8, 1, '2.0', '', ''),
+('Popular Groups', 'popular_groups', 'groups', 'index', 'groups_sidebar', 9, 1, '2.0', '', ''),
+('Popular Topics', 'popular_topics', 'topics', 'index', 'topics_sidebar', 10, 1, '2.0', '', ''),
+('Popular Videos', 'popular_videos', 'videos', 'index', 'videos_sidebar', 11, 1, '2.0', '', ''),
+('Friend Suggestions', 'friend_suggestions', '', '', 'global_sidebar', 12, 1, '2.0', '', ''),
+('Featured Groups', 'featured_groups', 'groups', 'index', 'groups_sidebar', 13, 1, '2.0', '', '');
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}languages` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `key` varchar(3) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `key` (`key`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT IGNORE `{PREFIX}languages` (`id`, `key`, `name`) VALUES
+(1, 'eng', 'English');
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}plugins` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+  `key` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `permission` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+  `settings` text COLLATE utf8_unicode_ci NOT NULL,
+  `enabled` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  `core` tinyint(1) unsigned NOT NULL,
+  `version` varchar(16) COLLATE utf8_unicode_ci NOT NULL,
+  `weight` smallint(5) unsigned NOT NULL,
+  `menu` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  `url` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+  `icon_class` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `key` (`key`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT IGNORE `{PREFIX}plugins` (`id`, `name`, `key`, `permission`, `settings`, `enabled`, `core`, `version`, `weight`, `menu`, `url`, `icon_class`) VALUES
+(1, 'People', 'user', '', 'a:0:{}', 1, 1, '2.0', 1, 1, '/users', 'icon-user'),
+(2, 'Blogs', 'blog', '', '', 1, 1, '2.0', 2, 1, '/blogs', 'icon-edit'),
+(3, 'Photos', 'photo', '', '', 1, 1, '2.0', 3, 1, '/photos', 'icon-picture'),
+(4, 'Videos', 'video', '', '', 1, 1, '2.0', 4, 1, '/videos', 'icon-facetime-video'),
+(5, 'Topics', 'topic', '', '', 1, 1, '2.0', 5, 1, '/topics', 'icon-comments'),
+(6, 'Groups', 'group', '', '', 1, 1, '2.0', 6, 1, '/groups', 'icon-group'),
+(7, 'Events', 'event', '', '', 1, 1, '2.0', 7, 1, '/events', 'icon-calendar'),
+(8, 'Conversations', 'conversation', '', '', 1, 1, '2.0', 8, 0, '', ''),
+(9, 'Pages', 'page', '', '', 1, 1, '2.0', 9, 0, '', '');
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}roles` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+  `is_admin` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `is_super` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `params` text COLLATE utf8_unicode_ci NOT NULL,
+  `core` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT IGNORE `{PREFIX}roles` (`id`, `name`, `is_admin`, `is_super`, `params`, `core`) VALUES
+(1, 'Super Admin', 1, 1, 'global_search,user_username,blog_view,blog_create,album_create,album_view,event_create,event_view,group_create,group_view,group_delete,photo_upload,photo_view,topic_create,topic_view,video_share,video_view,attachment_upload,attachment_download', 1),
+(2, 'Member', 0, 0, 'global_search,user_username,blog_view,blog_create,album_create,album_view,event_create,event_view,group_create,group_view,photo_upload,photo_view,topic_create,topic_view,video_share,video_view,attachment_upload,attachment_download', 1),
+(3, 'Guest', 0, 0, 'global_search,user_username,blog_view,blog_create,album_create,album_view,event_create,event_view,group_create,group_view,group_delete,photo_upload,photo_view,topic_create,topic_view,video_share,video_view,attachment_upload,attachment_download', 1);
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}settings` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `field` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `value` text COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `field` (`field`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT IGNORE `{PREFIX}settings` (`field`, `value`) VALUES
+('site_name', ''),
+('site_email', ''),
+('site_keywords', ''),
+('site_description', ''),
+('default_feed', 'everyone'),
+('recaptcha', '0'),
+('recaptcha_publickey', ''),
+('recaptcha_privatekey', ''),
+('email_validation', '0'),
+('guest_message', ''),
+('header_code', ''),
+('sidebar_code', ''),
+('footer_code', ''),
+('member_message', ''),
+('select_theme', '1'),
+('guest_search', '1'),
+('default_theme', 'light'),
+('force_login', '0'),
+('homepage_code', ''),
+('ban_ips', ''),
+('feed_selection', '1'),
+('admin_notes', ''),
+('site_offline', '0'),
+('offline_message', ''),
+('cron_last_run', ''),
+('version', '2.0.2'),
+('profile_privacy', '1'),
+('fb_app_id', ''),
+('fb_app_secret', ''),
+('fb_integration', '0'),
+('popular_interval', '30'),
+('add_this', '1'),
+('default_language', 'eng'),
+('disable_registration', '0'),
+('time_format', '12h'),
+('date_format', 'F j \\a\\t g:ia'),
+('logo', ''),
+('hide_admin_link', '0'),
+('select_language', '1'),
+('analytics_code', ''),
+('registration_notify', '0'),
+('hide_activites', '0'),
+('username_change', '1'),
+('save_original_image', '0'),
+('mail_transport', 'Mail'),
+('smtp_host', 'localhost'),
+('smtp_username', ''),
+('smtp_password', ''),
+('restricted_usernames', ''),
+('enable_registration_code', '0'),
+('registration_code', ''),
+('languages', 'eng=English'),
+('smtp_port', ''),
+('google_dev_key', ''),
+('timezone', '0'),
+('enable_timezone_selection', '1'),
+('require_birthday', '1'),
+('enable_spam_challenge', '0'),
+('show_credit', '0'),
+('name_change', '1'),
+('registration_message', '');
+
+CREATE TABLE IF NOT EXISTS `{PREFIX}themes` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `key` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+  `core` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT IGNORE `{PREFIX}themes` (`id`, `key`, `name`, `core`) VALUES
+(1, 'light', 'Light Theme', 1),
+(2, 'blue', 'Blue Theme', 0),
+(3, 'mobile', 'Mobile Theme', 1);

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.0" method="upgrade">
+    <name>Easy Profile - Social Network package</name>
+	<packagename>jsnsocial</packagename>
+	<author>JSN Project</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>fiorino.desanto@gmail.com</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<packager>JSN Project</packager>
+	<description>Easy Profile Package</description>
+
+    <files folder="packages">
+	
+	<file type="plugin" id="socialnetwork" group="jsn">socialnetwork_final.zip</file>
+	<file type="file">socialnetwork_view.zip</file>
+	
+	</files>
+   
+	
+</extension>

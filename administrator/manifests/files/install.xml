@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="file" method="upgrade">
+	<name>Easy Profile - JReviews Community</name>
+	<author>JSN Project</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>fiorino.desanto@gmail.com</authorEmail>
+	<authorUrl>www.easy-profile.org</authorUrl>
+	<version>1.0.0</version>
+	<fileset>
+		<files folder="community" target="components/com_jreviews/jreviews/models/community">
+			<filename>easyprofile.php</filename>
+		</files>
+		<files folder="plugin" target="components/com_jreviews/jreviews/plugins">
+			<filename>easyprofile.php</filename>
+		</files>
+	</fileset>
+</extension>

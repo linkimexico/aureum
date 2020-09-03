@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info>
+	<name>People</name>
+	<key>user</key>
+	<version>2.0</version>
+	<description>Users Plugin</description>
+	<author>Jsn Project</author>
+	<website>http://www.easy-profile.com</website>
+	<menu>Jsn Project</menu>
+	<icon_class>icon-user</icon_class>
+</info>

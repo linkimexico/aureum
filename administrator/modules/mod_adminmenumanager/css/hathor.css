@@ -1,0 +1,176 @@
+
+/* all ul's. for submenu's there is an override below */
+ul.adminmenum_menu{			
+	font-size: 1.2em;	
+	line-height: 1.25em;
+	margin: 0;
+	padding: 0;
+}
+
+/* level 2 ul. override below */
+ul.adminmenum_menu ul{
+	margin: 0;
+	margin-top: -0.2em;
+	padding: 0;
+	list-style-type: none;
+	z-index: 110;
+}
+
+/* all li's. for submenu's there is an override below */
+ul.adminmenum_menu li{
+	float: left;
+	margin: 0;
+	padding: 0;
+	border-right: 1px solid #C7C8B2;	
+	background-repeat: no-repeat;
+	background-position: 0.35em 50%;	
+	position: relative;
+	list-style: none;	
+	background-color: #F9FADE;	
+}
+
+/* all a's. for submenu's there is an override below */
+ul.adminmenum_menu li a{				
+	display: block;			
+	text-decoration: none;
+	padding: 0.35em 2.5em 0.35em 2em;
+	font-size: 100%;
+	white-space: nowrap;	
+	vertical-align: middle;
+	font-weight: bold;
+	background-repeat: no-repeat;
+	background-position: 0.35em 50%;
+	color: #054993;
+}
+
+/* ul's submenu and deeper */
+ul.adminmenum_menu li ul{
+	position: absolute;
+	left: 0;
+	top: 2.1em;				
+	border: 1px solid #C7C8B2;		
+	width: 15em;	
+}
+	
+/* all level 2 li's and deeper */	
+ul.adminmenum_menu li li{
+	float: none;
+	border: 0;				
+	width: 15em;						
+}
+	
+/* all level 2 a's and deeper */		
+ul.adminmenum_menu li li a{				
+	display: block;					
+	text-decoration: none;											
+	padding: 0.35em 2.5em 0.35em 2em;		
+	white-space: normal;	
+	background-position: 0.1em 0.37em;
+}
+				
+/* offset level 3 and deeper */
+ul.adminmenum_menu li li ul{
+	left: 15em;
+	top: -1px;
+	margin: 0;
+}
+	
+/* arrow for parents for submenu and deeper */			
+ul.adminmenum_menu ul li.parent{	
+	background-image: url("../images/arrow.png");
+	background-position: 14em 0.8em;	
+}
+
+/* all a's */
+ul.adminmenum_menu li a,
+ul.adminmenum_menu li:hover a{
+	display: block;
+	color: #054993;
+}
+
+/* background color li's on hover */
+ul.adminmenum_menu li:hover{
+	background-color: #E3E4CA;
+}
+
+
+/* hide submenus */
+ul.adminmenum_menu li ul,
+ul.adminmenum_menu li:hover li ul,
+ul.adminmenum_menu li li:hover li ul,
+ul.adminmenum_menu li li li:hover li ul,
+ul.adminmenum_menu li li li li:hover li ul,
+ul.adminmenum_menu li li li li li:hover li ul,
+ul.adminmenum_menu li li li li li li:hover li ul,
+ul.adminmenum_menu li li li li li li li:hover li ul{
+	display: none;
+}
+
+/* show submenus */
+ul.adminmenum_menu li:hover ul,
+ul.adminmenum_menu li li:hover ul,
+ul.adminmenum_menu li li li:hover ul,
+ul.adminmenum_menu li li li li:hover ul,
+ul.adminmenum_menu li li li li li:hover ul,
+ul.adminmenum_menu li li li li li li:hover ul,
+ul.adminmenum_menu li li li li li li li:hover ul,
+ul.adminmenum_menu li li li li li li li li:hover ul{
+	display: block;
+}
+
+/* line separator before or after menu. optional see module configuration */
+.amm_line_separator{
+	height: 1px;	
+	background: #ccc;
+}
+
+/* a's when menu is disabled on edit-pages */
+ul.amm_menu_disabled li.amm_li_disabled a,
+ul.amm_menu_disabled li.amm_li_disabled a:hover{
+	cursor: default;
+	border-color: #F9FADE;
+	background-color: none;
+	color: #ccc;
+}
+
+/* li's hover when menu is disabled on edit-pages */
+ul.adminmenum_menu li.amm_li_disabled:hover{
+	background-color: #F9FADE;	
+}
+
+/* text separator horizontal */
+ul.adminmenum_menu li.adminmenum_text_separator_level_1 span{
+	display: block;
+	padding: 0.35em 2.5em 0.35em 2em;
+	font-size: 100%;
+	white-space: nowrap;	
+	vertical-align: middle;		
+	color: #054993;
+}
+
+/* text separator vertical */
+ul.adminmenum_menu li.adminmenum_text_separator span{
+	background-color: #F9FADE;	
+	display: block;								
+	padding: 0.35em 1em 0.35em 0.3em;		
+	white-space: normal;
+}
+
+/* separators no background color on hover */
+ul.adminmenum_menu li.adminmenum_text_separator_level_1:hover, ul.adminmenum_menu li.adminmenum_text_separator:hover,
+ul.adminmenum_menu li.adminmenum_line_separator_level_1:hover, ul.adminmenum_menu li.adminmenum_line_separator:hover{
+	background-color: transparent;
+}
+
+/* line separator horizontal */
+ul.adminmenum_menu li.adminmenum_line_separator_level_1 span{	
+	display: block;
+	padding: 0.35em 0;	
+}
+
+/* line separator vertical */
+ul.adminmenum_menu li.adminmenum_line_separator{
+	height: 1px;
+	background-color: #F0F1DE;	
+}
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="jsn" method="upgrade">
+	<name>Easy Profile - Membership Pro Subscription History Tab</name>
+	<author>JSN Project</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>fiorino.desanto@gmail.com</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.2</version>
+
+	<files>
+		<filename plugin="tab_osmembership">tab_osmembership.php</filename>
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_categories/models/fields">
+				<field name="tabtitle" label="Title of Tab" type="text" filter="string" default="Subscriptions" />
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+        <server type="extension" priority="1" name="Easy Profile">https://www.easy-profile.com/update.php?p=os-membership-pro-tabs-plugin&amp;file=extension.xml</server>
+    </updateservers>
+	
+</extension>

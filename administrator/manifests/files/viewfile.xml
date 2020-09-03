@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="file" method="upgrade">
+	<name>Socialnetwork View</name>
+	<author>JSN Project</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>fiorino.desanto@gmail.com</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<fileset>
+		<files folder="view/social" target="components/com_jsn/views/social">
+			<filename>metadata.xml</filename>
+		</files>
+		<files folder="view/social/tmpl" target="components/com_jsn/views/social/tmpl">
+			<filename>default.xml</filename>
+		</files>
+	</fileset>
+</extension>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="jsn" method="upgrade">
+	<name>Easy Profile - Kunena Topic Tab</name>
+	<author>JSN Project</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>fiorino.desanto@gmail.com</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+
+	<files>
+		<filename plugin="tab_kunena">tab_kunena.php</filename>
+		
+	</files>
+	<media folder="media" destination="plg_jsn_kunena">
+		<filename>loading.gif</filename>
+	</media>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_categories/models/fields">
+				<field name="tabtitle" label="Title of Tab" type="text" filter="string" default="Forum Posts" />
+				<field name="showEmptyTab" type="radio" default="1" label="Show empty Tab" description="Display the Gallery Tab even if the user has no pics uploaded">
+		          <option value="0">JNO</option>
+		          <option value="1">JYES</option>
+		        </field>
+				<field name="showCategory" type="radio" default="1" label="Show Topic Category" description="">
+		          <option value="0">JNO</option>
+		          <option value="1">JYES</option>
+		        </field>
+				<field name="showHits" type="radio" default="1" label="Show Topic Hits" description="">
+		          <option value="0">JNO</option>
+		          <option value="1">JYES</option>
+		        </field>
+				
+				<field name="showCreatedDate" type="radio" default="1" label="Show Post Created Date" description="">
+		          <option value="0">JNO</option>
+		          <option value="1">JYES</option>
+		        </field>
+				<!-- <field name="showLastReply" type="radio" default="1" label="Show Last Reply" description="">
+		          <option value="0">JNO</option>
+		          <option value="1">JYES</option>
+		        </field> -->
+				<field name="showIntro" type="radio" default="1" label="Show Topic Intro Text" description="">
+		          <option value="0">JNO</option>
+		          <option value="1">JYES</option>
+		        </field> -->
+				<field name="introtext_limit" type="text" default="300"
+					label="Intro Post Text Limit"
+					description="" />
+		        <!-- <field
+					id="catid"
+					name="catid"
+					type="categoryedit"
+					extension="com_content"
+					label="Display only from categories"
+					description="If empty then will show all Topics"
+					multiple="true"
+					class="inputbox"
+					>
+				</field> -->
+				<!-- <field name="orderby" type="list"
+					description=""
+					label="Order by"
+					default="a.last_post_time DESC" 
+				> 
+					<option value="a.last_post_time DESC">Last replied first</option>
+					<option value="a.first_post_time DESC">JGLOBAL_MOST_RECENT_FIRST</option>
+					<option value="a.first_post_time DESC">JGLOBAL_MOST_RECENT_FIRST</option>
+					<option value="a.first_post_time">JGLOBAL_OLDEST_FIRST</option>
+					<option value="a.subject">JGLOBAL_TITLE_ALPHABETICAL</option>
+					<option value="a.subject DESC">JGLOBAL_TITLE_REVERSE_ALPHABETICAL</option>
+					<option value="a.hits DESC">JGLOBAL_MOST_HITS</option>
+					<option value="a.hits">JGLOBAL_LEAST_HITS</option>
+				</field> -->
+				<field name="articles_page" type="list"
+					description=""
+					label="Items per page"
+					default="10" 
+				>
+					<option value="5">5</option>
+					<option value="10">10</option>
+					<option value="20">20</option>
+					<option value="30">30</option>
+					<option value="50">50</option>
+					<option value="100">100</option>
+					
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+        <server type="extension" priority="1" name="Easy Profile">https://www.easy-profile.com/update.php?p=kunena-tabs-plugin&amp;file=extension.xml</server>
+    </updateservers>
+	
+</extension>

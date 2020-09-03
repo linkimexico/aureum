@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<versions>
+	<version>
+		<number>1.0.1</number>
+		<queries></queries>
+	</version>
+	<version>
+		<number>1.0.2</number>
+		<queries></queries>
+	</version>	
+	<version>
+		<number>1.0.3</number>
+		<queries>
+			<query>INSERT IGNORE {PREFIX}settings (id ,field ,value) VALUES (41 , 'default_language', 'eng')</query>
+		</queries>
+	</version>
+	<version>
+		<number>1.0.4</number> 
+		<queries>
+			<query>INSERT IGNORE {PREFIX}settings (id, field, value) VALUES (43, 'disable_registration', '0'), (44, 'time_format', '12h'), (45, 'date_format', 'F j \\a\\t g:ia'), (46, 'logo', ''), (47, 'hide_admin_link', '0'), (48, 'admin_password', '')</query>
+		</queries>
+	</version>
+	<version>
+		<number>1.1.0</number>
+		<queries>
+			<query>INSERT IGNORE {PREFIX}settings (id, field, value) VALUES (49, 'recently_joined', '1'), (50, 'featured_members', '1'), (51, 'select_language', '1'), (52, 'analytics_code', '')</query>
+			<query>ALTER TABLE {PREFIX}users ADD username VARCHAR( 64 ) COLLATE utf8_unicode_ci NOT NULL, ADD about TEXT COLLATE utf8_unicode_ci NOT NULL, ADD featured tinyint(1) unsigned NOT NULL DEFAULT '0', ADD INDEX (username)</query>
+			<query>ALTER TABLE {PREFIX}events ADD address VARCHAR( 256 ) COLLATE utf8_unicode_ci NOT NULL</query>
+			<query>ALTER TABLE {PREFIX}notifications ADD action VARCHAR( 32 ) COLLATE utf8_unicode_ci NOT NULL AFTER text, ADD params TEXT COLLATE utf8_unicode_ci NOT NULL</query>
+			<query>ALTER TABLE {PREFIX}groups ADD topic_count smallint(5) unsigned NOT NULL DEFAULT '0', ADD video_count smallint(5) unsigned NOT NULL DEFAULT '0', ADD event_count smallint(5) unsigned NOT NULL DEFAULT '0'</query>
+			<query>ALTER TABLE {PREFIX}topics ADD group_id int(10) unsigned NOT NULL, ADD INDEX (group_id)</query>
+			<query>ALTER TABLE {PREFIX}videos ADD group_id int(10) unsigned NOT NULL, ADD INDEX (group_id)</query>
+			<query>ALTER TABLE {PREFIX}activities ADD params TEXT COLLATE utf8_unicode_ci NOT NULL</query>
+			<query>CREATE TABLE IF NOT EXISTS `{PREFIX}admin_notifications` (
+				  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+				  `user_id` int(10) unsigned NOT NULL,
+				  `created` datetime NOT NULL,
+				  `text` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+				  `message` text COLLATE utf8_unicode_ci NOT NULL,
+				  `url` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+				  `read` tinyint(1) unsigned NOT NULL DEFAULT '0',
+				  PRIMARY KEY (`id`),
+				  KEY `user_id` (`user_id`)
+				) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;</query>			
+		</queries>
+	</version>
+	<version>
+		<number>1.1.1</number>
+		<queries>
+			<query>INSERT IGNORE {PREFIX}settings (id ,field ,value) VALUES (53 , 'registration_notify', '0')</query>
+			<query>ALTER TABLE {PREFIX}users ADD lang VARCHAR( 4 ) COLLATE utf8_unicode_ci NOT NULL</query>
+			<query>ALTER TABLE {PREFIX}activities ADD like_count smallint(5) unsigned NOT NULL DEFAULT '0'</query>
+			<query>ALTER TABLE {PREFIX}activity_comments ADD like_count smallint(5) unsigned NOT NULL DEFAULT '0'</query>
+			<query>ALTER TABLE {PREFIX}comments ADD like_count smallint(5) unsigned NOT NULL DEFAULT '0'</query>
+		</queries>
+	</version>
+	<version>
+		<number>1.2.0</number>
+		<queries>			
+			<query>CREATE TABLE IF NOT EXISTS `{PREFIX}themes` (
+				  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+				  `key` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+				  `name` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+				  `core` tinyint(1) unsigned NOT NULL DEFAULT '0',
+				  PRIMARY KEY (`id`)
+				) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;</query>			
+			<query>INSERT IGNORE {PREFIX}themes (`id`, `key`, `name`, `core`) VALUES (1, 'light', 'Light Theme', 1)</query>
+			<query>INSERT IGNORE {PREFIX}themes (`id`, `key`, `name`, `core`) VALUES (2, 'blue', 'Blue Theme', 1)</query>
+			<query>INSERT IGNORE {PREFIX}settings (id ,field ,value) VALUES (54 , 'hide_activites', '0')</query>
+			<query>ALTER TABLE {PREFIX}topics ADD pinned tinyint(1) unsigned NOT NULL DEFAULT '0'</query>
+		</queries>
+	</version>
+	<version>
+		<number>1.2.1</number>
+		<queries>
+			<query>INSERT IGNORE {PREFIX}settings (id ,field ,value) VALUES (55, 'username_change', '1')</query>
+		</queries>
+	</version>
+	<version>
+		<number>1.2.2</number>
+		<queries>
+			<query>INSERT IGNORE {PREFIX}settings (id ,field ,value) VALUES (57, 'save_original_image', '0'), (58, 'mail_transport', 'Mail'), (59, 'smtp_host', 'localhost'), (60, 'smtp_username', ''), (61, 'smtp_password', '')</query>
+			<query>ALTER TABLE {PREFIX}users ADD hide_online tinyint(1) unsigned NOT NULL DEFAULT '0'</query>
+			<query>ALTER TABLE {PREFIX}events ADD category_id smallint(5) unsigned NOT NULL DEFAULT '0', ADD INDEX (category_id)</query>
+			<query>INSERT IGNORE {PREFIX}categories (type, name, description, item_count, active, weight) VALUES ('event', 'Default Category', '', 0, 1, 0)</query>
+			<query>ALTER TABLE {PREFIX}photos ADD original VARCHAR( 256 ) COLLATE utf8_unicode_ci NOT NULL</query>
+		</queries>
+	</version>
+	<version>
+		<number>1.2.3</number>
+		<queries>
+			<query>ALTER TABLE {PREFIX}profile_fields ADD profile tinyint(1) unsigned NOT NULL DEFAULT '1'</query>
+			<query>ALTER TABLE {PREFIX}users ADD cover VARCHAR( 256 ) COLLATE utf8_unicode_ci NOT NULL</query>
+			<query>ALTER TABLE {PREFIX}albums ADD type VARCHAR( 50 ) COLLATE utf8_unicode_ci NOT NULL</query>
+		</queries>
+	</version>
+	<version>
+		<number>1.3.0</number>
+		<queries>
+			<query>ALTER TABLE {PREFIX}albums ADD dislike_count smallint(5) unsigned NOT NULL DEFAULT '0'</query>
+			<query>ALTER TABLE {PREFIX}blogs ADD dislike_count smallint(5) unsigned NOT NULL DEFAULT '0'</query>
+			<query>ALTER TABLE {PREFIX}activities ADD dislike_count smallint(5) unsigned NOT NULL DEFAULT '0'</query>
+			<query>ALTER TABLE {PREFIX}activity_comments ADD dislike_count smallint(5) unsigned NOT NULL DEFAULT '0'</query>
+			<query>ALTER TABLE {PREFIX}comments ADD dislike_count smallint(5) unsigned NOT NULL DEFAULT '0'</query>
+			<query>ALTER TABLE {PREFIX}photos ADD dislike_count smallint(5) unsigned NOT NULL DEFAULT '0'</query>
+			<query>ALTER TABLE {PREFIX}topics ADD dislike_count smallint(5) unsigned NOT NULL DEFAULT '0'</query>
+			<query>ALTER TABLE {PREFIX}videos ADD dislike_count smallint(5) unsigned NOT NULL DEFAULT '0'</query>
+			<query>ALTER TABLE {PREFIX}likes ADD thumb_up tinyint(1) unsigned NOT NULL DEFAULT '1'</query>
+			<query>ALTER TABLE {PREFIX}groups ADD featured tinyint(1) unsigned NOT NULL DEFAULT '0'</query>
+			<query>INSERT IGNORE {PREFIX}themes (`key`, `name`, `core`) VALUES ('mobile', 'Mobile Theme', 1)</query>
+			<query>INSERT IGNORE {PREFIX}settings (field ,value) VALUES ('num_new_members', '10'), ('num_friend_suggestions', '2'), ('friend_birthdays', '0'), ('restricted_usernames', ''), ('enable_registration_code', '0'), ('registration_code', ''), ('languages', 'eng=English')</query>
+			<query>DELETE FROM {PREFIX}notifications WHERE user_id = 0</query>
+		</queries>
+	</version>
+	<version>
+		<number>1.3.1</number>
+	</version>
+	<version>
+		<number>1.3.2</number>
+		<queries>	
+			<query>ALTER TABLE {PREFIX}topics ADD locked tinyint(1) unsigned NOT NULL DEFAULT '0'</query>
+			<query>INSERT IGNORE {PREFIX}settings (field ,value) VALUES ('smtp_port', ''), ('google_dev_key', '')</query>
+		</queries>
+	</version>
+	<version>
+		<number>1.3.3</number>
+	</version>
+	<version>
+		<number>2.0.0</number>
+		<queries>
+			<query>CREATE TABLE IF NOT EXISTS `{PREFIX}acos` (
+				  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+				  `group` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+				  `key` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+				  `description` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+				  PRIMARY KEY (`id`),
+				  UNIQUE KEY `group` (`group`,`key`)
+				) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+			</query>	
+			<query>INSERT IGNORE `{PREFIX}acos` (`group`, `key`, `description`) VALUES
+					('user', 'username', 'Select username'),
+					('blog', 'view', 'View blog entry'),
+					('blog', 'create', 'Create/Edit blog entry'),
+					('album', 'create', 'Create/Edit photo album'),
+					('album', 'view', 'View photo album'),
+					('event', 'create', 'Create/Edit event'),
+					('event', 'view', 'View event'),
+					('group', 'create', 'Create/Edit group'),
+					('group', 'view', 'View group'),
+					('photo', 'upload', 'Upload photos'),
+					('photo', 'view', 'View photo'),
+					('topic', 'create', 'Create/Edit topic'),
+					('topic', 'view', 'View topic'),
+					('video', 'share', 'Share video'),
+					('video', 'view', 'View video'),
+					('attachment', 'upload', 'Upload attachment'),
+					('attachment', 'download', 'Download attachment');
+			</query>			
+			<query>CREATE TABLE IF NOT EXISTS `{PREFIX}attachments` (
+				  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+				  `plugin_id` int(10) unsigned NOT NULL,
+				  `target_id` int(10) unsigned NOT NULL,
+				  `user_id` int(10) unsigned NOT NULL,
+				  `filename` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+				  `original_filename` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+				  `extension` varchar(8) COLLATE utf8_unicode_ci NOT NULL,
+				  `created` datetime NOT NULL,
+				  `downloads` smallint(5) unsigned NOT NULL,
+				  PRIMARY KEY (`id`),
+				  KEY `plugin_id` (`plugin_id`,`target_id`),
+				  KEY `user_id` (`user_id`)
+				) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+			</query>
+			<query>CREATE TABLE IF NOT EXISTS `{PREFIX}hooks` (
+				  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+				  `name` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+				  `key` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+				  `controller` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+				  `action` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+				  `position` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+				  `weight` smallint(6) NOT NULL DEFAULT '0',
+				  `enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+				  `version` varchar(16) COLLATE utf8_unicode_ci NOT NULL,
+				  `settings` text COLLATE utf8_unicode_ci NOT NULL,
+				  `permission` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+				  PRIMARY KEY (`id`),
+				  UNIQUE KEY `key` (`key`),
+				  KEY `controller` (`controller`),
+				  KEY `action` (`action`)
+				) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+			</query>
+			<query>INSERT IGNORE `{PREFIX}hooks` (`id`, `name`, `key`, `controller`, `action`, `position`, `weight`, `enabled`, `version`, `settings`, `permission`) VALUES
+					(2, 'Featured Members', 'featured_members', 'home', 'index', 'home_sidebar', 6, 1, '2.0', 'a:0:{}', ''),
+					(16, 'Popular Blogs', 'popular_blogs', 'blogs', 'index', 'blogs_sidebar', 2, 1, '2.0', 'a:1:{s:9:"num_blogs";s:1:"5";}', ''),
+					(15, 'Popular Albums', 'popular_albums', 'photos', 'index', 'photos_sidebar', 3, 1, '2.0', 'a:1:{s:10:"num_albums";s:1:"5";}', ''),
+					(14, 'Today Birthdays', 'today_birthdays', 'home', 'index', 'home_sidebar', 4, 1, '2.0', 'a:1:{s:16:"friend_birthdays";s:1:"1";}', ''),
+					(12, 'Online Users', 'online_users', '', '', 'global_sidebar', 5, 1, '2.0', 'a:1:{s:16:"num_online_users";s:2:"12";}', ''),
+					(13, 'Recently Joined', 'recently_joined', 'home', 'index', 'home_sidebar', 7, 1, '2.0', 'a:1:{s:15:"num_new_members";s:2:"10";}', ''),
+					(17, 'Popular Events', 'popular_events', 'events', 'index', 'events_sidebar', 8, 1, '2.0', 'a:1:{s:10:"num_events";s:1:"5";}', ''),
+					(18, 'Popular Groups', 'popular_groups', 'groups', 'index', 'groups_sidebar', 9, 1, '2.0', 'a:1:{s:10:"num_groups";s:1:"5";}', ''),
+					(19, 'Popular Topics', 'popular_topics', 'topics', 'index', 'topics_sidebar', 10, 1, '2.0', 'a:1:{s:10:"num_topics";s:1:"5";}', ''),
+					(20, 'Popular Videos', 'popular_videos', 'videos', 'index', 'videos_sidebar', 11, 1, '2.0', 'a:1:{s:10:"num_videos";s:1:"5";}', ''),
+					(21, 'Friend Suggestions', 'friend_suggestions', '', '', 'global_sidebar', 12, 1, '2.0', 'a:1:{s:22:"num_friend_suggestions";s:1:"2";}', ''),
+					(22, 'Featured Groups', 'featured_groups', 'groups', 'index', 'groups_sidebar', 13, 1, '2.0', 'a:0:{}', '');
+			</query>
+			<query>CREATE TABLE IF NOT EXISTS `{PREFIX}languages` (
+				  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+				  `key` varchar(3) COLLATE utf8_unicode_ci NOT NULL,
+				  `name` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+				  PRIMARY KEY (`id`),
+				  UNIQUE KEY `key` (`key`)
+				) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;				
+			</query>
+			<query>INSERT IGNORE `{PREFIX}languages` (`id`, `key`, `name`) VALUES (1, 'eng', 'English');</query>
+			<query>CREATE TABLE IF NOT EXISTS `{PREFIX}pages` (
+				  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+				  `title` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+				  `alias` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+				  `content` text COLLATE utf8_unicode_ci NOT NULL,
+				  `permission` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+				  `params` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+				  `created` datetime NOT NULL,
+				  `modified` datetime NOT NULL,
+				  `menu` tinyint(1) unsigned NOT NULL DEFAULT '0',
+				  `icon_class` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+				  `weight` int(10) unsigned NOT NULL,
+				  PRIMARY KEY (`id`),
+				  UNIQUE KEY `alias` (`alias`)
+				) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+			</query>
+			<query>CREATE TABLE IF NOT EXISTS `{PREFIX}plugins` (
+				  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+				  `name` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+				  `key` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+				  `permission` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+				  `settings` text COLLATE utf8_unicode_ci NOT NULL,
+				  `enabled` tinyint(1) unsigned NOT NULL DEFAULT '1',
+				  `core` tinyint(1) unsigned NOT NULL,
+				  `version` varchar(16) COLLATE utf8_unicode_ci NOT NULL,
+				  `weight` smallint(5) unsigned NOT NULL,
+				  `menu` tinyint(1) unsigned NOT NULL DEFAULT '1',
+				  `url` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+				  `icon_class` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+				  PRIMARY KEY (`id`),
+				  UNIQUE KEY `key` (`key`)
+				) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;				
+			</query>
+			<query>INSERT IGNORE `{PREFIX}plugins` (`id`, `name`, `key`, `permission`, `settings`, `enabled`, `core`, `version`, `weight`, `menu`, `url`, `icon_class`) VALUES
+					(1, 'People', 'user', '', 'a:0:{}', 1, 1, '2.0', 1, 1, '/users', 'icon-user'),
+					(2, 'Blogs', 'blog', '', '', 1, 1, '2.0', 2, 1, '/blogs', 'icon-edit'),
+					(3, 'Photos', 'photo', '', '', 1, 1, '2.0', 3, 1, '/photos', 'icon-picture'),
+					(4, 'Videos', 'video', '', '', 1, 1, '2.0', 4, 1, '/videos', 'icon-facetime-video'),
+					(5, 'Topics', 'topic', '', '', 1, 1, '2.0', 5, 1, '/topics', 'icon-comments'),
+					(6, 'Groups', 'group', '', '', 1, 1, '2.0', 6, 1, '/groups', 'icon-group'),
+					(7, 'Events', 'event', '', '', 1, 1, '2.0', 7, 1, '/events', 'icon-calendar'),
+					(8, 'Conversations', 'conversation', '', '', 1, 1, '2.0', 8, 0, '', ''),
+					(9, 'Pages', 'page', '', '', 1, 1, '2.0', 9, 0, '', '');
+			</query>
+			<query>CREATE TABLE IF NOT EXISTS `{PREFIX}roles` (
+				  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+				  `name` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+				  `is_admin` tinyint(1) unsigned NOT NULL DEFAULT '0',
+				  `is_super` tinyint(1) unsigned NOT NULL DEFAULT '0',
+				  `params` text COLLATE utf8_unicode_ci NOT NULL,
+				  `core` tinyint(1) unsigned NOT NULL DEFAULT '0',
+				  PRIMARY KEY (`id`)
+				) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+			</query>	
+			<query>INSERT IGNORE `{PREFIX}roles` (`id`, `name`, `is_admin`, `is_super`, `params`, `core`) VALUES
+					(1, 'Super Admin', 1, 1, 'global_search,user_username,blog_view,blog_create,album_create,album_view,event_create,event_view,group_create,group_view,group_delete,photo_upload,photo_view,topic_create,topic_view,video_share,video_view,attachment_upload,attachment_download', 1),
+					(2, 'Member', 0, 0, 'global_search,user_username,blog_view,blog_create,album_create,album_view,event_create,event_view,group_create,group_view,photo_upload,photo_view,topic_create,topic_view,video_share,video_view,attachment_upload,attachment_download', 1),
+					(3, 'Guest', 0, 0, 'global_search,user_username,blog_view,blog_create,album_create,album_view,event_create,event_view,group_create,group_view,photo_upload,photo_view,topic_create,topic_view,video_share,video_view,attachment_upload,attachment_download', 1);
+			</query>
+			<query>CREATE TABLE IF NOT EXISTS `{PREFIX}spam_challenges` (
+				  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+				  `question` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
+				  `answers` text COLLATE utf8_unicode_ci NOT NULL,
+				  `active` tinyint(1) unsigned NOT NULL DEFAULT '1',
+				  PRIMARY KEY (`id`)
+				) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+			</query>			
+			<query>INSERT IGNORE {PREFIX}settings (field ,value) VALUES ('timezone', '0'), ('enable_timezone_selection', '1'), ('require_birthday', '1'), ('enable_spam_challenge', '0'), ('show_credit', '0'), ('name_change', '1')</query>
+			<query>ALTER TABLE {PREFIX}categories ADD parent_id smallint(5) unsigned NOT NULL DEFAULT '0', ADD header tinyint(1) unsigned NOT NULL DEFAULT '0', ADD create_permission varchar(256) COLLATE utf8_unicode_ci NOT NULL, ADD INDEX (parent_id)</query>
+			<query>ALTER TABLE {PREFIX}topics ADD attachment tinyint(1) unsigned NOT NULL DEFAULT '0'</query>
+			<query>ALTER TABLE {PREFIX}users CHANGE `timezone` `timezone` VARCHAR( 64 ) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL</query>
+		</queries>
+	</version>
+	<version>
+		<number>2.0.1</number>
+		<queries>	
+			<query>INSERT IGNORE {PREFIX}settings (field ,value) VALUES ('registration_message', '')</query>
+		</queries>
+	</version>
+	<version>
+		<number>2.0.2</number>
+		<queries></queries>
+	</version>
+</versions>

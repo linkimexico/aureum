@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" method="upgrade" client="site">
+    <!-- Name of the Module -->
+        <name>Multi Calendar</name> 
+ 
+    <!-- Name of the Author -->
+        <author>CodePeople</author> 
+ 
+    <!-- Version Date of the Module -->
+        <creationDate>2011-12-10</creationDate> 
+ 
+    <!-- Copyright information -->
+        <copyright>(c) 2010 CodePeople LLC - www.codepeople.net</copyright> 
+ 
+    <!-- License Information -->
+        <license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license> 
+ 
+    <!-- Author's email address -->
+        <authorEmail>info@joomlacalendars.com</authorEmail> 
+ 
+    <!-- Author's website -->
+        <authorUrl>www.joomlacalendars.com</authorUrl> 
+ 
+    <!-- Module version number -->
+        <version>1.0.0</version> 
+ 
+    <!-- Description of what the module does -->
+        <description>Provides an Multi View Calendar</description>
+ 
+    <!-- Listing of all files that should be installed for the module to function -->
+        <files>
+        <!-- The "module" attribute signifies that this is the main controller file -->
+                <filename module="mod_multicalendar">mod_multicalendar.php</filename>
+                <filename>index.html</filename>
+        </files>    
+        <languages>
+			<language tag="en-GB">languages/en-GB/en-GB.mod_multicalendar.ini</language>
+			<language tag="en-GB">languages/en-GB/en-GB.mod_multicalendar.sys.ini</language>
+		</languages>	
+    <!-- Optional parameters -->
+    <config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_multicalendar/models/fields" >
+		            <field name="the_calendar_id" type="multicalendar" default="" label="MULTICALENDAR" description="SELECT THE MULTI VIEW CALENDAR" required="true"/>
+		            <field name="views" type="checkboxlist" multiple="multiple" default="viewDay,viewWeek,viewMonth,viewNMonth" description="CHECK WHICH VIEWS YOU WANT TO SHOW ON THE FRONTEND" label="CALENDAR VIEWS" required="true">
+                            <option value="viewDay" >Day</option>
+                            <option value="viewWeek">Week</option>
+                            <option value="viewMonth">Month</option>
+                            <option value="viewNMonth">nMonth</option>
+                            <option value="viewList">List</option>
+                    </field>
+                    <field name="viewdefault" type="list" description="SELECT WHICH OF THE PREVIOUSLY CHECKED VIEWS WILL BE SHOWN AS DEFAULT" default="month" label="DEFAULT VIEW">
+                            <option value="day">Day</option>
+                            <option value="week">Week</option>
+                            <option value="month">Month</option>
+                            <option value="nMonth">nMonth</option>
+                            <option value="list">List</option>
+                    </field>
+					<field name="start_weekday" id="start_weekday" type="list" default="0" label="START DAY OF THE WEEK" description="SELECT THE START DAY OF THE WEEK">
+						<option value="0">Sunday</option>
+						<option value="1">Monday</option>
+						<option value="2">Tuesday</option>
+						<option value="3">Wednesday</option>
+						<option value="4">Thursday</option>
+						<option value="5">Friday</option>
+						<option value="6">Saturday</option>
+					</field>
+					<field name="cssStyle" id="cssStyle" type="list" default="cupertino" label="CSS STYLE" description="SELECT WHICH OF THE PRE-DEFINED COLOR SCHEMED YOU WANT TO USE">
+						<option value="ui-lightness">UI lightness</option>
+                        <option value="ui-darkness">UI darkness</option>
+                        <option value="smoothness">Smoothness</option>
+                        <option value="start">Start</option>
+                        <option value="redmond">Redmond</option>
+                        <option value="sunny">Sunny</option>
+                        <option value="overcast">Overcast</option>
+                        <option value="le-frog">Le Frog</option>
+                        <option value="flick">Flick</option>
+                        <option value="pepper-grinder">Pepper Grinder</option>
+                        <option value="eggplant">Eggplant</option>
+                        <option value="dark-hive">Dark Hive</option>
+                        <option value="cupertino">Cupertino</option>
+                        <option value="south-street">South Street</option>
+                        <option value="blitzer">Blitzer</option>
+                        <option value="humanity">Humanity</option>
+                        <option value="hot-sneaks">Hot sneaks</option>
+                        <option value="excite-bike">Excite Bike</option>
+                        <option value="vader">Vader</option>
+                        <option value="mint-choc">Mint Choc</option>
+                        <option value="black-tie">Black Tie</option>
+                        <option value="trontastic">Trontastic</option>
+                        <option value="swanky-purse">Swanky Purse</option>
+	    		    </field>
+	  				<field name="palette" type="palettes" default="" label="Palette Color" description="Select the Palette Color" required="true"/>
+	  				<field name="edition" type="checkbox" value="1" description="CHECK THIS TO ALLOW EDITION ON THE FRONTEND" label="ALLOW EDITION" />
+	  				<field name="buttons" type="checkboxlist" multiple="multiple" default="bnavigation" description="ENABLE OR DISABLE OTHER BUTTONS" label="OTHER BUTTONS">
+                            <option value="btoday">Show Today Button</option>
+                            <option value="bnavigation">Show Navigation Buttons</option>
+                            <option value="brefresh">Show Refresh Button</option>
+                    </field>
+                    <field name="numberOfMonths" type="integer" first="1" last="24" step="1" default="6" label="NUMBER OF MONTHS FOR NMONTHS VIEW" description="NUMBER OF MONTHS FOR NMONTHS VIEW"  />
+                    <field name="sample" type="nmonths" default="" label="OTHER PARAMETERS FOR NMONTHS VIEW" description="OTHER PARAMETERS FOR NMONTHS VIEW" />
+		        </fieldset>
+		        <fieldset name="advanced">
+		        	<field name="otherparams" id="otherparams" type="textarea" rows="3" cols="40" label="Additional parameters" description="Additional parameters" />
+		        	<field name="moduleclass_sfx" type="text" label="Module Class Suffix" description="Module Class Suffix" />
+		        </fieldset>
+        </fields>
+    </config>
+</extension>

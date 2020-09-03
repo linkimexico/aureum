@@ -1,0 +1,462 @@
+
+/* all ul's. for submenu's there is an override below */
+ul.adminmenum_menu{	
+	margin: 0;
+	padding: 0;	
+	list-style-type: none;		
+}
+
+/* level 2 ul. override below */
+ul.adminmenum_menu ul{
+	margin: 0;	
+	padding: 0;
+	list-style-type: none;
+	z-index: 110;	
+}
+
+/* all li's. for submenu's there is an override below */
+ul.adminmenum_menu li{
+	float: left;
+	margin: 0;
+	padding: 0;		
+	position: relative;
+	list-style: none;	
+	color: #D9D9D9;	
+}
+
+/* all a's. for submenu's there is an override below */
+body ul.adminmenum_menu li a{				
+	display: block;			
+	text-decoration: none;
+	font-size: 15px;
+	white-space: nowrap;	
+	line-height: 13px;
+	vertical-align: middle;		
+	background-repeat: no-repeat;
+	background-position: 5px 8px;	
+	color: #D9D9D9;
+}
+
+/* padding for all a's. override below */
+body ul.adminmenum_menu li a span.pad_a{
+	display: block;
+	padding: 10px 13px 7px 25px;
+}
+
+/* level 1 when no icon */
+body ul.adminmenum_menu li a.no_icon_level_1 span.pad_a{
+	padding-left: 10px;
+}
+
+/* a's on hover */
+ul.adminmenum_menu li a:hover, ul.adminmenum_menu li a:focus, ul.adminmenum_menu li a:active{
+	color: #fff;							
+}
+
+/* white arrows on level 1 dropdown parents */
+ul.adminmenum_menu li.parent span.arrow_down{	
+	background-image: url("../images/down.png");
+	background-position: right 50%;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+/* ul's submenu and deeper */
+ul.adminmenum_menu li ul{
+	position: absolute;
+	left: 0;	
+	font-weight: normal;
+	top: 35px;			
+}
+	
+/* all level 2 li's and deeper */	
+ul.adminmenum_menu li li{
+	float: none;
+	border: 0;				
+	width: 225px;						
+}
+	
+/* all level 2 a's and deeper */		
+ul.adminmenum_menu li li a{				
+	display: block;					
+	text-decoration: none;
+	padding: 0;
+	white-space: normal;
+	border: 1px solid transparent;
+	font-weight: normal;
+	line-height: 18px;	
+	background-position: 3px 3px;
+	color: #333;
+}
+
+/* padding for a's level 2 and deeper */
+ul.adminmenum_menu li li a span.pad_a{
+	padding: 2px 17px 2px 23px;		
+}
+				
+/* offset level 3 and deeper */
+ul.adminmenum_menu li li ul{
+	left: 215px;
+	top: -6px;
+}
+	
+/* arrow for parents for submenu and deeper	*/	
+ul.adminmenum_menu .arrow_right{
+	background-image: url("../images/right.png");
+	background-position: 207px 8px;	
+	background-repeat: no-repeat;	
+}
+
+/* arrow for parents for submenu and deeper hover */	
+ul.adminmenum_menu .arrow_right:hover{
+	background-image: url("../images/right_over.png");		
+}
+
+/* no hover for arrow right on text separator */
+ul.adminmenum_menu a.adminmenum_text_separator .arrow_right:hover{
+	background-image: url("../images/right.png");		
+}
+
+/* background color li's on hover first level */
+ul.adminmenum_menu li a:hover{
+	background-color: #10223E;
+}
+ 
+/* background color li's on hover submenu and deeper */
+ul.adminmenum_menu ul li a:hover{
+	background-color: #0083C5;
+}
+
+/* hide submenus */
+ul.adminmenum_menu li ul{
+	display: none;
+}
+
+/* line separator before or after menu. optional. see module configuration */
+.amm_line_separator{
+	height: 1px;
+	background: #6B6B6B;
+}
+
+/* a's and text separator when menu is disabled on edit-pages */
+ul.amm_menu_disabled li.amm_li_disabled a,
+ul.amm_menu_disabled li.amm_li_disabled a:hover{
+	cursor: default;	
+	background-color: none;
+	color: #647084;		
+}
+
+/* li's hover when menu is disabled on edit-pages */
+ul.amm_menu_disabled li.amm_li_disabled a:hover{
+	background-color: transparent;	
+}
+
+/* text separators no hand cursor */
+ul.adminmenum_menu a.adminmenum_text_separator,
+ul.adminmenum_menu a.adminmenum_text_separator_level_1{
+	cursor: default;
+}
+
+/* text separators level 2 and deeper */
+ul.adminmenum_menu a.adminmenum_text_separator,
+ul.adminmenum_menu a.adminmenum_text_separator:hover{
+	background-color: #F6F6F6;
+	color: #999999;
+}
+
+/* line separator horizontal */
+ul.adminmenum_menu li.adminmenum_line_separator_level_1 span{
+	display: block;	
+	background-color: #6B6B6B;
+	width: 1px;
+	height: 30px;
+}
+
+/* line separator horizontal when menu is disabled */
+ul.amm_menu_disabled li.adminmenum_line_separator_level_1 span{
+	background-color: #647084;
+}
+
+/* line separator vertical background */
+ul.adminmenum_menu li.adminmenum_line_separator,
+ul.adminmenum_menu li.adminmenum_line_separator:hover{
+	background-color: #fff;	
+	overflow: hidden;	
+}
+
+/* line separator vertical line */
+ul.adminmenum_menu li.adminmenum_line_separator span{
+	display: block;	
+	background-color: #D8D8D8;
+	height: 1px;	
+	margin: 9px 0;
+}
+
+/* placeholder of the show-hide button in the touchscreen view */
+ul.adminmenum_menu span.showhide{
+	float: right;
+	display: inline;
+	cursor: pointer;	
+}
+
+/* show-hide button in the touchscreen view */
+ul.adminmenum_menu span.showhide span{	
+	display: block;
+	height: 20px;
+	width: 60px;	
+	height: 32px;
+	margin-top: -31px;
+	border-left: 1px solid #57657B;	
+	background-repeat: no-repeat;
+	background-position: 27px 12px;	
+}
+
+/* open button in the touchscreen view */
+ul.adminmenum_menu span.showhide span.amm_open{
+	background-image: url(../images/open.gif);
+}
+
+/* open button in the touchscreen view when mouseover */
+ul.adminmenum_menu li li a:hover span.showhide span.amm_open{
+	background-image: url(../images/open_over.gif);
+}
+
+/* open button in the touchscreen view when mouseover text separators */
+ul.adminmenum_menu li li a.adminmenum_text_separator:hover span.showhide span.amm_open{
+	background-image: url(../images/open.gif);
+}
+
+/* close button in the touchscreen view */
+ul.adminmenum_menu span.showhide span.amm_close{
+	background-image: url(../images/close.gif);
+}
+
+/* close button in the touchscreen view when mouseover */
+ul.adminmenum_menu li li a:hover span.showhide span.amm_close{
+	background-image: url(../images/close_over.gif);
+}
+
+/* close button in the touchscreen view when mouseover text separators */
+ul.adminmenum_menu li li a.adminmenum_text_separator:hover span.showhide span.amm_close{
+	background-image: url(../images/close.gif);
+}
+
+/* different border color for show-hide button in the touchscreen view when level 2 or deeper */
+ul.adminmenum_menu li li span.showhide span{
+	border-color: #E4E7EB;	
+}
+
+/* for 738px or less */
+@media screen and (max-width: 738px){
+	/* menu items full with */
+	ul.adminmenum_menu li,
+	ul.adminmenum_menu li li{
+		width: 100%;
+	}
+	
+	ul.adminmenum_menu li{
+		background-color: #354763;
+		border-top: 1px solid #57657B;
+		border-bottom: 1px solid #101927;		
+	}
+	
+	body ul.adminmenum_menu li a{
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 12px;
+	}
+	
+	/* level2 and deeper */
+	ul.adminmenum_menu li ul li{
+		background-color: #fff;
+		border: 0;			
+	}
+	
+	ul.adminmenum_menu li ul li a{
+		text-transform: none;
+		font-weight: normal;
+		font-size: 15px;
+		border-bottom: 1px solid #E4E7EB;
+	}
+	
+	/* no dropdown image in touchscreen view */
+	ul.adminmenum_menu li.parent span.arrow_down{
+		background-image: none;
+	}	
+	
+	.amm_line_separator{
+		display: none;
+	}
+	
+	/* no menu left or right of this menu */
+	html body .nav-collapse ul.nav{
+		clear: both;		
+	}	
+	
+	/* no cascading of ul's, just throw them under eachother */
+	ul.adminmenum_menu li ul{
+		position: relative;
+		left: 0;	
+		font-weight: normal;
+		text-transform: uppercase;
+		top: 0;	
+		border: 0;		
+	}
+	
+	/* offset level 3 and deeper */
+	ul.adminmenum_menu li li ul{
+		left: 0;
+		top: 0;
+	}	
+	
+	/* hide arrows level 2 and deeper */	
+	ul.adminmenum_menu .arrow_right,
+	ul.adminmenum_menu .arrow_right:hover{
+		background-image: none;
+	}	
+	
+	/* line separator level 1 background */
+	ul.adminmenum_menu li.adminmenum_line_separator_level_1,
+	ul.adminmenum_menu li.adminmenum_line_separator_level_1:hover{
+		background-color: #152D52;	
+		overflow: hidden;	
+	}
+	
+	/* line separator level 1 line */
+	ul.adminmenum_menu li.adminmenum_line_separator_level_1 span{
+		display: block;			
+		height: 1px;			
+	}
+	
+	/* paddings and background positions for the 7 levels of the menu */
+	body ul.adminmenum_menu li a.no_icon_level_1 span.pad_a{
+		padding-left: 25px;
+	}	
+	
+	body ul.adminmenum_menu li li span.pad_a{		
+		padding-top: 8px;
+		padding-bottom: 4px;	
+	}
+	
+	ul.adminmenum_menu li li a{		
+		background-position: 22px 9px;
+	}	
+	
+	body ul.adminmenum_menu li li span.pad_a{
+		padding-left: 42px;
+	}
+	
+	ul.adminmenum_menu li li li a{		
+		background-position: 45px 9px;
+	}
+	
+	ul.adminmenum_menu li li li span.pad_a{
+		padding-left: 65px;
+	}
+	
+	ul.adminmenum_menu li li li li a{
+		
+		background-position: 68px 9px;
+	}
+	
+	ul.adminmenum_menu li li li li span.pad_a{
+		padding-left: 88px;
+	}
+	
+	ul.adminmenum_menu li li li li li a{		
+		background-position: 91px 9px;
+	}
+	
+	ul.adminmenum_menu li li li li li span.pad_a{
+		padding-left: 111px;
+	}
+	
+	ul.adminmenum_menu li li li li li li a{		
+		background-position: 114px 9px;
+	}
+	
+	ul.adminmenum_menu li li li li li li span.pad_a{
+		padding-left: 134px;
+	}
+	
+	ul.adminmenum_menu li li li li li li li a{		
+		background-position: 137px 9px;
+	}
+	
+	ul.adminmenum_menu li li li li li li li span.pad_a{
+		padding-left: 157px;
+	}
+	
+	ul.adminmenum_menu li.adminmenum_line_separator span{		
+		background-color: #fff;		
+	}
+	
+	
+}
+
+/* for 738px or more */
+@media screen and (min-width: 738px){
+	
+	/* hide submenus */	
+	ul.adminmenum_menu li:hover li ul,
+	ul.adminmenum_menu li li:hover li ul,
+	ul.adminmenum_menu li li li:hover li ul,
+	ul.adminmenum_menu li li li li:hover li ul,
+	ul.adminmenum_menu li li li li li:hover li ul,
+	ul.adminmenum_menu li li li li li li:hover li ul,
+	ul.adminmenum_menu li li li li li li li:hover li ul{
+		display: none;
+	}
+	
+	/* show submenus */
+	ul.adminmenum_menu li:hover ul,
+	ul.adminmenum_menu li li:hover ul,
+	ul.adminmenum_menu li li li:hover ul,
+	ul.adminmenum_menu li li li li:hover ul,
+	ul.adminmenum_menu li li li li li:hover ul,
+	ul.adminmenum_menu li li li li li li:hover ul,
+	ul.adminmenum_menu li li li li li li li:hover ul,
+	ul.adminmenum_menu li li li li li li li li:hover ul{
+		display: block;
+	}
+	
+	/*ul.adminmenum_menu li.adminmenum_text_separator_level_1 span.showhide,*/
+	ul.adminmenum_menu span.showhide{
+		display: none;
+	}
+	
+	/* submenu */
+	ul.adminmenum_menu li ul{
+		-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+		-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+		box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+		-webkit-background-clip: padding-box;
+		-moz-background-clip: padding;
+		background-clip: padding-box;
+		border: 1px solid #ccc;
+		border: 1px solid rgba(0,0,0,0.2);
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;	
+		background-color: #fff;		
+		width: 225px;	
+		padding: 5px 0;			
+	}
+	
+	/* arrow above submenu */
+	.adminmenum_submenu:before{
+		content: " ";	
+		display: inline-block;	
+		position: absolute;
+		left: 0;
+		height: 7px;
+		top: -6px;
+		width: 195px;
+		background: url("../images/submenu.png") 9px 0px no-repeat transparent;
+	}
+	
+	body ul.adminmenum_menu li li a{	
+		font-size: 12px;
+	}
+
+}

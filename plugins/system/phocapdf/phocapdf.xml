@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade" version="3.9">
+	<name>plg_system_phocapdf</name>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<creationDate>17/05/2020</creationDate>
+	<authorEmail></authorEmail>
+	<authorUrl>https://www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>3.0.10</version>
+	<description>PLG_SYSTEM_PHOCAPDF_DESCRIPTION</description>
+	<projectName>PhocaPDFSystemPlugin</projectName>
+
+	<files>
+		<filename plugin="phocapdf">index.html</filename>
+		<filename plugin="phocapdf">phocapdf.php</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_phocapdf.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_phocapdf.sys.ini</language>
+	</languages>
+
+	<administration>
+		<languages>
+			<language tag="en-GB">language/en-GB/en-GB.plg_system_phocapdf.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.plg_system_phocapdf.sys.ini</language>
+		</languages>
+	</administration>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">	
+		
+			
+		
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+		<server type="extension" name="PLG_SYSTEM_PHOCAPDF" priority="1"><![CDATA[https://raw.githubusercontent.com/PhocaCz/PhocaPDFSystemPlugin/master/manifest.xml]]></server>
+	</updateservers>
+</extension>

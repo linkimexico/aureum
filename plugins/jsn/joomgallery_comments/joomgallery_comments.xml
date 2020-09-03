@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="jsn" method="upgrade">
+	<name>Easy Profile - Joomgallery Comments Tab</name>
+	<author>JSN Project</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>fiorino.desanto@gmail.com</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.2.0</version>
+
+	<files>
+		<filename plugin="joomgallery_comments">joomgallery_comments.php</filename>
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_jsn/models/fields">
+				<field name="tabtitle" label="Title of Tab" type="text" filter="string" default="Gallery Comments" />
+				<field name="showEmptyTab" type="radio" default="1" label="Show empty Tab" description="Display the Comments-Tab even when there are no comments">
+		          <option value="0">Disabled</option>
+		          <option value="1">Enabled</option>
+		        </field>
+		        <field name="sortBy" type="list" default="jgco.cmtid DESC" label="Order images by:" description="">
+		          <option value="jgco.cmtid DESC">Date (newest first, default)</option>
+		          <option value="jgco.cmtid ASC">Date (oldest first)</option>
+		          <option value="jg.hits DESC">Hits (most viewed first)</option>
+		          <option value="cmtcount DESC">Comments (most commented first)</option>
+		          <option value="cmtcount ASC">Comments (least commented first)</option>
+		          <option value="rating DESC">Rating (best first)</option>
+		          <option value="rating ASC">Rating (worst first)</option>
+		        </field>
+		        <field name="picsperpage" type="text" size="5" default="" label="Pictures per Page" description="Leave empty (default) to use the setting from the JoomGallery component" />
+		        <field name="numcols" type="text" size="5" default="" label="Number of columns" description="Leave empty (default) to use the setting from the JoomGallery component" />
+		        <field name="pagination" type="radio" default="1" label="Display pagination (otherwise only first page)" description="Spreads the comments over several pages. If disabled, only the first page will be displayed, containing the # of comments entered above">
+		          <option value="0">Disabled</option>
+		            <option value="1">Enabled</option>
+		        </field>
+		        <field name="completeComment" type="radio" default="1" label="Complete comment (otherwise shortened)" description="Should the complete comment, or only the beginning be showed?">
+		          <option value="0">Disabled</option>
+		          <option value="1">Enabled</option>
+		        </field>
+		        <field name="showcmttext" type="radio" default="1" label="Show text" description="Show text of comment">
+		          <option value="0">Disabled</option>
+		          <option value="1">Enabled</option>
+		        </field>
+		        <field name="showcmtdate" type="radio" default="1" label="Show date" description="Show date of comment">
+		          <option value="0">Disabled</option>
+		          <option value="1">Enabled</option>
+		        </field>
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>

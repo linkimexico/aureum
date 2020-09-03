@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="user">
+	<name>Multi View Cal Creator</name>
+	<creationDate>2011-07-30</creationDate>
+	<author>CodePeople</author>
+	<authorEmail>info@joomlacalendars.com</authorEmail>
+	<authorUrl>www.joomlacalendars.com</authorUrl>
+	<copyright>(c)	2011 CodePeople	LLC	- www.codepeople.net</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<version>1.7.0</version>
+	<description>Plugin to automatically create Multi-View calendar for new users</description>
+	<files>
+		<filename plugin="multiviewcalcreator">multiviewcalcreator.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="name" type="text" size="40" description="" label="Name" required="true" />
+				<field name="permissions1" type="list" description="" default="1" label="Can add?">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                </field>
+                <field name="permissions2" type="list" description="" default="1" label="Can edit?">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                </field>
+                <field name="permissions3" type="list" description="" default="1" label="Can remove?">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                </field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

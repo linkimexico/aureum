@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="jsn" method="upgrade">
+	<name>Easy Profile - Ajax Userlist</name>
+	<author>JSN Project</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>fiorino.desanto@gmail.com</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.1</version>
+
+	<files>
+		<filename plugin="ajaxuserlist">ajaxuserlist.php</filename>
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_jsn/models/fields">
+
+				<field
+					name="menuitems"
+					label="Choose User List menu items where this plugin is disabled"
+					description="Ajax is always nice but in some cases this will not work properly, for example if you have map syncronized with user list, this map will be not updated with new users in the page"
+					type="parent"
+					table="menu"
+					where="a.published=1 AND a.link LIKE 'index.php?option=com_jsn&amp;view=list%'"
+					field="id"
+					multiple="true"
+					>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>

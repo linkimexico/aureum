@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <extension version="2.5" type="file" method="upgrade">
+      <name>RSForm!Pro Spanish Language Pack</name>
+      <version>1.0.0</version>
+      <creationDate>10 October 2016</creationDate>
+      <author>RSJoomla!</author>
+      <authorEmail></authorEmail>
+      <authorUrl></authorUrl>
+      <copyright>Copyright (C) 2016. All rights reserved.</copyright>
+      <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+      <description>RSForm!Pro Spanish Language Pack by RSJoomla!</description>
+      <fileset>
+          <!-- Admin component language folder for Joomla! 2.5-->
+		  <files folder="admin25" target="administrator/language/es-ES">
+			  <filename>es-ES.com_rsform.ini</filename>
+			  <filename>es-ES.com_rsform.menu.ini</filename>
+			  <filename>es-ES.com_rsform.sys.ini</filename>
+			  <filename>es-ES.plg_system_rsfpakismet.ini</filename>
+			  <filename>es-ES.plg_system_rsfpconstantcontact.ini</filename>
+			  <filename>es-ES.plg_system_rsfpmailchimp.ini</filename>
+			  <filename>es-ES.plg_system_rsfpmappings.ini</filename>
+			  <filename>es-ES.plg_system_rsfppaypal.ini</filename>
+			  <filename>es-ES.plg_system_rsfprecaptcha.ini</filename>
+			  <filename>es-ES.plg_system_rsfpregistration.ini</filename>
+			  <filename>es-ES.plg_system_rsfprsevents.ini</filename>
+			  <filename>es-ES.plg_system_rsfpsalesforce.ini</filename>
+		  </files>
+          <!-- Site component language folder  for Joomla! 2.5-->
+		  <files folder="site25" target="language/es-ES">
+			<filename>es-ES.com_rsform.ini</filename>
+		  </files>
+      </fileset>
+  </extension>

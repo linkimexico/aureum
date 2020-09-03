@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="j2store" method="upgrade">
+    <name>Retainful - Next order coupon</name>
+    <version>1.0.1</version>
+    <creationDate>JAN 2019</creationDate>
+    <author>Sathyaseelan</author>
+    <authorEmail>supports@j2store.org</authorEmail>
+    <authorUrl>http://www.j2store.org</authorUrl>
+    <copyright>2019 Cartrabbit Technologies</copyright>
+    <license>GNU General Public License v3 or later</license>
+    <description>PLG_J2STORE_APP_NEXTORDERCOUPON_DESC</description>
+    <scriptfile>script.app_retainfulcoupon.php</scriptfile>
+    <files>
+        <filename plugin="app_retainfulcoupon">app_retainfulcoupon.php</filename>
+        <folder>app_retainfulcoupon</folder>
+        <filename>index.html</filename>
+    </files>
+    <languages folder="languages/en-GB">
+        <language tag="en-GB">en-GB.plg_j2store_app_retainfulcoupon.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="J2STORE_BASIC_SETTINGS">
+                <field name="retainful_app_id" type="text" default=""
+                       label="j2store_default_coupon_app_id" description="j2store_default_coupon_app_id_desc"/>
+                <field name="verify" type="verifyappid" default=""
+                       addfieldpath="plugins/j2store/app_retainfulcoupon/app_retainfulcoupon/fields"
+                       label="" description="j2store_default_coupon_app_id_verify_button_desc"/>
+                <field name="coupon_payment_status" type="paymentstatus" multiple="multiple" default="4"
+                       addfieldpath="plugins/j2store/app_retainfulcoupon/app_retainfulcoupon/fields"
+                       label="j2store_default_coupon_payment_status" description="j2store_default_coupon_payment_status_desc"/>
+                <field name="coupon_amount" type="text" default=""
+                       label="j2store_couponnextorder_coupon_amount">
+                </field>
+                <field name="coupon_amount" type="text" default=""
+                       label="j2store_couponnextorder_coupon_amount">
+                </field>
+                <field name="is_retainful_connected" type="hidden" default="0"
+                       label="">
+                </field>
+                <field name="coupon_type" type="radio" default="0"
+                       label="j2store_couponnextorder_coupon_type">
+                    <option value="0">J2STORE_COUPONNEXTORDER_PERCENTAGE</option>
+                    <option value="1">J2STORE_COUPONNEXTORDER_FLAT</option>
+                </field>
+                <field name="apply_coupon_to" type="list" default="0"
+                       label="j2store_couponnextorder_coupon_type">
+                    <option value="0">J2STORE_COUPONNEXTORDER_TO_ANYONE</option>
+                    <option value="1">J2STORE_COUPONNEXTORDER_TO_VALIDATE_AT_CHECKOUT</option>
+                    <option value="2">J2STORE_COUPONNEXTORDER_APPLY_ONLY_AFTER_LOGIN</option>
+                </field>
+                <field name="coupon_message" type="messageeditor" filter="safehtml" default=""
+                       addfieldpath="plugins/j2store/app_retainfulcoupon/app_retainfulcoupon/fields"
+                       label="J2STORE_COUPONNEXTORDER_COUPON_MESSAGE" description="j2store_couponnextorder_coupon_message_desc">
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>

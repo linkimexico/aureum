@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6" client="administrator" method="upgrade">
+	<name>Admin Menu Manager</name>
+	<author>Carsten Engel</author>
+	<creationDate>April 2016</creationDate>
+	<copyright>(C) 2011-2016 Carsten Engel. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail></authorEmail>
+	<authorUrl>www.pages-and-items.com</authorUrl>
+	<version>2.2.7</version>
+	<description>Displays admin menu created with component Admin-Menu-Manager. Publish this module to position 'menu'.</description>
+	<files>		
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>javascript</folder>
+		<folder>language</folder>		
+		<folder>params</folder>
+		<folder>tmpl</folder>		
+		<filename>helper.php</filename>
+		<filename>index.html</filename>		
+		<filename module="mod_adminmenumanager">mod_adminmenumanager.php</filename>			
+	</files>
+	<languages>	
+		<language tag="af-ZA">language/af-ZA.mod_adminmenumanager.ini</language>
+		<language tag="af-ZA">language/af-ZA.mod_adminmenumanager.sys.ini</language>
+		<language tag="ar-EG">language/ar-EG.mod_adminmenumanager.ini</language>
+		<language tag="ar-EG">language/ar-EG.mod_adminmenumanager.sys.ini</language>
+		<language tag="be-BE">language/be-BE.mod_adminmenumanager.ini</language>
+		<language tag="be-BE">language/be-BE.mod_adminmenumanager.sys.ini</language>
+		<language tag="bg-BG">language/bg-BG.mod_adminmenumanager.ini</language>
+		<language tag="bg-BG">language/bg-BG.mod_adminmenumanager.sys.ini</language>
+		<language tag="ca-ES">language/ca-ES.mod_adminmenumanager.ini</language>
+		<language tag="ca-ES">language/ca-ES.mod_adminmenumanager.sys.ini</language>
+		<language tag="cs-CZ">language/cs-CZ.mod_adminmenumanager.ini</language>
+		<language tag="cs-CZ">language/cs-CZ.mod_adminmenumanager.sys.ini</language>
+		<language tag="cy-GB">language/cy-GB.mod_adminmenumanager.ini</language>
+		<language tag="cy-GB">language/cy-GB.mod_adminmenumanager.sys.ini</language>
+		<language tag="da-DK">language/da-DK.mod_adminmenumanager.ini</language>
+		<language tag="da-DK">language/da-DK.mod_adminmenumanager.sys.ini</language>
+		<language tag="de-DE">language/de-DE.mod_adminmenumanager.ini</language>
+		<language tag="de-DE">language/de-DE.mod_adminmenumanager.sys.ini</language>
+		<language tag="el-GR">language/el-GR.mod_adminmenumanager.ini</language>
+		<language tag="el-GR">language/el-GR.mod_adminmenumanager.sys.ini</language>
+		<language tag="en-GB">language/en-GB.mod_adminmenumanager.ini</language>
+		<language tag="en-GB">language/en-GB.mod_adminmenumanager.sys.ini</language>
+		<language tag="es-ES">language/es-ES.mod_adminmenumanager.ini</language>
+		<language tag="es-ES">language/es-ES.mod_adminmenumanager.sys.ini</language>
+		<language tag="et-EE">language/et-EE.mod_adminmenumanager.ini</language>
+		<language tag="et-EE">language/et-EE.mod_adminmenumanager.sys.ini</language>
+		<language tag="fa-IR">language/fa-IR.mod_adminmenumanager.ini</language>
+		<language tag="fa-IR">language/fa-IR.mod_adminmenumanager.sys.ini</language>
+		<language tag="fi-FI">language/fi-FI.mod_adminmenumanager.ini</language>
+		<language tag="fi-FI">language/fi-FI.mod_adminmenumanager.sys.ini</language>
+		<language tag="fr-FR">language/fr-FR.mod_adminmenumanager.ini</language>
+		<language tag="fr-FR">language/fr-FR.mod_adminmenumanager.sys.ini</language>
+		<language tag="ga-IE">language/ga-IE.mod_adminmenumanager.ini</language>
+		<language tag="ga-IE">language/ga-IE.mod_adminmenumanager.sys.ini</language>
+		<language tag="gl-ES">language/gl-ES.mod_adminmenumanager.ini</language>
+		<language tag="gl-ES">language/gl-ES.mod_adminmenumanager.sys.ini</language>
+		<language tag="he-IL">language/he-IL.mod_adminmenumanager.ini</language>
+		<language tag="he-IL">language/he-IL.mod_adminmenumanager.sys.ini</language>
+		<language tag="hi-IN">language/hi-IN.mod_adminmenumanager.ini</language>
+		<language tag="hi-IN">language/hi-IN.mod_adminmenumanager.sys.ini</language>
+		<language tag="hr-HR">language/hr-HR.mod_adminmenumanager.ini</language>
+		<language tag="hr-HR">language/hr-HR.mod_adminmenumanager.sys.ini</language>
+		<language tag="ht-NG">language/ht-NG.mod_adminmenumanager.ini</language>
+		<language tag="ht-NG">language/ht-NG.mod_adminmenumanager.sys.ini</language>
+		<language tag="hu-HU">language/hu-HU.mod_adminmenumanager.ini</language>
+		<language tag="hu-HU">language/hu-HU.mod_adminmenumanager.sys.ini</language>
+		<language tag="id-ID">language/id-ID.mod_adminmenumanager.ini</language>
+		<language tag="id-ID">language/id-ID.mod_adminmenumanager.sys.ini</language>
+		<language tag="is-IS">language/is-IS.mod_adminmenumanager.ini</language>
+		<language tag="is-IS">language/is-IS.mod_adminmenumanager.sys.ini</language>
+		<language tag="it-IT">language/it-IT.mod_adminmenumanager.ini</language>
+		<language tag="it-IT">language/it-IT.mod_adminmenumanager.sys.ini</language>
+		<language tag="ja-JP">language/ja-JP.mod_adminmenumanager.ini</language>
+		<language tag="ja-JP">language/ja-JP.mod_adminmenumanager.sys.ini</language>
+		<language tag="ko-KR">language/ko-KR.mod_adminmenumanager.ini</language>
+		<language tag="ko-KR">language/ko-KR.mod_adminmenumanager.sys.ini</language>
+		<language tag="lt-LT">language/lt-LT.mod_adminmenumanager.ini</language>
+		<language tag="lt-LT">language/lt-LT.mod_adminmenumanager.sys.ini</language>
+		<language tag="lv-LV">language/lv-LV.mod_adminmenumanager.ini</language>
+		<language tag="lv-LV">language/lv-LV.mod_adminmenumanager.sys.ini</language>
+		<language tag="mk-MK">language/mk-MK.mod_adminmenumanager.ini</language>
+		<language tag="mk-MK">language/mk-MK.mod_adminmenumanager.sys.ini</language>
+		<language tag="ms-MY">language/ms-MY.mod_adminmenumanager.ini</language>
+		<language tag="ms-MY">language/ms-MY.mod_adminmenumanager.sys.ini</language>
+		<language tag="mt-MT">language/mt-MT.mod_adminmenumanager.ini</language>
+		<language tag="mt-MT">language/mt-MT.mod_adminmenumanager.sys.ini</language>
+		<language tag="nl-NL">language/nl-NL.mod_adminmenumanager.ini</language>
+		<language tag="nl-NL">language/nl-NL.mod_adminmenumanager.sys.ini</language>
+		<language tag="no-NO">language/no-NO.mod_adminmenumanager.ini</language>
+		<language tag="no-NO">language/no-NO.mod_adminmenumanager.sys.ini</language>
+		<language tag="pl-PL">language/pl-PL.mod_adminmenumanager.ini</language>
+		<language tag="pl-PL">language/pl-PL.mod_adminmenumanager.sys.ini</language>
+		<language tag="pt-BR">language/pt-BR.mod_adminmenumanager.ini</language>
+		<language tag="pt-BR">language/pt-BR.mod_adminmenumanager.sys.ini</language>
+		<language tag="pt-PT">language/pt-PT.mod_adminmenumanager.ini</language>
+		<language tag="pt-PT">language/pt-PT.mod_adminmenumanager.sys.ini</language>
+		<language tag="ro-RO">language/ro-RO.mod_adminmenumanager.ini</language>
+		<language tag="ro-RO">language/ro-RO.mod_adminmenumanager.sys.ini</language>
+		<language tag="ru-RU">language/ru-RU.mod_adminmenumanager.ini</language>
+		<language tag="ru-RU">language/ru-RU.mod_adminmenumanager.sys.ini</language>
+		<language tag="sk-SK">language/sk-SK.mod_adminmenumanager.ini</language>
+		<language tag="sk-SK">language/sk-SK.mod_adminmenumanager.sys.ini</language>
+		<language tag="sl-SI">language/sl-SI.mod_adminmenumanager.ini</language>
+		<language tag="sl-SI">language/sl-SI.mod_adminmenumanager.sys.ini</language>
+		<language tag="sq-AL">language/sq-AL.mod_adminmenumanager.ini</language>
+		<language tag="sq-AL">language/sq-AL.mod_adminmenumanager.sys.ini</language>
+		<language tag="sr-RS">language/sr-RS.mod_adminmenumanager.ini</language>
+		<language tag="sr-RS">language/sr-RS.mod_adminmenumanager.sys.ini</language>
+		<language tag="sv-SE">language/sv-SE.mod_adminmenumanager.ini</language>
+		<language tag="sv-SE">language/sv-SE.mod_adminmenumanager.sys.ini</language>
+		<language tag="sw-TZ">language/sw-TZ.mod_adminmenumanager.ini</language>
+		<language tag="sw-TZ">language/sw-TZ.mod_adminmenumanager.sys.ini</language>
+		<language tag="th-TH">language/th-TH.mod_adminmenumanager.ini</language>
+		<language tag="th-TH">language/th-TH.mod_adminmenumanager.sys.ini</language>
+		<language tag="tl-PH">language/tl-PH.mod_adminmenumanager.ini</language>
+		<language tag="tl-PH">language/tl-PH.mod_adminmenumanager.sys.ini</language>
+		<language tag="tr-TR">language/tr-TR.mod_adminmenumanager.ini</language>
+		<language tag="tr-TR">language/tr-TR.mod_adminmenumanager.sys.ini</language>
+		<language tag="uk-UA">language/uk-UA.mod_adminmenumanager.ini</language>
+		<language tag="uk-UA">language/uk-UA.mod_adminmenumanager.sys.ini</language>
+		<language tag="vi-VN">language/vi-VN.mod_adminmenumanager.ini</language>
+		<language tag="vi-VN">language/vi-VN.mod_adminmenumanager.sys.ini</language>
+		<language tag="yi-IL">language/yi-IL.mod_adminmenumanager.ini</language>
+		<language tag="yi-IL">language/yi-IL.mod_adminmenumanager.sys.ini</language>
+		<language tag="zh-CN">language/zh-CN.mod_adminmenumanager.ini</language>
+		<language tag="zh-CN">language/zh-CN.mod_adminmenumanager.sys.ini</language>
+		<language tag="zh-TW">language/zh-TW.mod_adminmenumanager.ini</language>
+		<language tag="zh-TW">language/zh-TW.mod_adminmenumanager.sys.ini</language>
+	</languages>		
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="adminmenumanagermenu"
+					type="adminmenumanagermenu"
+					label="Menu"					
+					addfieldpath="/administrator/modules/mod_adminmenumanager/params"
+				/>	
+				<field
+					name="adminmenumanagermodpos"
+					type="adminmenumanagermodpos"
+					label="MOD_ADMINMENUMANAGER_PUBLISH_TO"					
+					addfieldpath="/administrator/modules/mod_adminmenumanager/params"
+				/>					
+				<field
+					name="allow_left"
+					default="1"
+					type="adminmenumanagerleft"
+					label="MOD_ADMINMENUMANAGER_NO_MODULE_LEFT"	
+					description="MOD_ADMINMENUMANAGER_NO_MODULE_LEFT_DESC"		
+					addfieldpath="/administrator/modules/mod_adminmenumanager/params"
+				/>					
+				<field
+					name="allow_right"
+					default="1"
+					type="adminmenumanagerright"
+					label="MOD_ADMINMENUMANAGER_NO_MODULE_RIGHT"	
+					description="MOD_ADMINMENUMANAGER_NO_MODULE_RIGHT_DESC"		
+					addfieldpath="/administrator/modules/mod_adminmenumanager/params"
+				/>	
+				<field
+					name="ammstyle"					
+					type="adminmenumanagerstyle"
+					default="auto"
+					label="MOD_ADMINMENUMANAGER_STYLE"							
+					addfieldpath="/administrator/modules/mod_adminmenumanager/params"
+				/>	
+				<field
+					name="extracss"
+					type="textarea"					
+					label="MOD_ADMINMENUMANAGER_ADDITIONAL_CSS">										
+				</field>
+				<field
+					name="adminmenumanagerdisable"					
+					type="adminmenumanagerdisable"
+					default="1"
+					label="MOD_ADMINMENUMANAGER_WHEN_EDIT_MODE"	
+					description="MOD_ADMINMENUMANAGER_WHEN_EDIT_MODE_DESC"								
+					addfieldpath="/administrator/modules/mod_adminmenumanager/params"
+				/>	
+				<field
+					name="adminmenumanagercursor"					
+					type="adminmenumanagercursor"
+					default="arrow"
+					label="MOD_ADMINMENUMANAGER_CURSOR_STYLE"	
+					description="MOD_ADMINMENUMANAGER_CURSOR_STYLE_DESC"								
+					addfieldpath="/administrator/modules/mod_adminmenumanager/params"
+				/>									
+			</fieldset>	
+			<fieldset name="advanced">	
+				<field
+					name="class_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" 
+				/>
+			</fieldset>		
+		</fields>
+	</config>
+</extension>

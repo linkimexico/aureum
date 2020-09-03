@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Social Network">
+		<message>
+			<![CDATA[Build your community]]>
+		</message>
+	</layout>
+	<!-- <fields name="request">
+		<fieldset name="request">
+			<field name="url" type="list"
+				description="COM_JSN_SOCIALPAGE"
+				label="COM_JSN_SOCIALPAGE_DESC"
+				default="users"
+			>
+				<option value="users">users</option>
+			</field>
+		</fieldset>
+	</fields> -->
+	
+</metadata>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info>
+	<name>Blogs</name>
+	<key>blog</key>
+	<version>2.0</version>
+	<description>Blogs Plugin</description>
+	<author>Jsn Project</author>
+	<website>http://www.easy-profile.com</website>
+	<menu>Jsn Project</menu>
+	<url>/blogs</url>
+	<icon_class>icon-edit</icon_class>
+</info>

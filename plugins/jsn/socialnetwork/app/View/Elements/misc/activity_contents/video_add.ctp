@@ -1,0 +1,7 @@
+<div class="activity_item">
+	<a href="<?php if ( !empty( $activity['Content']['Video']['group_id'] ) ): ?><?php echo $this->request->base?>/groups/view/<?php echo $activity['Content']['Video']['group_id']?>/video_id:<?php echo $activity['Content']['Video']['id']?><?php else: ?><?php echo $this->request->base?>/videos/view/<?php echo $activity['Content']['Video']['id']?>/<?php echo seoUrl($activity['Content']['Video']['title'])?><?php endif; ?>" class="vid_thumb" style="background-image:url(<?php echo $this->request->webroot?>uploads/videos/<?php echo $activity['Content']['Video']['thumb']?>)"></a>
+	<a href="<?php if ( !empty( $activity['Content']['Video']['group_id'] ) ): ?><?php echo $this->request->base?>/groups/view/<?php echo $activity['Content']['Video']['group_id']?>/video_id:<?php echo $activity['Content']['Video']['id']?><?php else: ?><?php echo $this->request->base?>/videos/view/<?php echo $activity['Content']['Video']['id']?>/<?php echo seoUrl($activity['Content']['Video']['title'])?><?php endif; ?>"><b><?php echo h($activity['Content']['Video']['title'])?></b></a><br />
+	<div class="date comment_message">
+		<?php echo h($this->Text->truncate($activity['Content']['Video']['description'], 200))?>
+	</div>
+</div>

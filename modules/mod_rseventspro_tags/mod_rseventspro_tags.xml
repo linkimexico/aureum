@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade" client="site">
+	<name>MOD_RSEVENTSPRO_TAGS</name>
+	<creationDate>May 2016</creationDate>
+	<author>RSJoomla!</author>
+	<authorEmail>support@rsjoomla.com</authorEmail>
+	<authorUrl>www.rsjoomla.com</authorUrl>
+	<copyright>(C) 2016 www.rsjoomla.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license> 
+	<version>1.1</version>
+	<description>MOD_RSEVENTSPRO_TAGS_DESCRIPTION</description>
+	
+	<updateservers>
+        <server type="extension" priority="1" name="RSEvents! Pro - Tags Module">https://www.rsjoomla.com/updates/com_rseventspro/Modules/mod_rseventspro_tags.xml</server>
+    </updateservers>
+
+	<files>
+		<filename module="mod_rseventspro_tags">mod_rseventspro_tags.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<media destination="mod_rseventspro_tags" folder="media">
+		<folder>css</folder>
+		<filename>index.html</filename>
+	</media>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_rseventspro_tags.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_rseventspro_tags.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="order" type="list" default="RANDOM" label="MOD_RSEVENTSPRO_TAGS_ORDERING" description="MOD_RSEVENTSPRO_TAGS_ORDERING_DESC">
+					<option value="DESC">MOD_RSEVENTSPRO_TAGS_DESCENDING</option>
+					<option value="ASC">MOD_RSEVENTSPRO_TAGS_ASCENDING</option>
+					<option value="RANDOM">MOD_RSEVENTSPRO_TAGS_RANDOM</option>
+				</field>
+				<field name="links" type="list" default="0" label="MOD_RSEVENTSPRO_TAGS_EVENTS_LINKS" description="MOD_RSEVENTSPRO_TAGS_EVENTS_LINKS_DESC">
+					<option value="0">MOD_RSEVENTSPRO_TAGS_EVENTS_LINKS_NEW</option>
+					<option value="1">MOD_RSEVENTSPRO_TAGS_EVENTS_LINKS_CURRENT</option>
+				</field>
+				<field name="itemid" type="text" default="" label="MOD_RSEVENTSPRO_TAGS_CUSTOM_ITEMID" description="MOD_RSEVENTSPRO_TAGS_CUSTOM_ITEMID_DESC" />
+				<field name="limit" type="text" default="10" label="MOD_RSEVENTSPRO_TAGS_LIMIT" description="MOD_RSEVENTSPRO_TAGS_LIMIT_DESC" />
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout" default="default" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

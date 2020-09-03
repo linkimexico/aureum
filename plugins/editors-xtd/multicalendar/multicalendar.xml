@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="editors-xtd">
+	<name>Editor Button - MultiCalendar</name>
+	<author>Codepeople</author>
+	<creationDate>July 2011</creationDate>
+	<copyright>Copyright (C) 2011 Codepeople. All rights reserved.</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>info@joomlacalendars.com</authorEmail>
+	<authorUrl>www.joomlacalendars.org</authorUrl>
+	<version>1.6</version>
+	<description>Insert Multi Calendar placeholders in article contents.</description>
+	<files>
+		<filename plugin="multicalendar">multicalendar.php</filename>
+	</files>
+</extension>

@@ -1,0 +1,338 @@
+html{
+	overflow-y: scroll;	
+}
+
+div.align_left{
+	text-align: left;
+}
+
+table#toolbar{
+	height: 52px;
+}
+
+div#amm_footer{
+	text-align: center;
+	margin-top: 80px;
+}
+
+.checkbox{
+	margin-bottom: -1px;
+}
+
+.url_field{
+	width: 600px;
+}
+
+td{
+	vertical-align: top;
+}
+
+.long_text_field{
+	width: 400px;
+}
+
+.hasTip{
+	border-bottom: 1px dashed #cccccc;	
+}
+
+div#element-box div.m form table.adminlist tr td a{
+	font-size: 100%;
+}
+
+#amm_header_messages div{
+	padding-left: 4px;
+}
+
+#version_checker_spinner{
+	display: none;
+}
+
+.amm_red{
+	color: #cc0000;
+}
+
+#amm_footer table{
+	width: 600px; 
+	margin: 0 auto; 	
+}
+
+fieldset.adminform .adminlist label{
+	width: auto;
+	display: inline;
+	float: none;
+	font-size: 100%;
+	clear: auto;
+}
+
+fieldset .amm_table input, fieldset .amm_table textarea, fieldset .amm_table select, fieldset .amm_table img, fieldset .amm_table button{
+	display: inline;
+	float: none;
+	margin: 0;
+}
+
+body table.amm_table{
+	font-size: 13px;
+	color: #000;
+	/*background: #fff;*/
+	border-color: white;
+}
+
+.amm_table td{
+	padding: 10px;
+}
+
+.amm_table td .radio, .amm_table td .checkbox{
+	margin: 0 5px 0 0;
+}
+
+#amm_footer table td{
+	text-align: left;	
+	width: 300px;
+	white-space: nowrap;
+}
+
+#amm_footer table td.text_right{
+	text-align: right;	
+}
+
+#amm_footer table td.five_pix{
+	width: 3px;
+	text-align: center;
+}
+
+.icon-48-amm_icon{
+	background-image: url('../images/icon.png');
+}
+
+div.pagetitle{
+	height: 52px;
+}
+
+.amm_green, .pi_green{	
+	color: green;/*same color as Joomla green text. see system info > dirs*/
+}
+
+.amm_nowrap{
+	white-space: nowrap;
+}
+
+.amm_page_title{
+	padding-left: 10px;
+}
+
+.icon_with_class2 img{
+	margin-bottom: -5px;
+}
+
+.icon_with_class{
+	display: block;
+	height: 16px;
+	width: 16px;
+	float: left;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+.icon_with_class2{
+	background-position: top;
+	display: inline-block;
+	height: 16px;
+	width: 16px;	
+}
+
+table.adminlist td.amm_quick_select_buttons{
+	padding: 0;
+}
+
+.amm_quick_select_buttons div#preview_div_a{
+	background: url('../images/bg_menu.gif') #fff repeat-y;
+}
+
+div#element-box div.m form table.adminlist tr td.amm_quick_select_buttons a,
+body form table.adminlist tr td.amm_quick_select_buttons a{
+	display: block;
+	width: 100px;	
+	background-repeat: no-repeat;
+	margin-bottom: 1px;
+	padding: 2px 10px 2px 25px;
+	background-position: 2px 2px;
+	border: 1px solid #ccc;
+	font-size: 10px;
+	line-height: 1.6em;
+	background-color: #fff;
+}
+
+.margin_1{
+	margin-left: 10px;
+}
+
+.margin_2{
+	margin-left: 20px;
+}
+
+.margin_3{
+	margin-left: 30px;
+}
+
+form label{
+	width: auto;
+	display: inline;
+	float: none;
+	font-size: 100%;
+	clear: auto;
+}
+
+/*
+fieldset.adminform legend.amm_legend{
+	padding: 0 10px;	
+}
+*/
+
+#preview_div_separator_text{
+	width: 150px;	
+	background-repeat: no-repeat;
+	margin-bottom: 1px;
+	padding: 2px 10px 2px 25px;	
+	border: 1px solid #ccc;
+	font-size: 10px;
+	line-height: 1.6em;
+	background-position:2px 2px;
+	background-repeat:no-repeat 
+}
+
+.center_tr_td td{
+	text-align: center;
+}
+
+#div_joomla table tr td table tr td table tr td{
+	vertical-align: middle;
+	padding: 0;
+}
+
+#div_joomla table tr td label{
+	clear: none;
+	padding: 0;
+	margin: 0;
+}
+
+#div_file, #div_textarea{
+	display: none;
+}
+
+.line_import{
+	display: block;
+	padding: 7px 0;
+}
+
+#div_joomla .margin_1{
+	margin-left: 0;
+}
+
+#div_joomla .margin_2{
+	margin-left: 10px;
+}
+
+#div_joomla .margin_3{
+	margin-left: 20px;
+}
+
+#div_joomla .select_all td{
+	padding-left: 3px;
+	font-size: 0.8em;
+	vertical-align: middle;
+}
+
+#div_joomla .select_all td.check{
+	width: 10px;
+}
+
+.icon-32-amm_export{
+	background-image: url('../images/export.png');
+}
+
+.icon-32-amm_import{
+	background-image: url('../images/import.png');
+}
+
+.trialheader_j3{
+	border: 1px solid #E3E3E3;		
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;	
+	margin-bottom: 10px;
+	padding: 9px;
+	background: #F5F5F5;	
+}
+
+#j-main-container .fieldset_margin_bottom{
+	margin-bottom: 50px;
+}
+
+.amm_clearboth{
+	clear: both;
+}
+
+.icon-amm_export{
+	background: url('../images/export_j3.png') no-repeat 1px 3px;
+}
+
+.icon-amm_import{
+	background: url('../images/import_j3.png') no-repeat 1px 3px;
+}
+
+.icon-amm_back{
+	background: url('../images/back_j3.png') no-repeat 1px 3px;
+}
+
+body form table.adminlist tr td.amm_quick_select_buttons table.joomla3 td input{
+	margin: 0 3px;
+}
+
+/* icon for j3 */
+.icon-amm_icon{
+	background-image: url('../images/icon-toolbar.png');	
+	margin-bottom: -9px;	
+	display: inline-block;
+	height: 36px;
+	line-height: 25px;
+	width: 48px;	
+}
+
+.pi_wrapper_nice{	
+	margin-left: 4px; 
+	background: #fff;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-bottom: 10px;
+}
+
+div.joomla3 fieldset.pi_wrapper_nice, div.joomla3 div.pi_wrapper_nice{	
+	background: #F9F9F9;
+	padding-left: 20px;	
+	margin-right: 10px;
+}
+
+fieldset.adminform legend.pi_legend{
+	padding: 0 10px;
+	width: auto;
+	border: 0;	
+}
+
+div.joomla3 fieldset.adminform legend.pi_legend{
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.pi_imgborder{
+	border: 1px solid #ccc;
+}
+
+.pi_show_bullets li{
+	list-style: square;
+	margin-left: 20px;
+}

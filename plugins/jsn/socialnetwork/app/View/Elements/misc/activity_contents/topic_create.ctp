@@ -1,0 +1,4 @@
+<div class="summary date">
+	<a href="<?php if ( !empty( $activity['Content']['Topic']['group_id'] ) ): ?><?php echo $this->request->base?>/groups/view/<?php echo $activity['Content']['Topic']['group_id']?>/topic_id:<?php echo $activity['Content']['Topic']['id']?><?php else: ?><?php echo $this->request->base?>/topics/view/<?php echo $activity['Content']['Topic']['id']?>/<?php echo seoUrl($activity['Content']['Topic']['title'])?><?php endif; ?>"><b><?php echo h($activity['Content']['Topic']['title'])?></b></a><br />
+	<?php echo $this->Text->truncate( strip_tags( str_replace( array('<br>','&nbsp;'), array(' ',''), $activity['Content']['Topic']['body'] ) ), 160 )?>
+</div>

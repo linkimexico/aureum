@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="captcha" method="upgrade">
+	<name>plg_captcha_customrecaptcha</name>
+	<version>2.2.0</version>
+	<creationDate>September 2017</creationDate>
+	<copyright>Copyright (C) 2011 Simplify Your Web. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later</license>
+	<author>Olivier Buisard</author>
+	<authorEmail>olivier.buisard@simplifyyourweb.com</authorEmail>
+	<authorUrl>www.simplifyyourweb.com</authorUrl>
+	<description>PLG_CAPTCHA_CUSTOMRECAPTCHA_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="customrecaptcha">customrecaptcha.php</filename>
+		<filename>index.html</filename>
+		<filename>license.txt</filename>
+		<filename>recaptchalib.php</filename>
+		<folder>fields</folder>
+		<folder>images</folder>
+		<folder>tmpl</folder>
+	</files>	 
+	<media destination="syw_customrecaptcha" folder="media">
+		<filename>index.html</filename>
+		<folder>js</folder>
+	</media>
+	<languages>
+		<language tag="da-DK">language/da-DK/da-DK.plg_captcha_customrecaptcha.ini</language>
+		<language tag="da-DK">language/da-DK/da-DK.plg_captcha_customrecaptcha.sys.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.plg_captcha_customrecaptcha.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.plg_captcha_customrecaptcha.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_captcha_customrecaptcha.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_captcha_customrecaptcha.sys.ini</language>
+		<language tag="es-ES">language/es-ES/es-ES.plg_captcha_customrecaptcha.ini</language>
+		<language tag="es-ES">language/es-ES/es-ES.plg_captcha_customrecaptcha.sys.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.plg_captcha_customrecaptcha.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.plg_captcha_customrecaptcha.sys.ini</language>
+		<language tag="it-IT">language/it-IT/it-IT.plg_captcha_customrecaptcha.ini</language>
+		<language tag="it-IT">language/it-IT/it-IT.plg_captcha_customrecaptcha.sys.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.plg_captcha_customrecaptcha.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.plg_captcha_customrecaptcha.sys.ini</language>
+		<language tag="pt-BR">language/pt-BR/pt-BR.plg_captcha_customrecaptcha.ini</language>
+		<language tag="pt-BR">language/pt-BR/pt-BR.plg_captcha_customrecaptcha.sys.ini</language>
+		<language tag="ru-RU">language/ru-RU/ru-RU.plg_captcha_customrecaptcha.ini</language>
+		<language tag="ru-RU">language/ru-RU/ru-RU.plg_captcha_customrecaptcha.sys.ini</language>
+		<language tag="sv-SE">language/sv-SE/sv-SE.plg_captcha_customrecaptcha.ini</language>
+		<language tag="sv-SE">language/sv-SE/sv-SE.plg_captcha_customrecaptcha.sys.ini</language>
+		<language tag="tr-TR">language/tr-TR/tr-TR.plg_captcha_customrecaptcha.ini</language>
+		<language tag="tr-TR">language/tr-TR/tr-TR.plg_captcha_customrecaptcha.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/plugins/captcha/customrecaptcha/fields">
+		
+			<fieldset name="basic" label="PLG_CAPTCHA_CUSTOMRECAPTCHA_INFORMATION_FIELDSET_LABEL" addfieldpath="/libraries/syw/fields">
+				
+				<field type="extensionversion" version="2.2.0" />
+				<field type="extensionauthor" />
+				<field type="extensionconnect" />				
+				<field type="extensiontranslators" translators="PLG_CAPTCHA_CUSTOMRECAPTCHA_TRANSLATORS" />
+				
+				<field type="extensionlinks" 
+					translate="https://simplifyyourweb.com/translators" 
+					onlinedoc="https://simplifyyourweb.com/documentation/custom-recaptcha" 
+					forum="https://simplifyyourweb.com/forum/41-custom-recaptcha" 
+					support="https://simplifyyourweb.com/support" 
+					report="https://simplifyyourweb.com/support" 
+	           		demo="http://demo3.simplifyyourweb.com/trombinoscope-extended/business/contact-greenface?anchor=form#teform" 
+	            	review="http://extensions.joomla.org/extensions/extension/access-a-security/site-security/custom-recaptcha" 
+	            	donate="https://simplifyyourweb.com/free-products/custom-recaptcha" />
+				
+				<field type="sywlibtest" minversion="1.4.12" downloadlink="http://www.simplifyyourweb.com/downloads/syw-extension-library" />
+			</fieldset>	
+			
+			<fieldset name="mandatory" label="PLG_CAPTCHA_CUSTOMRECAPTCHA_MANDATORY_FIELDSET_LABEL" addfieldpath="/libraries/syw/fields">
+			
+				<field type="sywonlinehelp" url="https://simplifyyourweb.com/documentation/custom-recaptcha/the-api-keys" class="alert alert-info"
+					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_MANDATORY_FIELDSET_DESC" />
+					
+				<field name="version" type="radio" default="v1" class="btn-group" 
+					label="PLG_CAPTCHA_CUSTOMRECAPTCHA_VERSION_LABEL"
+					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_VERSION_DESC">
+					<option value="v1">PLG_CAPTCHA_CUSTOMRECAPTCHA_VALUE_RECAPTCHAV1</option>
+					<option value="v2">PLG_CAPTCHA_CUSTOMRECAPTCHA_VALUE_RECAPTCHAV2</option>
+					<option value="invisible">PLG_CAPTCHA_CUSTOMRECAPTCHA_VALUE_RECAPTCHAINVISIBLEVERSION</option>
+				</field>
+								
+				<field type="imagelink" title="PLG_CAPTCHA_CUSTOMRECAPTCHA_TITLE_GETKEYS" link="https://www.google.com/recaptcha" text="PLG_CAPTCHA_CUSTOMRECAPTCHA_DOC_GETKEYS" />
+				
+				<field type="message" text="PLG_CAPTCHA_CUSTOMRECAPTCHA_WARNING_VERSIONKEYS" style="warning" />	
+			
+				<field name="public_key" type="text" default="" filter="string" size="50" class="input-xxlarge" 
+					label="PLG_CAPTCHA_CUSTOMRECAPTCHA_PUBLIC_KEY_LABEL"
+					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_PUBLIC_KEY_DESC" />
+					
+				<field type="message" text="PLG_CAPTCHA_CUSTOMRECAPTCHA_TESTSITEKEY" style="example" label="PLG_CAPTCHA_CUSTOMRECAPTCHA_TESTSITEKEY_LABEL" />
+
+				<field name="private_key" type="text" default="" filter="string" size="50" class="input-xxlarge" 
+					label="PLG_CAPTCHA_CUSTOMRECAPTCHA_PRIVATE_KEY_LABEL"
+					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_PRIVATE_KEY_DESC" />
+					
+				<field type="message" text="PLG_CAPTCHA_CUSTOMRECAPTCHA_TESTSECRETKEY" style="example" label="PLG_CAPTCHA_CUSTOMRECAPTCHA_TESTSECRETKEY_LABEL" />
+				
+				<field name="test_mode" type="radio" default="0" class="btn-group" 
+					label="PLG_CAPTCHA_CUSTOMRECAPTCHA_TESTMODE_LABEL"
+					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_TESTMODE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field type="message" text="PLG_CAPTCHA_CUSTOMRECAPTCHA_WARNING_MANDATORYKEYS" style="warning" showon="test_mode:0" />
+			</fieldset>	
+		
+			<fieldset name="version_1" label="PLG_CAPTCHA_CUSTOMRECAPTCHA_RECAPTCHAVERSION1_FIELDSET_LABEL" addfieldpath="/libraries/syw/fields">
+				
+				<field type="sywonlinehelp" url="https://simplifyyourweb.com/documentation/custom-recaptcha/the-options" class="alert alert-info"
+					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_RECAPTCHAVERSION1_FIELDSET_DESC" />				
+				
+				<field type="message" text="PLG_CAPTCHA_CUSTOMRECAPTCHA_WARNING_NOMORESUPPORT" style="error" />
+				
+				<field type="imagelink" title="reCAPTCHA V1" link="https://developers.google.com/recaptcha/old/docs/customization#Custom_Theming" text="PLG_CAPTCHA_CUSTOMRECAPTCHA_DOC_VERSION1" />
+									
+				<field name="layout" type="layoutselect" default="default" selectedcolor="#ff5475" 
+					label="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_LAYOUT_LABEL"
+					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_LAYOUT_DESC" />	
+					
+				<field name="classes" type="text" default="" filter="string" 
+	            	label="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_CLASSES_LABEL" 
+	            	description="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_CLASSES_DESC" />
+					
+				<field name="styles" type="editor" rows="10" default="" editor="codemirror|none" filter="raw" buttons="false" syntax="css" 
+	            	label="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_STYLES_LABEL" 
+	            	description="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_STYLES_DESC" />
+	            	
+	            <field type="message" text="PLG_CAPTCHA_CUSTOMRECAPTCHA_EXAMPLE_EXTRACSS" style="example" />
+			</fieldset>
+			
+			<fieldset name="version_2" label="PLG_CAPTCHA_CUSTOMRECAPTCHA_RECAPTCHAVERSION2_FIELDSET_LABEL" addfieldpath="/libraries/syw/fields">
+				
+				<field type="sywonlinehelp" url="https://simplifyyourweb.com/documentation/custom-recaptcha/the-options-nocaptcha" class="alert alert-info"
+					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_RECAPTCHAVERSION2_FIELDSET_DESC" />				
+			
+				<field type="imagelink" title="reCAPTCHA V2" link="https://developers.google.com/recaptcha/docs/display" text="PLG_CAPTCHA_CUSTOMRECAPTCHA_DOC_VERSION2" />
+				
+				<field name="theme" type="radio" default="light" class="btn-group" 
+					label="PLG_CAPTCHA_CUSTOMRECAPTCHA_THEME_LABEL"
+					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_THEME_DESC">
+					<option value="light">PLG_CAPTCHA_CUSTOMRECAPTCHA_VALUE_LIGHT</option>
+					<option value="dark">PLG_CAPTCHA_CUSTOMRECAPTCHA_VALUE_DARK</option>
+				</field>
+			
+				<field name="size" type="radio" default="normal" class="btn-group" 
+					label="PLG_CAPTCHA_CUSTOMRECAPTCHA_SIZE_LABEL"
+					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_SIZE_DESC">
+					<option value="normal">PLG_CAPTCHA_CUSTOMRECAPTCHA_VALUE_NORMAL</option>
+					<option value="compact">PLG_CAPTCHA_CUSTOMRECAPTCHA_VALUE_COMPACT</option>
+				</field>
+				
+				<field name="make_responsive_v2" type="radio" default="0" class="btn-group" showon="size:normal" 
+					label="PLG_CAPTCHA_CUSTOMRECAPTCHA_MAKERESPONSIVE_LABEL"
+					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_MAKERESPONSIVE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			
+				<field name="type" type="radio" default="image" class="btn-group" 
+					label="PLG_CAPTCHA_CUSTOMRECAPTCHA_TYPE_LABEL"
+					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_TYPE_DESC">
+					<option value="image">PLG_CAPTCHA_CUSTOMRECAPTCHA_VALUE_IMAGE</option>
+					<option value="audio">PLG_CAPTCHA_CUSTOMRECAPTCHA_VALUE_AUDIO</option>
+				</field>
+				
+				<field name="force_fallback" type="radio" default="0" class="btn-group" 
+					label="PLG_CAPTCHA_CUSTOMRECAPTCHA_FORCEFALLBACK_LABEL"
+					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_FORCEFALLBACK_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			
+				<field name="tabindex" type="sywverbosetext" size="4" default="0" filter="integer" 
+	            	label="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_TABINDEX_LABEL" 
+	            	description="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_TABINDEX_DESC" />	
+					
+				<field name="classes_v2" type="text" default="" filter="string" 
+	            	label="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_CLASSES_LABEL" 
+	            	description="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_CLASSES_DESC" />
+				
+				<field name="styles_v2" type="editor" rows="10" default="" editor="codemirror|none" filter="raw" buttons="false" syntax="css" 
+	            	label="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_STYLES_LABEL" 
+	            	description="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_STYLES_DESC" />
+	            	
+	            <field type="message" text="PLG_CAPTCHA_CUSTOMRECAPTCHA_EXAMPLE_EXTRACSS_V2" style="example" />	
+	            	
+	            <field name="callback" type="text" default="" filter="string" 
+	            	label="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_CALLBACK_LABEL" 
+	            	description="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_CALLBACK_DESC" />
+	            	
+	            <field name="expired_callback" type="text" default="" filter="string" 
+	            	label="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_EXPIRED_CALLBACK_LABEL" 
+	            	description="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_EXPIRED_CALLBACK_DESC" />
+	            	
+	            <field name="error_callback" type="text" default="" filter="string" 
+	            	label="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_ERROR_CALLBACK_LABEL" 
+	            	description="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_ERROR_CALLBACK_DESC" />				
+			</fieldset>
+			
+			<fieldset name="version_invisible" label="PLG_CAPTCHA_CUSTOMRECAPTCHA_RECAPTCHAVERSIONINVISIBLE_FIELDSET_LABEL" addfieldpath="/libraries/syw/fields">
+				
+				<field type="sywonlinehelp" url="https://simplifyyourweb.com/documentation/custom-recaptcha/the-options-invisible" class="alert alert-info"
+					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_RECAPTCHAVERSIONINVISIBLE_FIELDSET_DESC" />
+				
+				<field type="imagelink" title="Invisible reCAPTCHA" link="https://developers.google.com/recaptcha/docs/invisible" text="PLG_CAPTCHA_CUSTOMRECAPTCHA_DOC_VERSIONINVISIBLE" />
+			
+				<field name="badge" type="radio" default="bottomright" class="btn-group" 
+					label="PLG_CAPTCHA_CUSTOMRECAPTCHA_BADGE_LABEL"
+					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_BADGE_DESC">
+					<option value="bottomright">PLG_CAPTCHA_CUSTOMRECAPTCHA_VALUE_BOTTOMRIGHT</option>
+					<option value="bottomleft">PLG_CAPTCHA_CUSTOMRECAPTCHA_VALUE_BOTTOMLEFT</option>
+					<option value="inline">PLG_CAPTCHA_CUSTOMRECAPTCHA_VALUE_INLINE</option>
+				</field>
+				
+				<field name="make_responsive_invisible" type="radio" default="0" class="btn-group" showon="badge:inline" 
+					label="PLG_CAPTCHA_CUSTOMRECAPTCHA_MAKERESPONSIVE_LABEL"
+					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_MAKERESPONSIVE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field name="add_legal" type="radio" default="0" class="btn-group" 
+					label="PLG_CAPTCHA_CUSTOMRECAPTCHA_ADDLEGALINFO_LABEL"
+					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_ADDLEGALINFO_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			
+				<field name="tabindex_invisible" type="sywverbosetext" size="4" default="0" filter="integer" 
+	            	label="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_TABINDEX_LABEL" 
+	            	description="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_TABINDEX_DESC" />				
+					
+				<field name="classes_invisible" type="text" default="" filter="string" 
+	            	label="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_CLASSES_LABEL" 
+	            	description="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_CLASSES_DESC" />
+				
+				<field name="styles_invisible" type="editor" rows="10" default="" editor="codemirror|none" filter="raw" buttons="false" syntax="css" 
+	            	label="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_STYLES_LABEL" 
+	            	description="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_STYLES_DESC" />
+	            	
+	            <field type="message" text="PLG_CAPTCHA_CUSTOMRECAPTCHA_EXAMPLE_EXTRACSS_INVISIBLE" style="example" />	            
+	            	
+	            <field name="callback_invisible" type="text" default="submitCustomReCaptchaInvisible" filter="string" 
+	            	label="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_CALLBACK_LABEL" 
+	            	description="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_CALLBACK_DESC" />
+	            	
+	            <field name="expired_callback_invisible" type="text" default="" filter="string" 
+	            	label="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_EXPIRED_CALLBACK_LABEL" 
+	            	description="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_EXPIRED_CALLBACK_DESC" />
+	            	
+	            <field name="error_callback_invisible" type="text" default="" filter="string" 
+	            	label="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_ERROR_CALLBACK_LABEL" 
+	            	description="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_ERROR_CALLBACK_DESC" />	
+			</fieldset>
+			
+<!-- 			<fieldset name="advanced" addfieldpath="/libraries/syw/fields">  -->
+	            	
+<!-- 				<field name="inline_scripts" type="radio" default="0" class="btn-group"  -->
+<!-- 					label="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_INLINESCRIPTS_LABEL"  -->
+<!-- 					description="PLG_CAPTCHA_CUSTOMRECAPTCHA_FIELD_INLINESCRIPTS_DESC"> -->
+<!--                     <option value="0">JNO</option> -->
+<!-- 					<option value="1">JYES</option> -->
+<!-- 				</field> -->
+<!-- 			</fieldset> -->
+		</fields>
+	</config>
+</extension>

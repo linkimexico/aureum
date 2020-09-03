@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="jsn" method="upgrade">
+	<name>Easy Profile - Social Network</name>
+	<author>JSN Project</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>fiorino.desanto@gmail.com</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.1.7</version>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.sql</file>
+		</sql>
+	</install>
+
+	<files>
+		<filename plugin="socialnetwork">socialnetwork.php</filename>
+		<folder>sql</folder>
+		<folder>app</folder>
+		<folder>lib</folder>
+		<folder>vendors</folder>
+		<folder>plugins</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_jsn/models/fields">
+				<field
+					name="search_fields"
+					label="Search Fields"
+					description="Set the fields to show on People Page"
+					type="parent"
+					level="2"
+					table="jsn_fields"
+					where="a.search=1 AND a.type NOT LIKE 'password' AND a.type NOT LIKE 'delimeter' AND a.type NOT LIKE 'image' AND a.type NOT LIKE 'filetype'"
+					field="id"
+					multiple="true"
+					>
+					<option value="formatname">Formatname</option>
+					<option value="status">Online Status</option>
+				</field>
+				<field
+					name="birthday_field"
+					label="Birthday Field"
+					description="Set the Birthday field"
+					type="parent"
+					level="2"
+					table="jsn_fields"
+					where="a.type LIKE 'date'"
+					field_id="alias"
+					default=""
+					>
+					<option value="">Not Set</option>
+				</field>
+				<field name="exclude_ids"
+					type="text"
+					label="Exclude Users From People List"
+					description="Please use a comma separated ids"
+				/>
+				<field name="include_groups"
+					type="usergroup"
+					multiple="true"
+					label="Include only these Usergroups From People List"
+					description=""
+				/>
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+        <server type="extension" priority="1" name="Easy Profile">https://www.easy-profile.com/update.php?p=socialnetwork-plugin&amp;file=extension.xml</server>
+    </updateservers>
+</extension>

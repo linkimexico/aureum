@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6" method="upgrade">
+    <name>COM_ADMINMENUMANAGER</name>
+    <creationDate>april 2019</creationDate>
+    <author>Carsten Engel</author>
+    <copyright>Copyright 2012 - 2019 (C) Carsten Engel - Engelweb. All rights reserved.</copyright>
+    <authorEmail></authorEmail>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorUrl>www.pages-and-items.com</authorUrl>
+    <version>2.3.2</version>
+    <description>Manager for custom administrator menus at the Joomla backend.</description>	    
+    <administration>  
+		<menu img="components/com_adminmenumanager/images/adminmenumanager_icon_small.png">COM_ADMINMENUMANAGER</menu>
+		<submenu>			
+			<menu link="option=com_adminmenumanager&amp;view=configuration" view="configuration" img="components/com_adminmenumanager/images/com_adminmenumanager_configuration.png" 
+				alt="Configuration">COM_ADMINMENUMANAGER_CONFIG</menu>
+			<menu link="option=com_adminmenumanager&amp;view=menus" view="menus" img="components/com_adminmenumanager/images/com_adminmenumanager_menus.png" 
+				alt="Menus">JOPTION_MENUS</menu>
+			<menu link="option=com_adminmenumanager&amp;view=menuitems" view="menuitems" img="components/com_adminmenumanager/images/com_adminmenumanager_menuitems.png" 
+				alt="Menuitems">COM_ADMINMENUMANAGER_MENUITEMS</menu>
+			<menu link="option=com_adminmenumanager&amp;view=menuitemsimport" view="menuitemsimport" img="components/com_adminmenumanager/images/com_adminmenumanager_menuitems.png" 
+				alt="Menuitems import">COM_ADMINMENUMANAGER_MENUITEMSIMPORT</menu>
+			<menu link="option=com_adminmenumanager&amp;view=users" view="users" img="components/com_adminmenumanager/images/com_adminmenumanager_users.png" 
+				alt="Users">COM_ADMINMENUMANAGER_USERS</menu>			
+			<menu link="option=com_adminmenumanager&amp;view=info" view="info" img="components/com_adminmenumanager/images/com_adminmenumanager_info.png" 
+				alt="Info and Support">COM_ADMINMENUMANAGER_INFO</menu>						
+		</submenu>      
+		<languages folder="admin">
+			<language tag="af-ZA">language/af-ZA.com_adminmenumanager.ini</language>
+			<language tag="af-ZA">language/af-ZA.com_adminmenumanager.sys.ini</language>
+			<language tag="ar-EG">language/ar-EG.com_adminmenumanager.ini</language>
+			<language tag="ar-EG">language/ar-EG.com_adminmenumanager.sys.ini</language>
+			<language tag="be-BE">language/be-BE.com_adminmenumanager.ini</language>
+			<language tag="be-BE">language/be-BE.com_adminmenumanager.sys.ini</language>
+			<language tag="bg-BG">language/bg-BG.com_adminmenumanager.ini</language>
+			<language tag="bg-BG">language/bg-BG.com_adminmenumanager.sys.ini</language>
+			<language tag="ca-ES">language/ca-ES.com_adminmenumanager.ini</language>
+			<language tag="ca-ES">language/ca-ES.com_adminmenumanager.sys.ini</language>
+			<language tag="cs-CZ">language/cs-CZ.com_adminmenumanager.ini</language>
+			<language tag="cs-CZ">language/cs-CZ.com_adminmenumanager.sys.ini</language>
+			<language tag="cy-GB">language/cy-GB.com_adminmenumanager.ini</language>
+			<language tag="cy-GB">language/cy-GB.com_adminmenumanager.sys.ini</language>
+			<language tag="da-DK">language/da-DK.com_adminmenumanager.ini</language>
+			<language tag="da-DK">language/da-DK.com_adminmenumanager.sys.ini</language>
+			<language tag="de-DE">language/de-DE.com_adminmenumanager.ini</language>
+			<language tag="de-DE">language/de-DE.com_adminmenumanager.sys.ini</language>
+			<language tag="el-GR">language/el-GR.com_adminmenumanager.ini</language>
+			<language tag="el-GR">language/el-GR.com_adminmenumanager.sys.ini</language>
+			<language tag="en-GB">language/en-GB.com_adminmenumanager.ini</language>
+			<language tag="en-GB">language/en-GB.com_adminmenumanager.sys.ini</language>
+			<language tag="es-ES">language/es-ES.com_adminmenumanager.ini</language>
+			<language tag="es-ES">language/es-ES.com_adminmenumanager.sys.ini</language>
+			<language tag="et-EE">language/et-EE.com_adminmenumanager.ini</language>
+			<language tag="et-EE">language/et-EE.com_adminmenumanager.sys.ini</language>
+			<language tag="fa-IR">language/fa-IR.com_adminmenumanager.ini</language>
+			<language tag="fa-IR">language/fa-IR.com_adminmenumanager.sys.ini</language>
+			<language tag="fi-FI">language/fi-FI.com_adminmenumanager.ini</language>
+			<language tag="fi-FI">language/fi-FI.com_adminmenumanager.sys.ini</language>
+			<language tag="fr-FR">language/fr-FR.com_adminmenumanager.ini</language>
+			<language tag="fr-FR">language/fr-FR.com_adminmenumanager.sys.ini</language>
+			<language tag="ga-IE">language/ga-IE.com_adminmenumanager.ini</language>
+			<language tag="ga-IE">language/ga-IE.com_adminmenumanager.sys.ini</language>
+			<language tag="gl-ES">language/gl-ES.com_adminmenumanager.ini</language>
+			<language tag="gl-ES">language/gl-ES.com_adminmenumanager.sys.ini</language>
+			<language tag="he-IL">language/he-IL.com_adminmenumanager.ini</language>
+			<language tag="he-IL">language/he-IL.com_adminmenumanager.sys.ini</language>
+			<language tag="hi-IN">language/hi-IN.com_adminmenumanager.ini</language>
+			<language tag="hi-IN">language/hi-IN.com_adminmenumanager.sys.ini</language>
+			<language tag="hr-HR">language/hr-HR.com_adminmenumanager.ini</language>
+			<language tag="hr-HR">language/hr-HR.com_adminmenumanager.sys.ini</language>
+			<language tag="ht-NG">language/ht-NG.com_adminmenumanager.ini</language>
+			<language tag="ht-NG">language/ht-NG.com_adminmenumanager.sys.ini</language>
+			<language tag="hu-HU">language/hu-HU.com_adminmenumanager.ini</language>
+			<language tag="hu-HU">language/hu-HU.com_adminmenumanager.sys.ini</language>
+			<language tag="id-ID">language/id-ID.com_adminmenumanager.ini</language>
+			<language tag="id-ID">language/id-ID.com_adminmenumanager.sys.ini</language>
+			<language tag="is-IS">language/is-IS.com_adminmenumanager.ini</language>
+			<language tag="is-IS">language/is-IS.com_adminmenumanager.sys.ini</language>
+			<language tag="it-IT">language/it-IT.com_adminmenumanager.ini</language>
+			<language tag="it-IT">language/it-IT.com_adminmenumanager.sys.ini</language>
+			<language tag="ja-JP">language/ja-JP.com_adminmenumanager.ini</language>
+			<language tag="ja-JP">language/ja-JP.com_adminmenumanager.sys.ini</language>
+			<language tag="ko-KR">language/ko-KR.com_adminmenumanager.ini</language>
+			<language tag="ko-KR">language/ko-KR.com_adminmenumanager.sys.ini</language>
+			<language tag="lt-LT">language/lt-LT.com_adminmenumanager.ini</language>
+			<language tag="lt-LT">language/lt-LT.com_adminmenumanager.sys.ini</language>
+			<language tag="lv-LV">language/lv-LV.com_adminmenumanager.ini</language>
+			<language tag="lv-LV">language/lv-LV.com_adminmenumanager.sys.ini</language>
+			<language tag="mk-MK">language/mk-MK.com_adminmenumanager.ini</language>
+			<language tag="mk-MK">language/mk-MK.com_adminmenumanager.sys.ini</language>
+			<language tag="ms-MY">language/ms-MY.com_adminmenumanager.ini</language>
+			<language tag="ms-MY">language/ms-MY.com_adminmenumanager.sys.ini</language>
+			<language tag="mt-MT">language/mt-MT.com_adminmenumanager.ini</language>
+			<language tag="mt-MT">language/mt-MT.com_adminmenumanager.sys.ini</language>
+			<language tag="nl-NL">language/nl-NL.com_adminmenumanager.ini</language>
+			<language tag="nl-NL">language/nl-NL.com_adminmenumanager.sys.ini</language>
+			<language tag="no-NO">language/no-NO.com_adminmenumanager.ini</language>
+			<language tag="no-NO">language/no-NO.com_adminmenumanager.sys.ini</language>
+			<language tag="pl-PL">language/pl-PL.com_adminmenumanager.ini</language>
+			<language tag="pl-PL">language/pl-PL.com_adminmenumanager.sys.ini</language>
+			<language tag="pt-BR">language/pt-BR.com_adminmenumanager.ini</language>
+			<language tag="pt-BR">language/pt-BR.com_adminmenumanager.sys.ini</language>
+			<language tag="pt-PT">language/pt-PT.com_adminmenumanager.ini</language>
+			<language tag="pt-PT">language/pt-PT.com_adminmenumanager.sys.ini</language>			
+			<language tag="ro-RO">language/ro-RO.com_adminmenumanager.ini</language>
+			<language tag="ro-RO">language/ro-RO.com_adminmenumanager.sys.ini</language>
+			<language tag="ru-RU">language/ru-RU.com_adminmenumanager.ini</language>
+			<language tag="ru-RU">language/ru-RU.com_adminmenumanager.sys.ini</language>
+			<language tag="sk-SK">language/sk-SK.com_adminmenumanager.ini</language>
+			<language tag="sk-SK">language/sk-SK.com_adminmenumanager.sys.ini</language>
+			<language tag="sl-SI">language/sl-SI.com_adminmenumanager.ini</language>
+			<language tag="sl-SI">language/sl-SI.com_adminmenumanager.sys.ini</language>
+			<language tag="sq-AL">language/sq-AL.com_adminmenumanager.ini</language>
+			<language tag="sq-AL">language/sq-AL.com_adminmenumanager.sys.ini</language>
+			<language tag="sr-RS">language/sr-RS.com_adminmenumanager.ini</language>
+			<language tag="sr-RS">language/sr-RS.com_adminmenumanager.sys.ini</language>
+			<language tag="sv-SE">language/sv-SE.com_adminmenumanager.ini</language>
+			<language tag="sv-SE">language/sv-SE.com_adminmenumanager.sys.ini</language>
+			<language tag="sw-TZ">language/sw-TZ.com_adminmenumanager.ini</language>
+			<language tag="sw-TZ">language/sw-TZ.com_adminmenumanager.sys.ini</language>
+			<language tag="th-TH">language/th-TH.com_adminmenumanager.ini</language>
+			<language tag="th-TH">language/th-TH.com_adminmenumanager.sys.ini</language>
+			<language tag="tl-PH">language/tl-PH.com_adminmenumanager.ini</language>
+			<language tag="tl-PH">language/tl-PH.com_adminmenumanager.sys.ini</language>
+			<language tag="tr-TR">language/tr-TR.com_adminmenumanager.ini</language>
+			<language tag="tr-TR">language/tr-TR.com_adminmenumanager.sys.ini</language>
+			<language tag="uk-UA">language/uk-UA.com_adminmenumanager.ini</language>
+			<language tag="uk-UA">language/uk-UA.com_adminmenumanager.sys.ini</language>
+			<language tag="vi-VN">language/vi-VN.com_adminmenumanager.ini</language>
+			<language tag="vi-VN">language/vi-VN.com_adminmenumanager.sys.ini</language>
+			<language tag="yi-IL">language/yi-IL.com_adminmenumanager.ini</language>
+			<language tag="yi-IL">language/yi-IL.com_adminmenumanager.sys.ini</language>			
+			<language tag="zh-CN">language/zh-CN.com_adminmenumanager.ini</language>
+			<language tag="zh-CN">language/zh-CN.com_adminmenumanager.sys.ini</language>
+			<language tag="zh-TW">language/zh-TW.com_adminmenumanager.ini</language>
+			<language tag="zh-TW">language/zh-TW.com_adminmenumanager.sys.ini</language>		
+		</languages> 		
+		<files folder="admin">	
+				
+			<folder>css</folder>
+			<folder>helpers</folder>
+			<folder>images</folder>			
+			<folder>language</folder>				
+			<folder>models</folder>
+			<!--<folder>sql</folder>-->
+			<folder>views</folder>
+						
+			<filename>adminmenumanager.php</filename>
+			<filename>config.xml</filename>	
+			<filename>controller.php</filename>
+			<filename>index.html</filename>			
+									
+		</files> 
+				
+	</administration>	
+	
+	<!--
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/mysql.uninstall.sql</file>
+		</sql>
+	</uninstall>
+	-->
+			
+	<scriptfile>install.script.php</scriptfile>		
+	
+	<updateservers>
+		<server type="extension" priority="1" name="com_adminmenumanager"><![CDATA[http://www.pages-and-items.com/updateserver.php?ext=adminmenumanager&type=free&]]></server>
+	</updateservers>		
+	
+</extension>

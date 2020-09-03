@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	method="upgrade"
+	client="site">
+	<name>J2Store Products search module </name>
+	<creationDate>JAN 2017</creationDate>
+	<author>Gokila Priya</author>
+	<copyright>Copyright (c) 2017 Weblogicx India Private Ltd. All rights reserved.</copyright>
+	<authorEmail>support@j2store.org</authorEmail>
+	<authorUrl>http://j2store.org</authorUrl>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.6</version>
+	<description>MOD_J2STORE_SEARCH</description>
+	<scriptfile>script.mod_j2store_search.php</scriptfile>
+	<files>
+		<filename module="mod_j2store_search">mod_j2store_search.php</filename>
+		<folder>elements</folder>
+		<folder>helpers</folder>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>languages</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.mod_j2store_search.ini</language>		
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="modules/mod_j2store_search/elements/">
+				<field name="customtext" type="customnotice" addfieldpath="/administrator/components/com_j2store/models/fields/"
+					label="MOD_SEARCH_CUSTOMNOTICE"/>
+				<field name="moduleclass_sfx" type="text" default=""
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" />				 
+				<field name="menuitem_id" type="j2storemenuitem" 
+					 label="MOD_SEARCH_SELECT_MENU_ITEM_LABEL" description="MOD_SEARCH_SELECT_MENU_ITEM_LABEL_DESC" required="true">
+					<option value="0">J2STORE_SELECT_OPTION</option>
+				</field>
+				<field type="category" name="categorylist" extension="com_content" multiple="multiple" 
+				label="MOD_SEARCH_SELECT_CATEGORY_LIST" description="MOD_SEARCH_SELECT_CATEGORY_LIST_DESC" required="true"/>	
+				<field name="show_label" type="radio" default="1" label="MOD_J2STORE_SEARCH_LABEL" class="btn-group">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade" client="site">
+	<name>MOD_RSEVENTSPRO_FEATURED</name>
+	<creationDate>July 2013</creationDate>
+	<author>www.rsjoomla.com</author>
+	<copyright>GNU General Public License</copyright>
+	<authorEmail>suport@rsjoomla.com</authorEmail>
+	<authorUrl>http://www.rsjoomla.com</authorUrl>
+	<version>1.3</version>
+	<description>MOD_RSEVENTSPRO_FEATURED_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
+	
+	<updateservers>
+        <server type="extension" priority="1" name="RSEvents! Pro - Featured Module">https://www.rsjoomla.com/updates/com_rseventspro/Modules/mod_rseventspro_featured.xml</server>
+    </updateservers>
+
+	<files>
+		<filename module="mod_rseventspro_featured">mod_rseventspro_featured.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<media destination="mod_rseventspro_featured" folder="media">
+		<folder>css</folder>
+		<filename>index.html</filename>
+	</media>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_rseventspro_featured.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_rseventspro_featured.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_rseventspro/models/fields">
+				<field name="moduleclass_sfx" type="text" default="" label="MOD_RSEVENTSPRO_FEATURED_CLASS_SUFFIX" description="MOD_RSEVENTSPRO_FEATURED_CLASS_SUFFIX" />
+				<field name="itemid" type="text" default="" label="MOD_RSEVENTSPRO_FEATURED_CUSTOM_ITEMID" description="MOD_RSEVENTSPRO_FEATURED_CUSTOM_ITEMID" />
+				
+				<field name="ordering" type="list" default="start" label="MOD_RSEVENTSPRO_FEATURED_ORDERING" description="MOD_RSEVENTSPRO_FEATURED_ORDERING_DESC">
+					<option value="name">MOD_RSEVENTSPRO_FEATURED_NAME_ORDERING</option>
+					<option value="start">MOD_RSEVENTSPRO_FEATURED_STARTDATE_ORDERING</option>
+				</field>
+				
+				<field name="order" type="list" default="DESC" label="MOD_RSEVENTSPRO_FEATURED_ORDERING_DIRECTION" description="MOD_RSEVENTSPRO_FEATURED_ORDERING_DIRECTION_DESC">
+					<option value="DESC">MOD_RSEVENTSPRO_FEATURED_DESCENDING</option>
+					<option value="ASC">MOD_RSEVENTSPRO_FEATURED_ASCENDING</option>
+				</field>
+				
+				<field name="links" type="list" default="0" label="MOD_RSEVENTSPRO_FEATURED_EVENTS_LINKS" description="MOD_RSEVENTSPRO_FEATURED_EVENTS_LINKS_DESC">
+					<option value="0">MOD_RSEVENTSPRO_FEATURED_EVENTS_LINKS_NEW</option>
+					<option value="1">MOD_RSEVENTSPRO_FEATURED_EVENTS_LINKS_CURRENT</option>
+				</field>
+				
+				<field name="limit" type="text" default="4" label="MOD_RSEVENTSPRO_FEATURED_LIMIT" description="MOD_RSEVENTSPRO_FEATURED_LIMIT_DESC" />
+				
+				<field name="categories" type="category" extension="com_rseventspro" default="" label="MOD_RSEVENTSPRO_FEATURED_EVENTS_CATEGORIES" description="MOD_RSEVENTSPRO_FEATURED_EVENTS_CATEGORIES_DESC" multiple="multiple" class="rs200 rschosen" />
+				<field name="locations" type="rslocations" default="" label="MOD_RSEVENTSPRO_FEATURED_EVENTS_LOCATIONS" description="MOD_RSEVENTSPRO_FEATURED_EVENTS_LOCATIONS_DESC" multiple="multiple" class="rs200 rschosen" show_root="false" />
+				<field name="tags" type="rstags" default="" label="MOD_RSEVENTSPRO_FEATURED_EVENTS_TAGS" description="MOD_RSEVENTSPRO_FEATURED_EVENTS_TAGS_DESC" multiple="multiple" class="rs200 rschosen" />
+				<field name="choosen" type="rschosen" />
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>

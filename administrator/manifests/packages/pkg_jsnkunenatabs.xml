@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.0" method="upgrade">
+    <name>Easy Profile - Kunena Tabs</name>
+	<packagename>jsnkunenatabs</packagename>
+	<author>JSN Project</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>fiorino.desanto@gmail.com</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<packager>JSN Project</packager>
+	<description>Easy Profile Package</description>
+
+    <files folder="packages">
+	
+	<file type="plugin" id="tab_kunena" group="jsn">tab_kunena.zip</file>
+	<file type="plugin" id="tab_kunenafavs" group="jsn">tab_kunenafavs.zip</file>
+	<file type="plugin" id="tab_kunenasubs" group="jsn">tab_kunenasubs.zip</file>
+	
+	
+	</files>
+   
+	
+</extension>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2" client="site" method="upgrade">
+	<name>J2Store Categories</name>
+	<author>Gokila Priya</author>
+	<creationDate>AUG 2018</creationDate>
+	<copyright>Copyright (C) 2016 ThemeParrot. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>support@themeparrot.com</authorEmail>
+	<authorUrl>www.themeparrot.com</authorUrl>
+	<version>1.7</version>
+	<description>MOD_J2STORE_CATEGORIES_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_j2store_categories">mod_j2store_categories.php</filename>
+		<folder>elements</folder>
+		<folder>languages</folder>
+		<folder>tmpl</folder>		
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_j2store_categories.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_j2store_categories.ini</language>
+		<language tag="en-GB">languages/en-GB.mod_j2store_categories.sys.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_ARTICLES_CATEGORIES" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="modules/mod_j2store_categories/elements/">
+				
+				<field name="menuitem_id" type="j2storemenuitem"
+					 label="MOD_J2STORE_FIELD_SETITEMID_LABEL" description="MOD_J2STORE_FIELD_SETITEMID_LABEL_DESC" default="0" >
+					<option value="0">J2STORE_SELECT_OPTION</option>
+				</field>
+					
+				<field
+					name="parent"
+					type="category"
+					extension="com_content"
+					published=""
+					label="MOD_J2STORE_CATEGORIES_FIELD_PARENT_LABEL"
+					description="MOD_J2STORE_CATEGORIES_FIELD_PARENT_DESC"/>
+	
+				<field
+					name="show_description"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="MOD_J2STORE_CATEGORIES_FIELD_SHOW_DESCRIPTION_LABEL"
+					description="MOD_J2STORE_CATEGORIES_FIELD_SHOW_DESCRIPTION_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+	
+				<field
+					name="numitems"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="MOD_J2STORE_CATEGORIES_FIELD_NUMITEMS_LABEL"
+					description="MOD_J2STORE_CATEGORIES_FIELD_NUMITEMS_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+				<field
+					name="browse_link"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_J2STORE_CATEGORIES_FIELD_BROWSE_LINK_LABEL"
+					description="MOD_J2STORE_CATEGORIES_FIELD_BROWSE_LINK_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+	
+				<field
+					name="show_children"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="MOD_J2STORE_CATEGORIES_FIELD_SHOW_CHILDREN_LABEL"
+					description="MOD_J2STORE_CATEGORIES_FIELD_SHOW_CHILDREN_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="category_bootstrap_version" type="list" default="2"
+					   label="MOD_J2STORE_CATEGORIES_CATEGORY_BOOTSTRAP_VERSION">
+					<option value="2">J2STORE_BOOTSTRAP2</option>
+					<option value="3">J2STORE_BOOTSTRAP3</option>
+				</field>
+
+				<field name="category_display_view" type="list" default="list_view"
+					   label="MOD_J2STORE_CATEGORIES_CATEGORY_VIEW" description="MOD_J2STORE_CATEGORIES_CATEGORY_VIEW_DESC">
+					<option value="list_view">MOD_J2STORE_LIST</option>
+					<option value="grid_view">MOD_J2STORE_GRID</option>
+				</field>
+
+				<field
+						name="categories_per_row"
+						type="number"
+						default="4"
+						label="MOD_J2STORE_CATEGORIES_PER_ROW"
+						description="MOD_J2STORE_CATEGORIES_PER_ROW_DESC" min="1" max="12" />
+				<field
+						name="count"
+						type="number"
+						label="MOD_J2STORE_CATEGORIES_FIELD_COUNT_LABEL"
+						description="MOD_J2STORE_CATEGORIES_FIELD_COUNT_DESC"
+						default="4" />
+				<field
+					name="maxlevel"
+					type="list"
+					label="MOD_J2STORE_CATEGORIES_FIELD_MAXLEVEL_LABEL"
+					description="MOD_J2STORE_CATEGORIES_FIELD_MAXLEVEL_DESC"
+					default="0"
+				>
+					<option value="0">JALL</option>
+					<option value="1">J1</option>
+					<option value="2">J2</option>
+					<option value="3">J3</option>
+					<option value="4">J4</option>
+					<option value="5">J5</option>
+					<option value="6">J6</option>
+					<option value="7">J7</option>
+					<option value="8">J8</option>
+					<option value="9">J9</option>
+					<option value="10">J10</option>
+				</field>
+				
+				<field name="show_image" type="radio" default="1" class="btn-group" label="COM_J2STORE_CATEGORIES_FIELD_SHOW_IMAGE_LABEL"	description="COM_J2STORE_CATEGORIES_FIELD_SHOW_IMAGE_DESC">
+					<option value="1">J2STORE_SHOW</option>
+					<option value="0">J2STORE_HIDE</option>
+				</field>
+				<field
+						name="image_height"
+						type="number"
+						default="40"
+						label="MOD_J2STORE_CATEGORIES_FIELD_IMAGE_HEIGHT"
+						description="MOD_J2STORE_CATEGORIES_FIELD_IMAGE_HEIGHT_DESC" />
+
+				<field
+						name="image_width"
+						type="number"
+						default="40"
+						label="MOD_J2STORE_CATEGORIES_FIELD_IMAGE_WIDTH"
+						description="MOD_J2STORE_CATEGORIES_FIELD_IMAGE_WIDTH_DESC" />
+			</fieldset>
+	
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+	
+				<field
+					name="item_heading"
+					type="list"
+					default="4"
+					label="MOD_J2STORE_CATEGORIES_TITLE_HEADING_LABEL"
+					description="MOD_J2STORE_CATEGORIES_TITLE_HEADING_DESC"
+				>
+					<option value="1">JH1</option>
+					<option value="2">JH2</option>
+					<option value="3">JH3</option>
+					<option value="4">JH4</option>
+					<option value="5">JH5</option>
+				</field>
+	
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+	
+				<field
+					name="owncache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+				>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+	
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,9 @@
+{
+  "name": "retainful-coupon",
+  "description": "Simple plugin to give coupons for users next order",
+  "autoload": {
+    "psr-4": {
+      "Noc\\": "src/"
+    }
+  }
+}

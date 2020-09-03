@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="jsn" method="upgrade">
+	<name>Easy Profile - Import</name>
+	<author>JSN Project</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>fiorino.desanto@gmail.com</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.2.0</version>
+
+	<files>
+		<filename plugin="userimport">userimport.php</filename>
+		<filename plugin="userimport">parsecsv.lib.php</filename>
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="access"
+					type="accesslevel"
+					label="Access to user import"
+					description=""
+					>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+	<updateservers>
+        <server type="extension" priority="1" name="Easy Profile">https://www.easy-profile.com/update.php?p=import-plugin&amp;file=extension.xml</server>
+    </updateservers>
+	
+</extension>

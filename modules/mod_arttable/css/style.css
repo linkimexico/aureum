@@ -1,0 +1,19 @@
+.arttable_container {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.arttable_title {
+  color: #135CAE;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.arttable_table {
+  width: 300px;
+}
+
+table.sortable th a {
+	text-decoration: none;
+	color: #000;
+}

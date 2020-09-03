@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="jsn" method="upgrade">
+	<name>Easy Profile - Joomgallery Favourites Tab</name>
+	<author>JSN Project</author>
+	<creationDate>December 2013</creationDate>
+	<copyright>(C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>fiorino.desanto@gmail.com</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.2.0</version>
+
+	<files>
+		<filename plugin="joomgallery_favourites">joomgallery_favourites.php</filename>
+	</files>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_jsn/models/fields">
+				<field name="tabtitle" label="Title of Tab" type="text" filter="string" default="Gallery Favourites" />
+				<field name="showEmptyTab" type="radio" default="1" label="Show empty Tab" description="Display the GalleryFavourits-Tab even when the user has no favourites">
+		          <option value="0">Disabled</option>
+		          <option value="1">Enabled</option>
+		        </field>
+		        <field name="showPublic" type="radio" default="1" label="Display favoured images to Public" description="Enable, if everybody should see a user\'s favourites. Otherwise, only the user will see the favourites tab in his profile">
+		          <option value="0">Disabled</option>
+		          <option value="1">Enabled</option>
+		        </field>
+		        <field name="showCategory" type="radio" default="1" label="Display Category Path" description="Show the category path the picture is in under the title">
+		          <option value="0">Disabled</option>
+		          <option value="1">Enabled</option>
+		        </field>
+		        <field name="sortBy" type="list" default="jg.catid ASC" label="Order images by:" description="">
+		          <option value="jg.catid ASC">Category (default)</option>
+		          <option value="jg.imgdate ASC">Date of image (oldest first)</option>
+		          <option value="jg.imgdate DESC">Date of image (newest first)</option>
+		          <option value="jg.hits DESC">Hits (most viewed first)</option>
+		          <option value="cmtcount DESC">Comments (most commented first)</option>
+		          <option value="cmtcount ASC">Comments (least commented first)</option>
+		          <option value="rating DESC">Rating (best first)</option>
+		          <option value="rating ASC">Rating (worst first)</option>
+		        </field>
+		        <field name="categoryfilter" type="text" size="15" default="" label="Display only from categories" description="Enter a comma-separated list of category-IDs to display only pictures from these categories (e.g. &quot;1,5,6&quot;). Leave empty (default) to show pictures from all categories. This option requires JoomGallery 1.0.1, 1.5, or later!" />
+		        <field name="picsperpage" type="text" size="5" default="" label="Pictures per Page" description="Leave empty (default) to use the setting from the JoomGallery component" />
+		        <field name="numcols" type="text" size="5" default="" label="Number of columns" description="Leave empty (default) to use the setting from the JoomGallery component" />
+		        <field name="pagination" type="radio" default="1" label="Display pagination (otherwise only first page)" description="Spreads the images over several pages. If disabled, only the first page will be displayed, containing the # of pics entered above">
+		          <option value="0">Disabled</option>
+		            <option value="1">Enabled</option>
+		        </field>
+		        <field name="hidebackend" type="radio" default="0" label="Hide images uploaded from Backend" description="If enabled, no pictures that were uploaded from the Admin backend are shown on the tab.">
+		          <option value="0">Disabled</option>
+		          <option value="1">Enabled</option>
+		        </field>
+		        <field name="showauthor" type="radio" default="1" label="Show image author" description="Displays the author of the image.">
+		          <option value="0">Disabled</option>
+		          <option value="1">Enabled</option>
+		        </field>
+		        <field name="showhits" type="radio" default="1" label="Show number of hits" description="">
+		          <option value="0">Disabled</option>
+		          <option value="1">Enabled</option>
+		        </field>
+		        <field name="shownumcomments" type="radio" default="1" label="Show number of comments" description="">
+		          <option value="0">Disabled</option>
+		          <option value="1">Enabled</option>
+		        </field>
+		        <field name="showrate" type="radio" default="1" label="Show rating" description="">
+		          <option value="0">Disabled</option>
+		          <option value="1">Enabled</option>
+		        </field>
+				<field name="showdownloads" type="radio" default="1" label="Show downloads" description="">
+		          <option value="0">Disabled</option>
+		            <option value="1">Enabled</option>
+		        </field>
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>

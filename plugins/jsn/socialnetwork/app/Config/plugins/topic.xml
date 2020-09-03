@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info>
+	<name>Topics</name>
+	<key>topic</key>
+	<version>2.0</version>
+	<description>Topics Plugin</description>
+	<author>Jsn Project</author>
+	<website>http://www.easy-profile.com</website>
+	<menu>Jsn Project</menu>
+	<icon_class>/icon-comments</icon_class>
+</info>
